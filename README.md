@@ -1,3 +1,8 @@
 # Group_Project
 
-text test branche lcletz
+Présentation de notre projet :
+
+
+Membres de notre groupe :
+
+
