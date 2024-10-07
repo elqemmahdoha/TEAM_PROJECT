@@ -1,8 +1,7 @@
 # Group_Project
-
-Présentation de notre projet :
-
-
-Membres de notre groupe :
-
-
+<<<<<<< HEAD
+Noms des collaborateurs : 
+- Cletz Laura  
+- El Qemmah Doha 
+- Gillet Louison 
+=======
