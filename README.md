@@ -2,5 +2,4 @@
 Noms des collaborateurs : 
 - Cletz Laura  
 - El Qemmah Doha 
-- Gillet Louison 
-=======
+- Gillet Louison
