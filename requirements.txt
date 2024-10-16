@@ -1,0 +1,8 @@
+pandas
+seaborn
+os
+matplotlib
+numpy
+pooch
+pygal
+
