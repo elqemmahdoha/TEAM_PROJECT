@@ -9,7 +9,7 @@ Nous utilisons les données disponibles aux liens suivants, enregistrées dans l
 
 ## Qui sommes-nous ?
 
-Les trois collaboteur.ice.s sur ce projet sont :
+Les trois collaborateur.ice.s sur ce projet sont :
 - CLETZ Laura  
 - EL QEMMAH Doha 
 - GILLET Louison
