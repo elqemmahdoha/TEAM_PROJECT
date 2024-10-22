@@ -1,0 +1,41 @@
+---
+title: "Gantt diagram for the project: Bikes and Bike-Sharing in Montpellier 2024"
+format: html
+
+---
+
+```{mermaid}
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#d786f5',
+      'primaryTextColor': '#0d0c0c',
+      'primaryBorderColor': '#a350c1',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#8d9394'
+    }
+  }
+}%%
+gantt
+    dateFormat  DD-MM
+    axisFormat  %d-%b
+    todayMarker stroke-width:4px,stroke:#9c13ab,opacity:0.9
+
+    section First steps
+    README/Task affectation: done, des1, 19-09, 11-10
+    Data uploading/Gantt diagram :done, des1, 01-10, 24-10
+
+
+    section Project Structure 
+    Creation of the website :active, des2, 28-10, 30-11
+    Video Realization       :active, 28-10, 26-11
+    Interactive map         :active, 28-10, 26-11 
+    Presentation slides     :des3, after des2, 3d
+
+
+    section Review and Delivery
+    Revision and Quality Assurance :milestone, des4, after des3, 4d
+    Rehearsal :des5, after des4, 3d
+    The final countdown :crit, milestone, after des5, 6h
+```
