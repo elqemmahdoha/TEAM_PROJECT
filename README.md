@@ -19,7 +19,7 @@ et leurs tâches ont été réparties comme suivent :
 - Doha sur la forme et l'esthétique du site, ainsi que la documentation ;
 - Louison sur le code de la vidéo
 
-selon l'emploi du temps fixé sur le site suivant: https://elqemmahdoha.github.io/TEAM_PROJECT/Gantt_Diagram/gantt_diagram.html
+selon l'emploi du temps fixé sur le site suivant: https://elqemmahdoha.github.io/TEAM_PROJECT/Gantt_Diagram/interactive_gantt.html
 
 ## A quoi pouvons-nous nous attendre ?
 
