@@ -24,4 +24,6 @@ selon l'emploi du temps fixé dans #A_COMPLETER#
 ## A quoi pouvons-nous nous attendre ?
 
 Il manque bien sûr couleurs et textes détaillés mais le site devrait se présenter comme ceci :
-![Alt Text](https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/images/Photo_info_traffic_site.jpg)
+<p align="center">
+  <img src="https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/images/Photo_info_traffic_site.jpg" width="350" title="expectation_pic">
+</p>
