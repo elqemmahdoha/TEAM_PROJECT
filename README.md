@@ -19,9 +19,9 @@ et leurs tâches ont été réparties comme suivent :
 - Doha sur la forme et l'esthétique du site, ainsi que la documentation ;
 - Louison sur le code de la vidéo
 
-selon l'emploi du temps fixé dans #A_COMPLETER#
+selon l'emploi du temps interctif disponible sur le site suivant : https://elqemmahdoha.github.io/TEAM_PROJECT/Gantt_Diagram/interactive_gantt.html
 
 ## A quoi pouvons-nous nous attendre ?
 
 Il manque bien sûr couleurs et textes détaillés mais le site devrait se présenter comme ceci :
-![Alt Text](https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/images/Photo_info_trafic_site.jpg)
+![Alt text](https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/images/Photo_info_trafic_site.jpg?raw=true)
