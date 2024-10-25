@@ -24,6 +24,4 @@ selon l'emploi du temps fixé sur le site suivant: https://elqemmahdoha.github.i
 ## A quoi pouvons-nous nous attendre ?
 
 Il manque bien sûr couleurs et textes détaillés mais le site devrait se présenter comme ceci :
-<p align="center">
-  <img src="https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/images/Photo_info_traffic_site.jpg" width="350" title="expectation_pic">
-</p>
+![Alt text](https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/images/Photo_info_trafic_site.jpg?raw=true)
