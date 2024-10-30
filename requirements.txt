@@ -1,4 +1,6 @@
 pandas
+plotly
+geojson
 seaborn
 os
 matplotlib
