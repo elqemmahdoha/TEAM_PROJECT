@@ -31,16 +31,12 @@ folium.GeoJson(
         "weight": 2,
         "dashArray": "5, 5",
         "fillOpacity": 0.01,
-    },
-    #tooltip=folium.features.GeoJsonTooltip(
-     #   fields=["nom"],
-      #  aliases=["Département:"],
-    #),
+    }
 ).add_to(Montpellier)
 
 
 color_mapa = cm.LinearColormap(
-    colors=["darkblue", "purple", "yellow"],
+    colors=["red", "orange", "yellow"],
     caption="Densité du trafic cycliste",
 )
 svg_style = "<style>svg#legend {background-color: rgba(255,255,255,0.5);}</style>"
