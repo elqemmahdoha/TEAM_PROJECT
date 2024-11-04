@@ -1,9 +1,9 @@
 pandas
 geopandas
 plotly
-geojson
 matplotlib
 numpy
 pooch
 pygal
+json
 

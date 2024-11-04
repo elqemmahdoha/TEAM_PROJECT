@@ -1,10 +1,10 @@
 import geopandas as gpd
 import pandas as pd
 import folium
+import json
 from folium.plugins import HeatMap
 from folium.plugins import GroupedLayerControl
 import branca.colormap as cm
-
 pd.options.mode.chained_assignment = None
 
 sf = gpd.read_file("data/openstreetdata/contour-du-departement.geojson")
@@ -159,8 +159,23 @@ Montpellier.add_child(jeudi)
 Montpellier.add_child(vendredi)
 Montpellier.add_child(samedi)
 Montpellier.add_child(dimanche)
+'''
+velo_orange = images/logo_velo_orange.png
+icon = folium.CustomIcon(
+    velo_orange,
+    icon_size=(2, 2),
+    icon_anchor=(2, 2),
+    popup_anchor=(2, 2)
+)
 
+with open('data/openstreetdata/MMM_MMM_Velomagg.json',) as f:
+    velomagg_geoloc = json.load(f)
 
+for i in velomagg_geoloc["features"]:
+    folium.Marker(location=velomagg_geoloc[[["coordinates"]]], 
+            icon=velo_orange, 
+            popup=velomagg_geoloc[[["nom"]]]).add_to(Montpellier)
+'''
 folium.TileLayer("OpenStreetMap", name="Street Map").add_to(Montpellier)
 
 folium.LayerControl(position="topleft", collapsed=True, opacity=0.7).add_to(Montpellier)
