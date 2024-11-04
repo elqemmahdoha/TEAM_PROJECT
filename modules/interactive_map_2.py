@@ -1,5 +1,3 @@
-import time 
-start = time.time()
 import geopandas as gpd
 import pandas as pd
 import numpy as np
@@ -40,7 +38,7 @@ folium.GeoJson(
 
 
 color_mapa = cm.LinearColormap(
-    colors=["darkblue", "purple", "yellow"],
+    colors=["red", "orange", "yellow"],
     caption="Densité du trafic cycliste",
 )
 svg_style = "<style>svg#legend {background-color: rgba(255,255,255,0.5);}</style>"
@@ -71,5 +69,3 @@ GroupedLayerControl(
     collapsed=False,
 ).add_to(Montpellier)
 
-end = time.time()
-print(f"Execution time: {end - start:.5f} s.")

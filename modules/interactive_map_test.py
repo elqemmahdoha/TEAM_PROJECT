@@ -36,7 +36,7 @@ folium.GeoJson(
 
 
 color_mapa = cm.LinearColormap(
-    colors=["red", "orange", "yellow"],
+    colors=["red", "orange", "yellow", "green"],
     caption="Densité du trafic cycliste",
 )
 svg_style = "<style>svg#legend {background-color: rgba(255,255,255,0.5);}</style>"
