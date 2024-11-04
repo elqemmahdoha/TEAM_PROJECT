@@ -2,8 +2,6 @@ pandas
 geopandas
 plotly
 geojson
-seaborn
-os
 matplotlib
 numpy
 pooch
