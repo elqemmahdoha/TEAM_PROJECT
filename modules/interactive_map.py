@@ -34,9 +34,9 @@ color_mapa.add_to(Montpellier)
 grad = {0: "#0d0887", 0.1: "#0d0887", 0.2: "#0d0887", 0.3: "#0d0887", 0.4: "#0d0887", 0.5: "#6a00a8", 0.6: "#b12a90", 0.7: "#e16462", 0.8: "#fca636", 0.9: "#fcce25", 1: "#f0f921"}
 
 weeklyd = pd.read_csv("data/donnees_hebdo.csv", sep=";", na_values="Null", low_memory=False)
-weeklyd = pd.wide_to_long(weeklyd, 
-                stubnames=["18/3","19/3","20/3","21/3","22/3","23/3","24/3"],
-                i= "Jour", j= "Intensité")
+weeklyd = pd.melt(weeklyd, id_vars=["N° Série","Latitude","Longitude"], 
+                value_vars=["18/3","19/3","20/3","21/3","22/3","23/3","24/3"],
+                var_name="Jour", value_name="Intensité")
 weeklyd = weeklyd.dropna()
 #On retire les deux compteurs qui sont trop loin de Montpellier Métropôle :
 compteurs_todrop = weeklyd[
