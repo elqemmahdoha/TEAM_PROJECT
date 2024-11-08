@@ -9,7 +9,7 @@ pd.options.mode.chained_assignment = None
 
 sf = gpd.read_file("data/openstreetdata/contour-du-departement.geojson")
 centre = [43.62505, 3.862038]
-Montpellier = folium.Map(location=centre, zoom_start=6.5, tiles=None)
+Montpellier = folium.Map(location=centre, zoom_start=6.5, tiles="OpenStreetMap")
 folium.GeoJson(
     sf[["geometry"]],
     zoom_on_click=True,
@@ -176,8 +176,6 @@ for i in velomagg_geoloc["features"]:
             icon=velo_orange, 
             popup=velomagg_geoloc[[["nom"]]]).add_to(Montpellier)
 '''
-folium.TileLayer("OpenStreetMap", name="Street Map").add_to(Montpellier)
-
 folium.LayerControl(position="topleft", collapsed=True, opacity=0.7).add_to(Montpellier)
 
 GroupedLayerControl(
@@ -185,4 +183,6 @@ GroupedLayerControl(
     groups={"Jours de la semaine": [lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche]},
     collapsed=False,
 ).add_to(Montpellier)
+
+Montpellier
 
