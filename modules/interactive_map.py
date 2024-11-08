@@ -68,23 +68,26 @@ for day, day_name in zip(days, day_names):
     day_feature_groups.append(feature_group)
 
 
-'''
-velo_orange = images/logo_velo_orange.png
+velo_orange = "images/logo_velo_orange.png" 
 icon = folium.CustomIcon(
     velo_orange,
-    icon_size=(2, 2),
-    icon_anchor=(2, 2),
-    popup_anchor=(2, 2)
+    icon_size=(30, 30),  
+    icon_anchor=(15, 15)  
 )
 
-with open('data/openstreetdata/MMM_MMM_Velomagg.json',) as f:
+with open('data/openstreetdata/MMM_MMM_Velomagg.json') as f:
     velomagg_geoloc = json.load(f)
 
-for i in velomagg_geoloc["features"]:
-    folium.Marker(location=velomagg_geoloc[[["coordinates"]]], 
-            icon=velo_orange, 
-            popup=velomagg_geoloc[[["nom"]]]).add_to(Montpellier)
-'''
+for feature in velomagg_geoloc["features"]:
+    lon, lat = feature["geometry"]["coordinates"]
+    name = feature["properties"].get("nom", "Station Velomagg")
+
+    folium.Marker(
+        location=[lat, lon], 
+        icon=folium.CustomIcon(velo_orange, icon_size=(30, 30)), 
+        popup=folium.Popup(name, parse_html=True)  
+    ).add_to(Montpellier)
+
 
 GroupedLayerControl(
     position="topleft",
