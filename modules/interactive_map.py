@@ -92,4 +92,7 @@ GroupedLayerControl(
 ).add_to(Montpellier)
 
 #Montpellier
+#TO_REMOVE
 Montpellier.save("mtp_interactive_test.html")
+import webbrowser
+webbrowser.open("mtp_interactive_test.html")
