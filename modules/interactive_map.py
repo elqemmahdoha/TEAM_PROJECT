@@ -86,14 +86,11 @@ for i in velomagg_geoloc["features"]:
             popup=velomagg_geoloc[[["nom"]]]).add_to(Montpellier)
 '''
 
-folium.LayerControl(position="topleft", collapsed=True, opacity=0.7).add_to(Montpellier)
 GroupedLayerControl(
     position="topleft",
     groups={"Jours de la semaine": day_feature_groups},
     collapsed=False,
 ).add_to(Montpellier)
 
-#Montpellier
 
-#TO_REMOVE
-Montpellier.save("mtp_interactive_test.html")
+Montpellier.save("mtp_interactive.html")
