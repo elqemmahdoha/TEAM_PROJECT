@@ -96,4 +96,6 @@ GroupedLayerControl(
 #Montpellier
 
 #TO_REMOVE
-Montpellier.save("Montpellier_map.html")
+Montpellier.save("mtp_interactive_test.html")
+import webbrowser
+webbrowser.open("mtp_interactive_test.html")
