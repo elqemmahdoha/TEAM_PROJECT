@@ -6,4 +6,4 @@ numpy
 pooch
 pygal
 json
-
+osmnx
