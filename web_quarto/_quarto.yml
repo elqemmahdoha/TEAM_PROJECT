@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website: 
+  repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT
+  repo-actions: [source, issue]
+  back-to-top-navigation: true
+  title: "Montpellier à Vélo"
+  navbar:
+    tools:
+      - icon: database
+        href: https://github.com/elqemmahdoha/TEAM_PROJECT/tree/main/data
+        text: Data
+      - icon: github
+        href: https://github.com/elqemmahdoha/TEAM_PROJECT
+        text: GitHub
+
+
+format:
+  html:
+    theme:
+      dark: [litera, darkmode.scss]
+      light: [litera, lightmode.scss]
+    toc: true         
+    toc-location: left
+    css: styles.css  
+    theme-switcher: true
+
+    
