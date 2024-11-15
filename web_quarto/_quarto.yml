@@ -9,7 +9,7 @@ website:
   navbar:
     tools:
       - icon: database
-        href: https://github.com/elqemmahdoha/TEAM_PROJECT/tree/main/data
+        href: https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo
         text: Data
       - icon: github
         href: https://github.com/elqemmahdoha/TEAM_PROJECT
