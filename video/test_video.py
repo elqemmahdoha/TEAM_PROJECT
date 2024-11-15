@@ -1,7 +1,7 @@
 import geopandas as gpd
 import osmnx as ox
 import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
+from matplotlib.animation import FuncAnimation, FFMpegWriter
 import random
 
 # Charger le réseau de rues de Montpellier
@@ -33,5 +33,8 @@ def update(frame):
 # Créer l'animation
 ani = FuncAnimation(fig, update, frames=100, repeat=False)
 
-# Sauvegarder la vidéo
-ani.save("compteurs_animation.gif", writer="Pillow", fps=10)
+# Création de l'instance writer avec les arguments nécessaires
+writer = FFMpegWriter(fps=10, codec='libx264', bitrate=1800)
+
+# Utilisation de writer lors de l'enregistrement
+ani.save("compteurs_animation.mp4", writer=writer)
