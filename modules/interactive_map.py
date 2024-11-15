@@ -1,3 +1,5 @@
+import time
+start = time.time()
 import geopandas as gpd
 import pandas as pd
 import folium
@@ -10,7 +12,7 @@ pd.options.mode.chained_assignment = None
 
 sf = gpd.read_file("data/openstreetdata/contour-du-departement.geojson")
 centre = [43.62505, 3.862038]
-Montpellier = folium.Map(location=centre, zoom_start=10.5, tiles="OpenStreetMap")
+Montpellier = folium.Map(location=centre, zoom_start=10.5, tiles=None)
 
 
 folium.GeoJson(
@@ -67,14 +69,14 @@ for day, day_name in zip(days, day_names):
     
     day_feature_groups.append(feature_group)
 
-
+'''
 velo_orange = "images/logo_velo_orange.png" 
 icon = folium.CustomIcon(
     velo_orange,
     icon_size=(30, 30),  
     icon_anchor=(15, 15)  
 )
-
+'''
 with open('data/openstreetdata/MMM_MMM_Velomagg.json') as f:
     velomagg_geoloc = json.load(f)
 
@@ -84,8 +86,12 @@ for feature in velomagg_geoloc["features"]:
 
     folium.Marker(
         location=[lat, lon], 
-        icon=folium.CustomIcon(velo_orange, icon_size=(30, 30)), 
-        popup=folium.Popup(name, parse_html=True)  
+        #icon = folium.CustomIcon(velo_orange, icon_size(30,30))
+        icon=folium.Icon(icon="bicycle", 
+                    prefix="fa", icon_color="black", 
+                    color="black", icon_size=(10, 10), 
+                    shadow_size=(0,0)), 
+        popup=folium.Popup(name, parse_html=True), 
     ).add_to(Montpellier)
 
 
@@ -95,5 +101,16 @@ GroupedLayerControl(
     collapsed=False,
 ).add_to(Montpellier)
 
+folium.TileLayer("OpenStreetMap", name="Street Map").add_to(Montpellier)
+folium.TileLayer(
+        tiles = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+        attr = 'Esri',
+        name = 'Satellite',
+        overlay = False,
+        control = True).add_to(Montpellier)
+folium.LayerControl(position="topleft", collapsed=True, opacity=0.7).add_to(Montpellier)
+
 
 Montpellier.save("mtp_interactive.html")
+end = time.time()
+print(f"Temps : {end - start:.5f} s")
