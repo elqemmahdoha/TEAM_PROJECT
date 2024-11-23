@@ -11,6 +11,9 @@ output: html
 
 # Densité sur un mois
 
+<video width="640" height="360" controls>
+  <source src="compteurs_animation.mp4" type="video/mp4">
+</video>
 
 
 # Description 

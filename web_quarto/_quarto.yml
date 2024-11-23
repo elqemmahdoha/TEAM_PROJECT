@@ -19,8 +19,8 @@ website:
 format:
   html:
     theme:
-      dark: [litera, darkmode.scss]
-      light: [litera, lightmode.scss]
+      dark: [cosmo, darkmode.scss]
+      light: [cosmo, lightmode.scss]
     toc: true         
     toc-location: left
     css: styles.css  
