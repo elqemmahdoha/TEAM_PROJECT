@@ -1,5 +1,6 @@
 ---
 title: "Pédaler à Montpellier : Une analyse dynamique"
+output: html
 ---
 
 
@@ -10,6 +11,9 @@ title: "Pédaler à Montpellier : Une analyse dynamique"
 
 # Densité sur un mois
 
+<video width="640" height="360" controls>
+  <source src="compteurs_animation.mp4" type="video/mp4">
+</video>
 
 
 # Description 
@@ -18,6 +22,9 @@ title: "Pédaler à Montpellier : Une analyse dynamique"
 
 # Prédiction du trafic
 
+La map interactive:
+
+<iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0"></iframe>
 
 
 # À propos
