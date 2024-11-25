@@ -4,6 +4,7 @@ project:
 website: 
   repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT
   repo-actions: [source, issue]
+  page-navigation: true
   back-to-top-navigation: true
   title: "Montpellier à Vélo"
   navbar:
@@ -14,6 +15,12 @@ website:
       - icon: github
         href: https://github.com/elqemmahdoha/TEAM_PROJECT
         text: GitHub
+    right:
+      - text: "Fr"
+        href: index_fr.qmd   
+      - text: "En"
+        href: index_ang.qmd  
+
 
 
 format:
@@ -23,7 +30,6 @@ format:
       light: [cosmo, lightmode.scss]
     toc: true         
     toc-location: left
+    toc-title: Sommaire
     css: styles.css  
     theme-switcher: true
-
-    
