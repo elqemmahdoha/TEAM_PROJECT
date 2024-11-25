@@ -1,5 +1,8 @@
 project:
   type: website
+  render: 
+    - index_fr.qmd
+    - index_ang.qmd
 
 website: 
   repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT
@@ -16,11 +19,10 @@ website:
         href: https://github.com/elqemmahdoha/TEAM_PROJECT
         text: GitHub
     right:
-      - text: "Fr"
-        href: index_fr.qmd   
-      - text: "En"
-        href: index_ang.qmd  
-
+      - href: index_fr.qmd
+        text: Fr
+      - href: index_ang.qmd
+        text: En
 
 
 format:

@@ -1,10 +1,6 @@
 ---
 title: "Pédaler à Montpellier : Une analyse dynamique"
 output: html
-navbar:
-  right:
-    - text: "Switch to En"
-      href: index_ang.qmd
 ---
 
 # Introduction 

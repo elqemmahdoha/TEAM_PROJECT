@@ -1,10 +1,6 @@
 ---
 title: "Cycling in Montpellier: A Dynamic Analysis"
 output: html
-navbar:
-  right:
-    - text: "Switch to Fr"
-      href: index_fr.qmd
 ---
 
 # Introduction
