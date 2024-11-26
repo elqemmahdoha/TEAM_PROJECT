@@ -20,3 +20,19 @@ output: html
 # About
 
 # Sources
+
+
+<button id="toc-toggle"> TOC</button>
+
+<script>
+    const toc = document.getElementById('TOC'); 
+    const toggleButton = document.getElementById('toc-toggle');
+
+    toggleButton.addEventListener('click', () => {
+        toc.classList.toggle('collapsed');
+        
+        if (toc.classList.contains('collapsed')) 
+        {toggleButton.textContent='Show';} 
+        else {toggleButton.textContent = 'Hide';}
+    });
+</script>

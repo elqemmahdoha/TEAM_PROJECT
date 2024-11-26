@@ -1,15 +1,12 @@
 /* Styles CSS pour la Table des matières (TOC) */
-
-/* Appliquer un style global à la page */
 body {
     display: flex;
-    flex-direction: row; /* Positionner la sidebar à gauche ou à droite */
+    flex-direction: row;
     margin: 0;
     padding: 0;
     height: 100vh; /* Assurer que la page couvre toute la hauteur de la fenêtre */
 }
 
-/* Appliquer un style spécifique à la sidebar TOC */
 .quarto-toc {
     width: 150px; /* Largeur de la sidebar TOC */
     height: 100vh; /* Hauteur de la sidebar TOC */
@@ -19,3 +16,24 @@ body {
     box-sizing: border-box; /* S'assurer que le padding ne dépasse pas la largeur allouée */
 }
 
+#toc-toggle {
+    position: fixed; /* Fixe le bouton sur la page */
+    top: 50px; /* Un peu de marge du haut */
+    left: 90px; /* Un peu à gauche de la sidebar */
+    background-color: #f5d1f7;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    z-index: 1100; /* Assurer que le bouton soit au-dessus de la TOC */
+}
+
+#toc-toggle:hover {
+    background-color: #d835b8;
+}
+
+#TOC.collapsed {
+    width: 0; /* Réduit la largeur à 0 pour plier */
+    padding: 0; /* Supprime le padding */
+    overflow: hidden; /* Masque tout contenu supplémentaire */
+}

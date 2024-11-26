@@ -1,7 +1,9 @@
 ---
 title: "Pédaler à Montpellier : Une analyse dynamique"
 output: html
+echo: false
 ---
+
 
 # Introduction 
 
@@ -28,3 +30,21 @@ output: html
 
 
 # Sources
+
+
+
+<button id="toc-toggle"> TOC</button>
+
+<script>
+    const toc = document.getElementById('TOC'); 
+    const toggleButton = document.getElementById('toc-toggle');
+
+    toggleButton.addEventListener('click', () => {
+        toc.classList.toggle('collapsed');
+        
+        if (toc.classList.contains('collapsed')) 
+        {toggleButton.textContent='Afficher';} 
+        else {toggleButton.textContent = 'Dissimuler';}
+    });
+</script>
+
