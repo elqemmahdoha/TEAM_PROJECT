@@ -1,0 +1,50 @@
+---
+title: "Pédaler à Montpellier : Une analyse dynamique"
+output: html
+echo: false
+---
+
+
+# Introduction 
+
+
+
+# Densité sur un mois
+
+<video width="640" height="360" controls>
+  <source src="compteurs_animation.mp4" type="video/mp4">
+</video>
+
+
+# Description 
+
+
+
+# Prédiction du trafic
+
+<iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0"></iframe>
+
+
+# À propos
+
+
+
+# Sources
+
+
+
+<button id="toc-toggle"> TOC</button>
+
+<script>
+    const toc = document.getElementById('TOC'); 
+    const toggleButton = document.getElementById('toc-toggle');
+
+    toggleButton.addEventListener('click', () => {
+        toc.classList.toggle('collapsed');
+        
+        if (toc.classList.contains('collapsed')) 
+        {toggleButton.textContent='Afficher';} 
+        else {toggleButton.textContent = 'Dissimuler';}
+    });
+</script>
+

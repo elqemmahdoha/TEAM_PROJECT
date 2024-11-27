@@ -10,14 +10,14 @@ from datetime import datetime
 montpellier_graph = ox.graph_from_place("Montpellier, France", network_type="bike")
 
 # Charger le fichier GeoJSON contenant les points de comptage
-compteurs = gpd.read_file("data/ecocompt/GeolocCompteurs.geojson")
+compteurs = gpd.read_file("data/video/ecocompt/GeolocCompteurs.geojson")
 
 # Charger les données de passages pour chaque compteur en filtrant pour juin
 passages = {}
 for compteur_id in compteurs.index:
     # Récupérer l'identifiant correct du compteur
     compteur_unique_id = compteurs.loc[compteur_id, 'N° Sér_1'] or compteurs.loc[compteur_id, 'N° Série']
-    file_path = f"data/ecocompt/fichiers_video/MMM_EcoCompt_{compteur_unique_id}_archive.json"
+    file_path = f"data/video/ecocompt/MMM_EcoCompt_{compteur_unique_id}_archive.json"
     
     if not os.path.exists(file_path):
         print(f"Fichier introuvable pour le compteur {compteur_unique_id}")
