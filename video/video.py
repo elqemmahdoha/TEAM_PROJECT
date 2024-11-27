@@ -41,7 +41,7 @@ for idx, row in compteurs.iterrows():
                         
                         if date_observed:
                             # Extraire uniquement la première partie de la plage de dates
-                            date = date_observed.split("/")[0]  # Garder seulement le début de la plage
+                            date = date_observed.split("/")[0].split("T")[0]  # Garder seulement le début de la plage
                             dates.append(date)
 
                     except json.JSONDecodeError as e:
@@ -109,4 +109,4 @@ ani = FuncAnimation(fig, update, frames=len(common_dates), repeat=False)
 writer = FFMpegWriter(fps=10, codec='libx264', bitrate=1800)
 
 # Utilisation de writer lors de l'enregistrement
-ani.save("compteurs_animation2.mp4", writer=writer)
+ani.save("compteurs_animation.mp4", writer=writer)
