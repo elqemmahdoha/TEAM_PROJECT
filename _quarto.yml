@@ -33,6 +33,5 @@ format:
       light: [cosmo, lightmode.scss]
     toc: true         
     toc-location: left
-    toc-title: Sommaire 
     css: styles.css  
     theme-switcher: true

@@ -33,18 +33,36 @@ echo: false
 
 
 
-<button id="toc-toggle"> TOC</button>
+
+<button id="toc-toggle"> Table des matières</button>
 
 <script>
     const toc = document.getElementById('TOC'); 
     const toggleButton = document.getElementById('toc-toggle');
+    let lastScrollTop = 0; // Variable pour suivre la dernière position de défilement
 
     toggleButton.addEventListener('click', () => {
         toc.classList.toggle('collapsed');
         
-        if (toc.classList.contains('collapsed')) 
-        {toggleButton.textContent='Afficher';} 
-        else {toggleButton.textContent = 'Dissimuler';}
+        if (toc.classList.contains('collapsed')) {
+            toggleButton.textContent = 'Afficher'; 
+        } else {
+            toggleButton.textContent = 'Masquer'; 
+        }
+    });
+
+  
+    window.addEventListener('scroll', () => {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Si l'utilisateur fait défiler vers le bas, cacher le bouton
+        if (currentScroll > lastScrollTop) {
+            toggleButton.style.display = 'none'; 
+        } else {
+            // Si l'utilisateur fait défiler vers le haut, afficher le bouton
+            toggleButton.style.display = 'block'; 
+        }
+        
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Pour éviter les erreurs si on est tout en haut de la page
     });
 </script>
-

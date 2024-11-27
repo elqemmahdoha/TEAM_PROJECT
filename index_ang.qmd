@@ -1,6 +1,7 @@
 ---
 title: "Cycling in Montpellier: A Dynamic Analysis"
 output: html
+echo: false
 ---
 
 # Introduction
@@ -22,17 +23,36 @@ output: html
 # Sources
 
 
-<button id="toc-toggle"> TOC</button>
+
+<button id="toc-toggle"> Table of contents</button>
 
 <script>
     const toc = document.getElementById('TOC'); 
     const toggleButton = document.getElementById('toc-toggle');
+    let lastScrollTop = 0; 
 
     toggleButton.addEventListener('click', () => {
         toc.classList.toggle('collapsed');
         
-        if (toc.classList.contains('collapsed')) 
-        {toggleButton.textContent='Show';} 
-        else {toggleButton.textContent = 'Hide';}
+        if (toc.classList.contains('collapsed')) {
+            toggleButton.textContent = 'Show'; 
+        } else {
+            toggleButton.textContent = 'Hide'; 
+        }
+    });
+
+    
+    window.addEventListener('scroll', () => {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        
+        if (currentScroll > lastScrollTop) {
+            toggleButton.style.display = 'none'; 
+        } else {
+            
+            toggleButton.style.display = 'block'; 
+        }
+        
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
     });
 </script>

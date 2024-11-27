@@ -17,15 +17,20 @@ body {
 }
 
 #toc-toggle {
-    position: fixed; /* Fixe le bouton sur la page */
-    top: 50px; /* Un peu de marge du haut */
-    left: 90px; /* Un peu à gauche de la sidebar */
-    background-color: #f5d1f7;
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    background-color: transparent;
     color: rgb(0, 0, 0);
     padding: 10px 15px;
     border: none;
     cursor: pointer;
-    z-index: 1100; /* Assurer que le bouton soit au-dessus de la TOC */
+    z-index: 1100;
+    border: 2px solid #b538a2;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
 }
 
 #toc-toggle:hover {
@@ -33,7 +38,8 @@ body {
 }
 
 #TOC.collapsed {
-    width: 0; /* Réduit la largeur à 0 pour plier */
-    padding: 0; /* Supprime le padding */
-    overflow: hidden; /* Masque tout contenu supplémentaire */
+    width: 0;
+    padding: 0;
+    overflow: hidden;
 }
+
