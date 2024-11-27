@@ -1,0 +1,816 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "MMM_MMM_Velomagg",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.853317342, 43.5882630621 ]
+			},
+			"properties" : {
+				"nom" : "Providence-Ovalie",
+				"secteur" : "Le Grand M",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 54,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8280306309, 43.6391121171 ]
+			},
+			"properties" : {
+				"nom" : "Euromédecine",
+				"secteur" : "ligne 1",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 41,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8328917424, 43.6336865747 ]
+			},
+			"properties" : {
+				"nom" : "Malbosc",
+				"secteur" : "ligne 1",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 35,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8347266149, 43.6214732421 ]
+			},
+			"properties" : {
+				"nom" : "Hôtel du Département",
+				"secteur" : "ligne 3",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 48,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8326421559, 43.6146896895 ]
+			},
+			"properties" : {
+				"nom" : "Celleneuve",
+				"secteur" : " ",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 44,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8394718931, 43.6151942523 ]
+			},
+			"properties" : {
+				"nom" : "Tonnelles",
+				"secteur" : "ligne 3",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 49,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.849034904, 43.634312448 ]
+			},
+			"properties" : {
+				"nom" : "Occitanie",
+				"secteur" : "ligne 1",
+				"installati" : "32 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 36,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8610694685, 43.6314441319 ]
+			},
+			"properties" : {
+				"nom" : "Fac des Sciences",
+				"secteur" : " ",
+				"installati" : "24 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 37,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8683479381, 43.6226843462 ]
+			},
+			"properties" : {
+				"nom" : "Boutonnet",
+				"secteur" : "ligne 1",
+				"installati" : "12 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 12,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8658015824, 43.6190001238 ]
+			},
+			"properties" : {
+				"nom" : "Charles Flahault",
+				"secteur" : " ",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 30,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8550871216, 43.6167993822 ]
+			},
+			"properties" : {
+				"nom" : "Place Viala",
+				"secteur" : " ",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 47,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8557044551, 43.6219370547 ]
+			},
+			"properties" : {
+				"nom" : "Père Soulas",
+				"secteur" : " ",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 46,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.882495466, 43.6262678104 ]
+			},
+			"properties" : {
+				"nom" : "Aiguelongue",
+				"secteur" : "ligne 2",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 39,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8738416122, 43.619840485 ]
+			},
+			"properties" : {
+				"nom" : "Marie Caizergues",
+				"secteur" : " ",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 42,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8838703934, 43.6198879537 ]
+			},
+			"properties" : {
+				"nom" : "Jeu de Mail des Abbés",
+				"secteur" : "ligne 2",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 40,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8939508257, 43.6187055731 ]
+			},
+			"properties" : {
+				"nom" : "Les Aubes",
+				"secteur" : " ",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 15,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8776877223, 43.6145755318 ]
+			},
+			"properties" : {
+				"nom" : "Louis Blanc",
+				"secteur" : "lignes 1-4",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 19,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8799808871, 43.6166711412 ]
+			},
+			"properties" : {
+				"nom" : "Emile Combes",
+				"secteur" : " ",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 13,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8818275629, 43.6140134811 ]
+			},
+			"properties" : {
+				"nom" : "Corum",
+				"secteur" : "lignes 1-2-4",
+				"installati" : "12 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 5,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8849352522, 43.6166451977 ]
+			},
+			"properties" : {
+				"nom" : "Beaux-Arts",
+				"secteur" : "ligne 2",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 14,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8671520365, 43.6120174261 ]
+			},
+			"properties" : {
+				"nom" : "Les Arceaux",
+				"secteur" : "Peyrou",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 23,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8732996639, 43.6109777873 ]
+			},
+			"properties" : {
+				"nom" : "Foch",
+				"secteur" : "Peyrou",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 7,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8684137971, 43.6085694888 ]
+			},
+			"properties" : {
+				"nom" : "Plan Cabanes",
+				"secteur" : "ligne 3",
+				"installati" : "12 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 11,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8706517253, 43.6070635891 ]
+			},
+			"properties" : {
+				"nom" : "Gambetta",
+				"secteur" : "ligne 3",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 20,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8679398754, 43.603556964 ]
+			},
+			"properties" : {
+				"nom" : "Renouvier",
+				"secteur" : " ",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 26,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8722140804, 43.603475123 ]
+			},
+			"properties" : {
+				"nom" : "Clémenceau",
+				"secteur" : " ",
+				"installati" : "12 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 22,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8772369657, 43.6099342368 ]
+			},
+			"properties" : {
+				"nom" : "Halles Castellane",
+				"secteur" : " ",
+				"installati" : "12 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 8,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8812760844, 43.6094492048 ]
+			},
+			"properties" : {
+				"nom" : "Esplanade",
+				"secteur" : "lignes 1-2",
+				"installati" : "32 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 3,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8788315031, 43.6081476627 ]
+			},
+			"properties" : {
+				"nom" : "Comédie",
+				"secteur" : "lignes 1-2",
+				"installati" : "24 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 2,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8769170201, 43.6061513637 ]
+			},
+			"properties" : {
+				"nom" : "Observatoire",
+				"secteur" : "lignes 3-4",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 9,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.881370075, 43.6053296752 ]
+			},
+			"properties" : {
+				"nom" : "Rue Jules Ferry",
+				"secteur" : "lignes 1-2-3-4",
+				"installati" : "12 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 1,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8749744308, 43.6048813993 ]
+			},
+			"properties" : {
+				"nom" : "Saint-Denis",
+				"secteur" : "lignes 3-4",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 28,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.879962846, 43.6043649583 ]
+			},
+			"properties" : {
+				"nom" : "Parvis Jules Ferry",
+				"secteur" : "Gare Saint-Roch",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 50,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8758151178, 43.5998583226 ]
+			},
+			"properties" : {
+				"nom" : "Nouveau Saint-Roch",
+				"secteur" : "ligne 2",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 25,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.884336371, 43.6011582475 ]
+			},
+			"properties" : {
+				"nom" : "Cité Mion",
+				"secteur" : " ",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 24,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8886145464, 43.6037779173 ]
+			},
+			"properties" : {
+				"nom" : "Voltaire",
+				"secteur" : "ligne 3",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 31,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8867372303, 43.6078882126 ]
+			},
+			"properties" : {
+				"nom" : "Nombre d'Or",
+				"secteur" : "Antigone ligne 1",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 18,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8907214944, 43.6078937189 ]
+			},
+			"properties" : {
+				"nom" : "Antigone Centre",
+				"secteur" : "Agglomération de Montpellier",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 16,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8931771644, 43.608206873 ]
+			},
+			"properties" : {
+				"nom" : "Médiathèque Emile Zola",
+				"secteur" : "Place de l'Europe lignes 1-4",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 17,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.894825744, 43.5989539459 ]
+			},
+			"properties" : {
+				"nom" : "Hôtel de Ville",
+				"secteur" : "lignes 1-3-4",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 4,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8984419614, 43.6003487634 ]
+			},
+			"properties" : {
+				"nom" : "Port Marianne",
+				"secteur" : "Bassin Jacques Coeur",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 21,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8993434656, 43.6035220367 ]
+			},
+			"properties" : {
+				"nom" : "Richter",
+				"secteur" : "ISEM",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 29,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.911515161, 43.6058242619 ]
+			},
+			"properties" : {
+				"nom" : "Jardin de la Lironde",
+				"secteur" : " ",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 45,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.9190935216, 43.6036653221 ]
+			},
+			"properties" : {
+				"nom" : "Odysseum",
+				"secteur" : "ligne 1",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 27,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8906896787, 43.590760933 ]
+			},
+			"properties" : {
+				"nom" : "Garcia Lorca",
+				"secteur" : "ligne 4",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 33,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8845068873, 43.5905067128 ]
+			},
+			"properties" : {
+				"nom" : "Près d'Arènes",
+				"secteur" : "Restanque ligne 4",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 32,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8601483089, 43.5842380999 ]
+			},
+			"properties" : {
+				"nom" : "Sabines",
+				"secteur" : "ligne 2",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 43,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8760262589, 43.6029235392 ]
+			},
+			"properties" : {
+				"nom" : "Rondelet",
+				"secteur" : "lignes 2-4",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 10,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8742329612, 43.6162318463 ]
+			},
+			"properties" : {
+				"nom" : "Place Albert 1er - St-Charles",
+				"secteur" : "lignes 1-4",
+				"installati" : "27 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 6,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.9234612134, 43.5956676216 ]
+			},
+			"properties" : {
+				"nom" : "Montpellier Sud de France",
+				"secteur" : "Navette Gare Montpellier Sud de France",
+				"installati" : "8 Vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 59,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8810044754, 43.6043436367 ]
+			},
+			"properties" : {
+				"nom" : "Deux Ponts - Gare Saint-Roch",
+				"secteur" : "Gare Saint-Roch",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 53,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8731804651, 43.6139404657 ]
+			},
+			"properties" : {
+				"nom" : "Albert 1er - Cathedrale",
+				"secteur" : "ligne 4",
+				"installati" : "12 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 55,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8824143622, 43.6059890847 ]
+			},
+			"properties" : {
+				"nom" : "Pont de Lattes - Gare St-Roch",
+				"secteur" : "Gare Saint-Roch",
+				"installati" : "12 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 51,
+				"type_stati" : "avec CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8728748163, 43.6087803873 ]
+			},
+			"properties" : {
+				"nom" : "Saint-Guilhem - Courreau",
+				"secteur" : "Ligne 4",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 56,
+				"type_stati" : "sans CB"
+			}
+		}
+	]
+}
