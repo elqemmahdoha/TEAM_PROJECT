@@ -41,7 +41,7 @@ for idx, row in compteurs.iterrows():
                         
                         if date_observed:
                             # Extraire uniquement la première partie de la plage de dates
-                            date = date_observed.split("/")[0]  # Garder seulement le début de la plage
+                            date = date_observed.split("/")[0].split("T")[0]  # Garder seulement le début de la plage
                             dates.append(date)
 
                     except json.JSONDecodeError as e:
@@ -77,6 +77,16 @@ montpellier_graph = ox.graph_from_place("Montpellier, France", network_type="bik
 # Création de la figure et des axes
 fig, ax = ox.plot_graph(montpellier_graph, show=False, close=False, node_size=0, edge_color="white", edge_linewidth=0.5, bgcolor="black")
 
+# Pré-calculer les tailles des marqueurs pour chaque frame
+precomputed_sizes = [
+    [
+        ((compteurs.iloc[i]['intensities'][frame] * 150) / moyenne_i) 
+        if len(compteurs.iloc[i]['intensities']) > frame else 0 
+        for i in range(len(compteurs))
+    ]
+    for frame in range(len(common_dates))
+]
+
 # Fonction de mise à jour pour la vidéo 
 def update(frame):
     ax.clear()  # Effacer l'ancienne image
@@ -85,11 +95,7 @@ def update(frame):
     ox.plot_graph(montpellier_graph, ax=ax, show=False, close=False, node_size=0, edge_color="white", edge_linewidth=0.5, bgcolor="black")
     
     # Ajuster taille du compteur selon intensité 
-    sizes = [
-        ((compteurs.iloc[i]['intensities'][frame] * 70) / moyenne_i) 
-        if len(compteurs.iloc[i]['intensities']) > frame else 0 
-        for i in range(len(compteurs))
-    ]
+    sizes = precomputed_sizes[frame]  # Charger les tailles précalculées
    
     # Afficher les compteurs avec des tailles de marqueurs variables
     # Afficher un halo (point plus large et moins transparent)
@@ -109,4 +115,4 @@ ani = FuncAnimation(fig, update, frames=len(common_dates), repeat=False)
 writer = FFMpegWriter(fps=10, codec='libx264', bitrate=1800)
 
 # Utilisation de writer lors de l'enregistrement
-ani.save("compteurs_animation2.mp4", writer=writer)
+ani.save("compteurs_animation.mp4", writer=writer)
