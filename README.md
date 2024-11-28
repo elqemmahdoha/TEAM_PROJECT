@@ -1,5 +1,6 @@
 # Densité du trafic cycliste à Montpellier
 
+Le site internet de ce projet est disponible à l'URL suivante: https://elqemmahdoha.github.io/TEAM_PROJECT/
 ## En quoi consiste notre projet ?
 
 Ce projet consiste à observer le trafic cycliste dans la ville de Montpellier à partir de l'Open Data 3M et à prédire ce trafic dans les jours suivants à partir d'un site que nous créons de toutes pièces.

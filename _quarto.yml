@@ -5,7 +5,7 @@ project:
     - index_ang.qmd
 
 website: 
-  repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT/
+  repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT
   repo-actions: [source, issue]
   page-navigation: true
   back-to-top-navigation: true
@@ -33,6 +33,6 @@ format:
       light: [cosmo, lightmode.scss]
     toc: true         
     toc-location: left
-    toc-title: Sommaire 
+    toc-title: Index
     css: styles.css  
     theme-switcher: true
