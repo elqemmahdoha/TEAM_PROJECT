@@ -32,9 +32,7 @@ echo: false
 # Sources
 
 
-
-
-<button id="toc-toggle"> Table des matières</button>
+<button id="toc-toggle"> Masquer</button>
 
 <script>
     const toc = document.getElementById('TOC'); 

@@ -24,7 +24,7 @@ echo: false
 
 
 
-<button id="toc-toggle"> Table of contents</button>
+<button id="toc-toggle"> Hide</button>
 
 <script>
     const toc = document.getElementById('TOC'); 
