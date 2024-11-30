@@ -1,6 +1,5 @@
 /* Styles CSS pour la Table des matières (TOC) */
 body {
-    display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
@@ -14,18 +13,25 @@ body {
     z-index: 1000; /* Assurer que la sidebar TOC est par-dessus le contenu */
     padding: 20px; /* Espacement autour des éléments de la sidebar */
     box-sizing: border-box; /* S'assurer que le padding ne dépasse pas la largeur allouée */
+    position: sticky;
 }
 
 #toc-toggle {
-    position: fixed; /* Fixe le bouton sur la page */
-    top: 50px; /* Un peu de marge du haut */
-    left: 90px; /* Un peu à gauche de la sidebar */
-    background-color: #f5d1f7;
+    position: fixed;
+    top: 70px;
+    left: 8px;
+    background-color: #b538a2;
     color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    border: none;
+    padding: 10px; /* Gardez une seule valeur pour padding */
+    border: 2px solid #b538a2; /* Bordure définie */
     cursor: pointer;
-    z-index: 1100; /* Assurer que le bouton soit au-dessus de la TOC */
+    z-index: 1100;
+    border-radius: 30px; /* Pour faire un bouton circulaire */
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    width: 90px; /* Fixe la largeur du bouton */
+    height: 50px; /* Fixe la hauteur du bouton */
+    box-sizing: border-box; /* Inclut la bordure dans les dimensions */
 }
 
 #toc-toggle:hover {
@@ -33,7 +39,7 @@ body {
 }
 
 #TOC.collapsed {
-    width: 0; /* Réduit la largeur à 0 pour plier */
-    padding: 0; /* Supprime le padding */
-    overflow: hidden; /* Masque tout contenu supplémentaire */
+    width: 0;
+    padding: 0;
+    overflow: hidden;
 }
