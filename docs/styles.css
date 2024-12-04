@@ -18,7 +18,7 @@ body {
 
 #toc-toggle {
     position: fixed;
-    top: 90px;
+    top: 170px;
     left: 8px;
     background-color: #b538a2;
     color: rgb(0, 0, 0);
@@ -46,11 +46,11 @@ body {
 
 /* Applique l'image d'arrière-plan uniquement à la navbar */
 .navbar {
-    background-image: url('vélo.jpg');  /* Remplacez par le chemin de votre image */
+    background-image: url('vélo_3.jpg');  /* Remplacez par le chemin de votre image */
     background-size: cover;  /* Couvre toute la largeur de la navbar */
-    background-position: center;  /* Centre l'image */
+    background-position: center 47%; /* Centre l'image */
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
-    height: 90px;  /* Ajustez la hauteur de la navbar */
+    height: 160px;  /* Ajustez la hauteur de la navbar */
   }
   
   /* Personnalisation de la couleur du texte pour améliorer la lisibilité sur l'image */
@@ -58,8 +58,11 @@ body {
     color: rgb(10, 10, 10);  /* Change la couleur des liens pour qu'ils soient visibles sur l'image */
   }
   
-  /* Si vous avez des éléments supplémentaires dans la navbar (comme les icônes), vous pouvez les styliser aussi */
-  .navbar .navbar-brand,
+  .navbar .navbar-brand {   
+    font-size: 27px;  /* Augmente la taille du texte du titre */
+    font-weight: bold;  /* Met le titre en gras */
+  }
+
   .navbar .navbar-nav a {
     color: rgb(10, 10, 10);  /* Change la couleur des éléments de la navbar */
   }

@@ -37,3 +37,5 @@ format:
     toc-title: Index
     css: styles.css  
     theme-switcher: true
+jupyter: python3
+editor: visual
