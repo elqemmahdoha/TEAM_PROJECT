@@ -7,8 +7,8 @@ json
 os
 shutil
 random
-ipywidgets
 locale
 time
 folium
 branca
+plotly
