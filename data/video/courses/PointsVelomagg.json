@@ -811,6 +811,36 @@
 				"numero" : 56,
 				"type_stati" : "sans CB"
 			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.869217398604767, 43.62842854135043 ]
+			},
+			"properties" : {
+				"nom" : "Fac de Lettres",
+				"secteur" : "",
+				"installati" : "12 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 38,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.871168886060632, 43.63534439935278 ]
+			},
+			"properties" : {
+				"nom" : "Vert-Bois",
+				"secteur" : "",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 34,
+				"type_stati" : "sans CB"
+			}
 		}
 	]
 }
