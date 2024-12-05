@@ -30,12 +30,10 @@ format:
   html:
     smooth-scroll: true
     theme:
-      dark: [cosmo, darkmode.scss]
       light: [cosmo, lightmode.scss]
+      dark: [cosmo, darkmode.scss]
     toc: true         
     toc-location: left
     toc-title: Index
     css: styles.css  
     theme-switcher: true
-jupyter: python3
-editor: visual

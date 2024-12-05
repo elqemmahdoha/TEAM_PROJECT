@@ -4,41 +4,55 @@ execute:
   echo: false
 ---
 
-# Introduction 
+# Introduction
 
-Bienvenue sur notre plateforme dédiée à l'analyse dynamique du cyclisme à Montpellier. À travers cette étude approfondie, nous explorons les données sur la circulation des vélos en ville, en mettant en lumière les tendances, les pics de trafic et les comportements des cyclistes au fil du temps. Grâce à des outils interactifs et des visualisations, nous vous offrons une perspective détaillée de l'évolution du trafic cycliste.
+Le site Montpellier à Vélo propose une exploration complète du trafic cycliste dans la ville, en combinant visualisations interactives et analyses dynamiques des données. Il permet d'examiner les tendances de circulation des vélos, d'identifier les périodes de forte affluence et d'analyser les comportements des cyclistes au fil du temps. Grâce à des outils interactifs tels que des vidéos, des cartes et des graphiques, la plateforme offre une perspective détaillée et enrichissante sur l'évolution du trafic cycliste à Montpellier.
 
 # Densité sur un mois
 
 Nous vous présentons une vidéo illustrant la densité du trafic cycliste sur un mois.
 
 <video width="640" height="360" controls>
-  <source src="compteurs_animation.mp4" type="video/mp4">
+
+<source src="compteurs_animation.mp4" type="video/mp4">
+
 </video>
 
-# Description 
-
-
+# Description
 
 # Prédiction du trafic
 
-Découvrez nos prédictions sur le trafic cycliste grâce à notre map interactif.
+Découvrez notre carte interactive qui vous permet de visualiser les prévisions du trafic cycliste à Montpellier. Elle met en évidence les zones à fort afflux et les moments de la journée les plus actifs pour les cyclistes, basés sur des données historiques.
 
-<iframe src="mtp_interactive.html" width="100%" height="800px" frameborder="0"></iframe>
+<iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0">
+
+</iframe>
 
 # Retraits et Dépôts des vélos Vélomagg
 
-<iframe src="graphique_interactif.html" width="100%" height="800"></iframe>
+Découvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à un graphique interactif qui présente, pour chaque jour de la semaine, le nombre de dépôts et de retraits dans chaque station. Cette visualisation permet de suivre l'évolution quotidienne des flux de vélos et de mieux comprendre les variations de fréquentation d'une station à l'autre, offrant ainsi une analyse approfondie des habitudes d'utilisation tout au long de la semaine.
+
+<iframe src="graphique_interactif.html" width="100%" height="800">
+</iframe>
 
 # À propos
 
-
-
 # Sources
 
+Les données utilisées pour cette analyse proviennent de plusieurs sources :
 
-<button id="toc-toggle"> Masquer</button>
+[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo)
 
+[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21)
+
+
+<button id="toc-toggle">
+
+Masquer
+
+</button>
+
+```{=html}
 <script>
     const toc = document.getElementById('TOC'); 
     const toggleButton = document.getElementById('toc-toggle');
@@ -58,14 +72,17 @@ Découvrez nos prédictions sur le trafic cycliste grâce à notre map interacti
     window.addEventListener('scroll', () => {
         let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-        // Si l'utilisateur fait défiler vers le bas, cacher le bouton
+        
         if (currentScroll > lastScrollTop) {
             toggleButton.style.display = 'none'; 
         } else {
-            // Si l'utilisateur fait défiler vers le haut, afficher le bouton
+            
             toggleButton.style.display = 'block'; 
         }
         
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Pour éviter les erreurs si on est tout en haut de la page
     });
 </script>
+
+
+```
