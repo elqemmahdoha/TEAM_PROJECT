@@ -121,6 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#density-over-a-month" id="toc-density-over-a-month" class="nav-link" data-scroll-target="#density-over-a-month">Density over a Month</a></li>
   <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
   <li><a href="#traffic-prediction" id="toc-traffic-prediction" class="nav-link" data-scroll-target="#traffic-prediction">Traffic Prediction</a></li>
+  <li><a href="#vélomagg-bike-checkouts-and-returns" id="toc-vélomagg-bike-checkouts-and-returns" class="nav-link" data-scroll-target="#vélomagg-bike-checkouts-and-returns">Vélomagg Bike Checkouts and Returns</a></li>
   <li><a href="#about" id="toc-about" class="nav-link" data-scroll-target="#about">About</a></li>
   <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
   </ul>
@@ -154,10 +155,11 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>Welcome to our platform dedicated to the dynamic analysis of cycling in Montpellier. Through this in-depth study, we explore data on bicycle traffic in the city, highlighting trends, traffic peaks, and cyclist behaviors over time. With interactive tools and visualizations, we offer you a detailed perspective on the evolution of cycling traffic.</p>
+<p>The “Montpellier à Vélo” website offers a comprehensive exploration of cycling traffic in the city, combining interactive visualizations and dynamic data analysis. It allows users to examine cycling traffic trends, identify peak periods, and analyze cyclists’ behaviors over time. With interactive tools such as videos, maps, and charts, the platform provides a detailed and enriching perspective on the evolution of cycling traffic in Montpellier.</p>
 </section>
 <section id="density-over-a-month" class="level1">
 <h1>Density over a Month</h1>
+<p>We present a video illustrating the bike traffic density over the course of a month.</p>
 <video width="640" height="360" controls="">
 <source src="compteurs_animation.mp4" type="video/mp4">
 </video>
@@ -167,7 +169,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="traffic-prediction" class="level1">
 <h1>Traffic Prediction</h1>
+<p>Discover our interactive map that allows you to visualize the cycling traffic predictions in Montpellier. It highlights areas with high traffic and the times of day when cyclists are most active, based on historical data.</p>
 <iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0">
+</iframe>
+</section>
+<section id="vélomagg-bike-checkouts-and-returns" class="level1">
+<h1>Vélomagg Bike Checkouts and Returns</h1>
+<p>Discover the trends in bike withdrawals and deposits for Vélomagg through an interactive chart that displays the number of deposits and withdrawals at each station for every day of the week. This visualization allows you to track the daily changes in bike flows and better understand the variations in station usage, providing an in-depth analysis of usage patterns throughout the week.</p>
+<iframe src="graphique_interactif.html" width="100%" height="800">
 </iframe>
 </section>
 <section id="about" class="level1">
@@ -175,8 +184,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="sources" class="level1">
 <h1>Sources</h1>
+<p>The data used for this analysis comes from several sources:</p>
+<p><a href="https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo">OPEN DATA 3M</a></p>
+<p><a href="https://www.openstreetmap.org/#map=6/46.45/2.21">OpenStreetMap</a></p>
 <button id="toc-toggle">
-Hide
+<p>Hide</p>
 </button>
 <script>
     const toc = document.getElementById('TOC'); 
