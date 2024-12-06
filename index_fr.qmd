@@ -14,7 +14,7 @@ Nous vous présentons une vidéo illustrant la densité du trafic cycliste sur u
 
 <video width="640" height="360" controls>
 
-<source src="compteurs_animation.mp4" type="video/mp4">
+<source src="bicycle.mp4" type="video/mp4">
 
 </video>
 
@@ -30,7 +30,7 @@ Découvrez notre carte interactive qui vous permet de visualiser les prévisions
 
 Découvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à un graphique interactif qui présente, pour chaque jour de la semaine, le nombre de dépôts et de retraits dans chaque station. Cette visualisation permet de suivre l'évolution quotidienne des flux de vélos et de mieux comprendre les variations de fréquentation d'une station à l'autre, offrant ainsi une analyse approfondie des habitudes d'utilisation tout au long de la semaine.
 
-<iframe src="graphique_interactif.html" width="100%" height="800">
+<iframe src="graphique_interactif.html" width="100%" height="500px">
 </iframe>
 
 # À propos
@@ -43,44 +43,3 @@ Les données utilisées pour cette analyse proviennent de plusieurs sources :
 
 [OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap est une carte du monde collaborative et libre, permettant à chacun d'ajouter et de modifier des informations géographiques. 
 
-
-<button id="toc-toggle">
-
-Masquer
-
-</button>
-
-```{=html}
-<script>
-    const toc = document.getElementById('TOC'); 
-    const toggleButton = document.getElementById('toc-toggle');
-    let lastScrollTop = 0; // Variable pour suivre la dernière position de défilement
-
-    toggleButton.addEventListener('click', () => {
-        toc.classList.toggle('collapsed');
-        
-        if (toc.classList.contains('collapsed')) {
-            toggleButton.textContent = 'Afficher'; 
-        } else {
-            toggleButton.textContent = 'Masquer'; 
-        }
-    });
-
-  
-    window.addEventListener('scroll', () => {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        
-        if (currentScroll > lastScrollTop) {
-            toggleButton.style.display = 'none'; 
-        } else {
-            
-            toggleButton.style.display = 'block'; 
-        }
-        
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Pour éviter les erreurs si on est tout en haut de la page
-    });
-</script>
-
-
-```

@@ -14,7 +14,7 @@ We present a video illustrating the bike traffic density over the course of a mo
 
 <video width="640" height="360" controls>
 
-<source src="compteurs_animation.mp4" type="video/mp4">
+<source src="bicycle.mp4" type="video/mp4">
 
 </video>
 
@@ -32,7 +32,7 @@ Discover our interactive map that allows you to visualize the cycling traffic pr
 
 Discover the trends in bike withdrawals and deposits for Vélomagg through an interactive chart that displays the number of deposits and withdrawals at each station for every day of the week. This visualization allows you to track the daily changes in bike flows and better understand the variations in station usage, providing an in-depth analysis of usage patterns throughout the week.
 
-<iframe src="graphique_interactif.html" width="100%" height="800">
+<iframe src="graphique_interactif.html" width="100%" height="500px">
 
 </iframe>
 
@@ -46,41 +46,3 @@ The data used for this analysis comes from several sources:
 
 [OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap is a collaborative and open map of the world, allowing anyone to add and edit geographical information.
 
-<button id="toc-toggle">
-
-Hide
-
-</button>
-
-```{=html}
-<script>
-    const toc = document.getElementById('TOC'); 
-    const toggleButton = document.getElementById('toc-toggle');
-    let lastScrollTop = 0; 
-
-    toggleButton.addEventListener('click', () => {
-        toc.classList.toggle('collapsed');
-        
-        if (toc.classList.contains('collapsed')) {
-            toggleButton.textContent = 'Show'; 
-        } else {
-            toggleButton.textContent = 'Hide'; 
-        }
-    });
-
-    
-    window.addEventListener('scroll', () => {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        
-        if (currentScroll > lastScrollTop) {
-            toggleButton.style.display = 'none'; 
-        } else {
-            
-            toggleButton.style.display = 'block'; 
-        }
-        
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
-    });
-</script>
-```
