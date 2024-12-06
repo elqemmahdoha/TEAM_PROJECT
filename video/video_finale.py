@@ -10,8 +10,60 @@ from matplotlib.animation import FuncAnimation, FFMpegWriter
 # Chargement fichier courses Velomagg 
 brut = pd.read_csv("data/video/courses/CoursesVelomagg_filtre.csv").dropna() 
 
+# Chargement fichier GeoJSON contenant les points de comptage
+compteurs = gpd.read_file("data/video/ecocompt/GeolocCompteurs.geojson")
+
 # Date de la vidéo
 date_video = pd.to_datetime("2024-10-07").date()
+
+# Extraire les numéros de série des compteurs
+compteurs["numero_serie"] = compteurs["N° Sér_1"].fillna(compteurs["N° Série"])
+
+# Initialiser les colonnes dans le GeoDataFrame
+compteurs["intensity"] = None  # Pour stocker les intensités
+compteurs["date"] = None  # Pour stocker les dates correspondantes
+
+for idx, row in compteurs.iterrows():
+    numero_serie = row["numero_serie"]
+    if pd.notnull(numero_serie):
+        try:
+            # Charger le fichier JSON correspondant
+            filepath = f"data/video/ecocompt/filtered/MMM_EcoCompt_{numero_serie}_archive.json"
+            with open(filepath, 'r', encoding='utf-8') as f:
+                # Lire les 100 dernières lignes
+                lines = f.readlines()
+    
+                # Parcourir les lignes et extraire les données nécessaires
+                for i, line in enumerate(lines):
+                    intensity = 0 
+                    try:
+                        line_data = json.loads(line.strip())  # Charger la ligne comme JSON
+                        intensity_observed = line_data.get("intensity", None)
+                        date_observed = line_data.get("dateObserved", None)
+                        if date_observed:
+                            # Extraire la date (avant "T")
+                            date = pd.to_datetime(date_observed.split("/")[0].split("T")[0]).date()
+                            if date == date_video:  # Filtrer uniquement pour date_video
+                                if intensity_observed is not None:
+                                    intensity = intensity_observed  # Ajouter l'intensité
+                                    compteurs.at[idx, "intensity"] = intensity
+                                    compteurs.at[idx, "date"] = date
+
+                    except json.JSONDecodeError as e:
+                        print(f"Erreur de décodage JSON à la ligne {i+1} pour le compteur {numero_serie}: {e}")
+
+        except FileNotFoundError:
+            print(f"Fichier manquant pour le compteur {numero_serie}")
+        except KeyError:
+            print(f"Données mal formées dans le fichier {numero_serie}")
+        except Exception as e:
+            print(f"Erreur inconnue pour le compteur {numero_serie}: {e}")
+
+# Remplacer None par 0 dans 'intensity'
+compteurs["intensity"] = compteurs["intensity"].fillna(0).astype(int)
+
+# Remplacer None dans 'date' par date_video
+compteurs["date"] = compteurs["date"].fillna(date_video)
 
 # Transformer la colonne des départs en format date avec test d'erreur
 try:
@@ -55,16 +107,11 @@ fig, ax = ox.plot_graph(montpellier_graph, show=False, close=False, node_size=0,
 # Fonction de recherche du trajet le plus court entre deux stations 
 def recherche_trajet(C):
     try:
-        print(C)
-        d_lat, d_lon = C['latitude_depart'], C['longitude_depart']  
-        print(d_lat)
-        print(d_lon) 
+        d_lat, d_lon = C['latitude_depart'], C['longitude_depart']   
         f_lat = C['latitude_retour'] 
         f_lon = C['longitude_retour']
         node_d = ox.distance.nearest_nodes(montpellier_graph, d_lon, d_lat)
         node_f = ox.distance.nearest_nodes(montpellier_graph, f_lon, f_lat)
-        print(node_d)
-        print(node_f)
         trajet = nx.shortest_path(montpellier_graph, node_d, node_f, weight="length")
         return trajet
     except Exception as e:
@@ -82,8 +129,8 @@ def initialize_graph_objects(trajets, ax):
     lignes = []
     
     # Paramètres de style pour les points et les lignes
-    point_style = {'color': 'cyan', 'marker': 'o'}
-    line_style = {'color': 'white', 'linewidth': 1}
+    point_style = {'color': '#FFFFE0', 'marker': 'o'}
+    line_style = {'color': '#FFFF00', 'linewidth': 1}
     
     for _ in trajets:
         # Créer un point et une ligne pour chaque trajet
@@ -106,6 +153,7 @@ def init():
     return points + lignes
 
 def update(frame):
+    # Trajets courses
     for i, trajet in enumerate(trajets):
         if frame < len(trajet):  # Afficher le trajet en cours
             x_vals = [montpellier_graph.nodes[node]['x'] for node in trajet[:frame + 1]]
@@ -113,19 +161,24 @@ def update(frame):
             lignes[i].set_data(x_vals, y_vals)
             points[i].set_data([montpellier_graph.nodes[trajet[frame]]['x']], [montpellier_graph.nodes[trajet[frame]]['y']])
         else:  # Cacher le trajet une fois terminé
-            lignes[i].set_data([], [])
+            #lignes[i].set_data([], [])
             points[i].set_data([], [])
+    # Compteurs
+    compteurs.plot(ax=ax, marker='o', color='#9b4dca', markersize=[100 for i in range(len(compteurs))], alpha=1, label="Compteurs", edgecolor='purple', linewidth=2)
+    
     return points + lignes
-
+    
 # Calculer le nombre total de frames basé sur le plus long trajet
-max_frames = max(len(trajet) for trajet in trajets)
-print(max_frames)
+frames = max(len(trajet) for trajet in trajets)
+
+# Ajout de la date 
+ax.set_title(f"Date : {date_video}")
 
 # Créer l'animation
-ani = FuncAnimation(fig, update, frames=max_frames, init_func=init, blit=True, repeat=False)
+ani = FuncAnimation(fig, update, frames=frames, init_func=init, blit=True, repeat=False)
 
 # Création de l'instance writer avec les arguments nécessaires
 writer = FFMpegWriter(fps=10, codec='libx264', bitrate=1800)
 
 # Sauvegarder l'animation sous forme de fichier MP4
-ani.save("test.mp4", writer=writer)
+ani.save("docs/bicycle.mp4", writer=writer)
