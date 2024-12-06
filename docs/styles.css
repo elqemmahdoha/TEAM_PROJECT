@@ -1,60 +1,78 @@
 /* Styles CSS pour la Table des matières (TOC) */
 body {
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Assurer que la page couvre toute la hauteur de la fenêtre */
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Assure que la page couvre toute la hauteur de la fenêtre */
 }
 
-.quarto-toc {
-    width: 150px; /* Largeur de la sidebar TOC */
-    height: 100vh; /* Hauteur de la sidebar TOC */
-    overflow-y: auto; /* Permet le défilement vertical si le contenu est trop long */
-    z-index: 1000; /* Assurer que la sidebar TOC est par-dessus le contenu */
-    padding: 20px; /* Espacement autour des éléments de la sidebar */
-    box-sizing: border-box; /* S'assurer que le padding ne dépasse pas la largeur allouée */
-    position: sticky;
+/* Déplacer l'élément de la navbar vers la gauche */
+.quarto-reader-toggle-btn {
+  position: absolute;  /* Positionner absolument */
+  left: 10px;          /* Déplacer l'élément vers la gauche */
+  top: 50%;            /* Centrer verticalement si nécessaire */
+  transform: translateY(-50%);  /* Centrer l'élément verticalement */
+  z-index: 100;        /* Assurez-vous qu'il soit au-dessus des autres éléments */
 }
 
-#toc-toggle {
-    position: fixed;
-    top: 170px;
-    left: 250px;
-    background-color: #b538a2;
-    color: rgb(0, 0, 0);
-    padding: 10px; /* Gardez une seule valeur pour padding */
-    border: 2px solid #b538a2; /* Bordure définie */
-    cursor: pointer;
-    z-index: 1100;
-    border-radius: 30px; /* Pour faire un bouton circulaire */
-    transition: background-color 0.3s ease;
-    font-size: 18px;
-    width: 90px; /* Fixe la largeur du bouton */
-    height: 50px; /* Fixe la hauteur du bouton */
-    box-sizing: border-box; /* Inclut la bordure dans les dimensions */
+.navbar .navbar-brand {
+  font-size: 27px;
+  font-weight: bold;
 }
 
-#toc-toggle:hover {
-    background-color: #d835b8;
+/* Style pour le conteneur principal de la TOC */
+.zindex-over-content.quarto-sidebar-toggle {
+  width: 200px;
+  position: fixed;
+  top: 63px;
+  left: 858.6px;
+  background-color: #fff; /* Fond blanc pour la TOC */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+  z-index: 1000; /* S'assurez que la TOC soit au-dessus des autres éléments */
+  transition: all 0.3s ease; /* Transition douce pour l'animation */
+  border-radius: 8px; /* Bord arrondi pour un look plus moderne */
 }
 
-#TOC.collapsed {
-    width: 0;
-    padding: 0;
-    overflow: hidden;
+/* Style pour le titre de la TOC */
+.quarto-sidebar-toggle-title {
+  background-color: #f1f1f1; /* Fond gris clair pour le titre */
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between; /* Espacement entre le texte et l'icône */
+  align-items: center;
+  border-bottom: 1px solid #ddd; /* Séparation subtile entre le titre et la liste */
 }
 
-  /* Personnalisation de la couleur du texte pour améliorer la lisibilité sur l'image */
-  .navbar a {
-    color: rgb(10, 10, 10);  /* Change la couleur des liens pour qu'ils soient visibles sur l'image */
-  }
-  
-  .navbar .navbar-brand {   
-    font-size: 27px;  /* Augmente la taille du texte du titre */
-    font-weight: bold;  /* Met le titre en gras */
-  }
+/* Effet survol pour le titre de la TOC */
+.quarto-sidebar-toggle-title:hover {
+  background-color: #e9ecef;
+}
 
-  .navbar .navbar-nav a {
-    color: rgb(10, 10, 10);  /* Change la couleur des éléments de la navbar */
-  }
-  
+/* Style pour l'icône */
+.quarto-sidebar-toggle-icon {
+  transition: transform 0.3s ease; /* Animation douce pour l'icône */
+}
+
+/* Rotation de l'icône lorsque la TOC est ouverte */
+.quarto-sidebar-toggle-contents.show .quarto-sidebar-toggle-icon {
+  transform: rotate(180deg); /* Rotation de l'icône pour indiquer l'ouverture */
+}
+
+/* Style pour la liste de la TOC (table des matières) */
+.sidebar.margin-sidebar.notransition.quarto-sidebar-toggle-contents {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease; /* Animation d'ouverture/fermeture */
+}
+
+/* Lorsque la TOC est ouverte, afficher les éléments */
+.sidebar.margin-sidebar.notransition.quarto-sidebar-toggle-contents.show {
+  height: auto;
+  opacity: 1;
+}
+
+

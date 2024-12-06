@@ -105,6 +105,11 @@ ul.task-list li input[type="checkbox"] {
     <a href="https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo" title="Data" class="quarto-navigation-tool px-1" aria-label="Data"><i class="bi bi-database"></i></a>
     <a href="https://github.com/elqemmahdoha/TEAM_PROJECT" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -161,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Density over a Month</h1>
 <p>We present a video illustrating the bike traffic density over the course of a month.</p>
 <video width="640" height="360" controls="">
-<source src="compteurs_animation.mp4" type="video/mp4">
+<source src="bicycle.mp4" type="video/mp4">
 </video>
 </section>
 <section id="description" class="level1">
@@ -176,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="vélomagg-bike-checkouts-and-returns" class="level1">
 <h1>Vélomagg Bike Checkouts and Returns</h1>
 <p>Discover the trends in bike withdrawals and deposits for Vélomagg through an interactive chart that displays the number of deposits and withdrawals at each station for every day of the week. This visualization allows you to track the daily changes in bike flows and better understand the variations in station usage, providing an in-depth analysis of usage patterns throughout the week.</p>
-<iframe src="graphique_interactif.html" width="100%" height="800">
+<iframe src="graphique_interactif.html" width="100%" height="500px">
 </iframe>
 </section>
 <section id="about" class="level1">
@@ -187,39 +192,6 @@ ul.task-list li input[type="checkbox"] {
 <p>The data used for this analysis comes from several sources:</p>
 <p><a href="https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo">OPEN DATA 3M</a>: This website provides information on bicycle (and sometimes pedestrian) counts collected by eco-counters in operation across the Montpellier Metropolitan area.</p>
 <p><a href="https://www.openstreetmap.org/#map=6/46.45/2.21">OpenStreetMap</a>: OpenStreetMap is a collaborative and open map of the world, allowing anyone to add and edit geographical information.</p>
-<button id="toc-toggle">
-<p>Hide</p>
-</button>
-<script>
-    const toc = document.getElementById('TOC'); 
-    const toggleButton = document.getElementById('toc-toggle');
-    let lastScrollTop = 0; 
-
-    toggleButton.addEventListener('click', () => {
-        toc.classList.toggle('collapsed');
-        
-        if (toc.classList.contains('collapsed')) {
-            toggleButton.textContent = 'Show'; 
-        } else {
-            toggleButton.textContent = 'Hide'; 
-        }
-    });
-
-    
-    window.addEventListener('scroll', () => {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        
-        if (currentScroll > lastScrollTop) {
-            toggleButton.style.display = 'none'; 
-        } else {
-            
-            toggleButton.style.display = 'block'; 
-        }
-        
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
-    });
-</script>
 
 
 </section>
