@@ -4,8 +4,6 @@ from collections import defaultdict
 import pandas as pd
 import os
 import plotly.express as px
-import seaborn as sns 
-import matplotlib.pyplot as plt
 
 # Créer un sous-répertoire de destination pour les figures
 dossier_destination = "docs\\figures"
