@@ -856,6 +856,36 @@
 				"numero" : 57,
 				"type_stati" : "sans CB"
 			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.884182597493091, 43.609754007595754 ]
+			},
+			"properties" : {
+				"nom" : "Jean de Beins",
+				"secteur" : "",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 61,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8842150963510873, 43.60137969689591 ]
+			},
+			"properties" : {
+				"nom" : "Cité Mion",
+				"secteur" : "",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 24,
+				"type_stati" : "sans CB"
+			}
 		}
 	]
 }
