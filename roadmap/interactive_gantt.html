@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        .mermaid {
+            text-align: center;
+            margin: 20px;
+        }
+        #message {
+            margin-top: 10px;
+            font-size: 18px; 
+            color: black;
+            display: none; 
+        }
+        #message a {
+            color: rgb(193, 17, 172); 
+            text-decoration: underline; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Gantt Diagram for the Project: Bikes and Bike-Sharing in Montpellier 2024</h1>
+    <p>Please note that this diagram is interactive, and you can get more information about the tasks by clicking on it</p>
+    <pre class="mermaid">
+        %%{
+          init: {
+            'theme': 'base',
+            'themeVariables': {
+              'primaryColor': '#d786f5',
+              'primaryTextColor': '#0d0c0c',
+              'primaryBorderColor': '#a350c1',
+              'secondaryColor': '#006100',
+              'tertiaryColor': '#8d9394'
+            }
+          }
+        }%%
+        gantt
+            dateFormat  DD-MM
+            axisFormat  %d-%b
+            todayMarker stroke-width:4px,stroke:#9c13ab,opacity:0.9
+
+            section First steps
+            README/Task affectation : done, des1, 19-09, 11-10
+            Data uploading/Gantt diagram : done, des2, 01-10, 24-10
+            Mid-term project snapshot  :crit, milestone, des10, 25-10, 1d
+
+            section Project Structure 
+            Creation of the website : active, des3, 28-10, 30-11
+            Video Realization : active, des4, 28-10, 26-11
+            Interactive map : active, des5, 28-10, 26-11 
+            Presentation slides : des6, after des3, 3d
+
+            section Review and Delivery
+            Revision and Quality Assurance : milestone, des7, after des6, 4d
+            Rehearsal : des8, after des7, 3d
+            The final countdown : crit, milestone, des9, after des8, 6h
+
+            click des1 call Message(1)
+            click des3 call Message(2)
+            click des4 call Message(3)
+            click des5 call Message(4)
+            click des6 call Message(5)
+            click des7 call Message(6)
+            click des8 call Message(7)
+            click des9 call Message(8)
+            click des10 call Message(9) 
+    </pre>
+
+    <div id="message"></div> <!-- Élément pour afficher le message -->
+
+    <script>
+        const messages = [
+            'Please access the project information by following the link provided on this website : <a href="https://elqemmahdoha.github.io/TEAM_PROJECT/" target="_blank">elqemmahdoha.github.io/TEAM_PROJECT/</a>',
+            "This task will be carried out by El Qemmah Doha, focusing on the aesthetics of the site and the documentation, while incorporating prototypes developed by other project collaborators as they are completed.",
+            "The video will be produced by Gillet Louison, utilizing data provided by the city to showcase the traffic density over the course of a month.",
+            "The interactive map created by Cletz Laura will predict bike traffic in the city for the following day, incorporating real-time data and historical data to provide accurate forecasts. Users will be able to visualize the anticipated bike flow in different areas, helping them plan their routes effectively.",
+            "The preparation of the presentation slides will be a collaborative effort by the entire group to showcase the project effectively.<br>The GitHub repository for the presentation slides must be completed by Tuesday, December 10, at 11:59 PM. This component accounts for 35% of the final grade. Please note that any submissions made after the deadline will not be considered.",
+            "The final checks will focus on verifying the project details, correcting any potential spelling errors, and ensuring the overall quality of the project.",
+            "Practice and rehearse for the presentation day to ensure everyone is well-prepared and confident.",
+            "The oral presentation will last 15 minutes, followed by a 5-minute Q&A session, scheduled for December 13 at 8:00 AM in room SC36.01. This portion accounts for 35% of your final grade. <br>Good luck;) You got this!",
+            "This part corresponds to 25% of the final grade. The due date is October 25 (23:59)."
+        ];
+
+        function Message(taskIndex) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.innerHTML = messages[taskIndex - 1]; // Affiche le message avec HTML
+            messageDiv.style.display = 'block'; // Afficher le message
+        }
+
+        const config = {
+            startOnLoad: true,
+            securityLevel: 'loose',
+        };
+        mermaid.initialize(config);
+    </script>
+</body>
+</html>
