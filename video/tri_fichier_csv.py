@@ -25,7 +25,7 @@ df = df.apply(lambda col: col.apply(correct_encoding) if col.dtype == "object" e
 df["Departure"] = pd.to_datetime(df["Departure"], errors="coerce")  # Ignorer les valeurs invalides
 
 # Filtrer pour garder uniquement les lignes à partir du 1er septembre 2024
-df_filtered = df[df["Departure"] >= "2024-09-01"]
+df_filtered = df[df["Departure"] >= "2024-08-01"]
 
 # Supprimer les lignes où 'Departure station' et 'Return station' sont identiques
 df_filtered = df_filtered[df_filtered["Departure station"] != df_filtered["Return station"]]
@@ -38,6 +38,18 @@ df_filtered = df_filtered[~df_filtered["Departure station"].str.contains("055 P�
 df_filtered = df_filtered[~df_filtered["Return station"].str.contains("055 Pérols Etang de l'Or", case=False, na=False)]
 df_filtered = df_filtered[~df_filtered["Departure station"].str.contains("058 Perols etang or", case=False, na=False)]
 df_filtered = df_filtered[~df_filtered["Return station"].str.contains("058 Perols etang or", case=False, na=False)]
+
+# Extraire les numéros avant les stations pour les deux colonnes
+df_filtered['Departure number'] = df_filtered['Departure station'].str.extract(r'(\d+)')[0].str.lstrip('0')
+df_filtered['Return number'] = df_filtered['Return station'].str.extract(r'(\d+)')[0].str.lstrip('0')
+
+# Supprimer les numéros et ne garder que le nom des stations
+df_filtered['Departure station'] = df_filtered['Departure station'].str.replace(r'^\d+\s+', '', regex=True)
+df_filtered['Return station'] = df_filtered['Return station'].str.replace(r'^\d+\s+', '', regex=True)
+
+# Supprimer les lignes où Departure number' ou 'Return number' contient "60" (Comedie Baudin)
+df_filtered = df_filtered[~df_filtered["Departure number"].str.contains("60", case=False, na=False)]
+df_filtered = df_filtered[~df_filtered["Return number"].str.contains("60", case=False, na=False)]
 
 # Sauvegarder le fichier corrigé, filtré et sans lignes où les stations sont identiques
 df_filtered.to_csv(output_file, index=False, encoding="utf-8-sig")  # Utilisation de utf-8-sig pour sauvegarder sans BOM
