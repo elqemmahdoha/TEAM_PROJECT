@@ -841,6 +841,21 @@
 				"numero" : 34,
 				"type_stati" : "sans CB"
 			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8727634196650214, 43.609010705140435 ]
+			},
+			"properties" : {
+				"nom" : "Saint-Guilhem - Courreau",
+				"secteur" : "ligne 4",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 57,
+				"type_stati" : "sans CB"
+			}
 		}
 	]
 }
