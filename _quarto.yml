@@ -4,6 +4,7 @@ project:
   render: 
     - index_fr.qmd
     - index_ang.qmd
+    - Statistiques.qmd
 
 website:
   reader-mode: true 
@@ -25,6 +26,9 @@ website:
         text: Fr
       - href: index_ang.qmd
         text: En
+    left: 
+      - href: Statistiques.qmd
+        text: Graphes
 
 
 format:

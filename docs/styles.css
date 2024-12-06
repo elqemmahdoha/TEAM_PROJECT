@@ -6,14 +6,6 @@ body {
   height: 100vh; /* Assure que la page couvre toute la hauteur de la fenêtre */
 }
 
-/* Déplacer l'élément de la navbar vers la gauche */
-.quarto-reader-toggle-btn {
-  position: absolute;  /* Positionner absolument */
-  left: 10px;          /* Déplacer l'élément vers la gauche */
-  top: 50%;            /* Centrer verticalement si nécessaire */
-  transform: translateY(-50%);  /* Centrer l'élément verticalement */
-  z-index: 100;        /* Assurez-vous qu'il soit au-dessus des autres éléments */
-}
 
 .navbar .navbar-brand {
   font-size: 27px;
@@ -51,16 +43,6 @@ body {
   background-color: #e9ecef;
 }
 
-/* Style pour l'icône */
-.quarto-sidebar-toggle-icon {
-  transition: transform 0.3s ease; /* Animation douce pour l'icône */
-}
-
-/* Rotation de l'icône lorsque la TOC est ouverte */
-.quarto-sidebar-toggle-contents.show .quarto-sidebar-toggle-icon {
-  transform: rotate(180deg); /* Rotation de l'icône pour indiquer l'ouverture */
-}
-
 /* Style pour la liste de la TOC (table des matières) */
 .sidebar.margin-sidebar.notransition.quarto-sidebar-toggle-contents {
   height: 0;
@@ -74,5 +56,3 @@ body {
   height: auto;
   opacity: 1;
 }
-
-

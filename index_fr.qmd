@@ -26,13 +26,6 @@ Découvrez notre carte interactive qui vous permet de visualiser les prévisions
 
 </iframe>
 
-# Retraits et Dépôts des vélos Vélomagg
-
-Découvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à un graphique interactif qui présente, pour chaque jour de la semaine, le nombre de dépôts et de retraits dans chaque station. Cette visualisation permet de suivre l'évolution quotidienne des flux de vélos et de mieux comprendre les variations de fréquentation d'une station à l'autre, offrant ainsi une analyse approfondie des habitudes d'utilisation tout au long de la semaine.
-
-<iframe src="graphique_interactif.html" width="100%" height="500px">
-</iframe>
-
 # À propos
 
 # Sources
@@ -42,4 +35,3 @@ Les données utilisées pour cette analyse proviennent de plusieurs sources :
 [OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): Ce site fournit des informations sur les comptages de vélos (et parfois de piétons) effectués par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
 
 [OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap est une carte du monde collaborative et libre, permettant à chacun d'ajouter et de modifier des informations géographiques. 
-
