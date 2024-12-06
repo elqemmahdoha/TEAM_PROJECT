@@ -19,7 +19,7 @@ body {
 #toc-toggle {
     position: fixed;
     top: 170px;
-    left: 8px;
+    left: 250px;
     background-color: #b538a2;
     color: rgb(0, 0, 0);
     padding: 10px; /* Gardez une seule valeur pour padding */
@@ -44,15 +44,6 @@ body {
     overflow: hidden;
 }
 
-/* Applique l'image d'arrière-plan uniquement à la navbar */
-.navbar {
-    background-image: url('vélo_3.jpg');  /* Remplacez par le chemin de votre image */
-    background-size: cover;  /* Couvre toute la largeur de la navbar */
-    background-position: center 47%; /* Centre l'image */
-    background-repeat: no-repeat;  /* Empêche l'image de se répéter */
-    height: 160px;  /* Ajustez la hauteur de la navbar */
-  }
-  
   /* Personnalisation de la couleur du texte pour améliorer la lisibilité sur l'image */
   .navbar a {
     color: rgb(10, 10, 10);  /* Change la couleur des liens pour qu'ils soient visibles sur l'image */
