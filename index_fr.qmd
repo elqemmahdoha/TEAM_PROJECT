@@ -18,8 +18,6 @@ Nous vous présentons une vidéo illustrant la densité du trafic cycliste sur u
 
 </video>
 
-# Description
-
 # Prédiction du trafic
 
 Découvrez notre carte interactive qui vous permet de visualiser les prévisions du trafic cycliste à Montpellier. Elle met en évidence les zones à fort afflux et les moments de la journée les plus actifs pour les cyclistes, basés sur des données historiques.
@@ -41,9 +39,9 @@ Découvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à
 
 Les données utilisées pour cette analyse proviennent de plusieurs sources :
 
-[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo)
+[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): Ce site fournit des informations sur les comptages de vélos (et parfois de piétons) effectués par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
 
-[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21)
+[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap est une carte du monde collaborative et libre, permettant à chacun d'ajouter et de modifier des informations géographiques. 
 
 
 <button id="toc-toggle">

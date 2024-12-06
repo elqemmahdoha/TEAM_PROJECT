@@ -42,9 +42,9 @@ Discover the trends in bike withdrawals and deposits for Vélomagg through an in
 
 The data used for this analysis comes from several sources:
 
-[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo)
+[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): This website provides information on bicycle (and sometimes pedestrian) counts collected by eco-counters in operation across the Montpellier Metropolitan area.
 
-[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21)
+[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap is a collaborative and open map of the world, allowing anyone to add and edit geographical information.
 
 <button id="toc-toggle">
 

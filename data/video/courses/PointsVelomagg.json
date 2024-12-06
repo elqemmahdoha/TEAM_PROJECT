@@ -811,6 +811,81 @@
 				"numero" : 56,
 				"type_stati" : "sans CB"
 			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.869217398604767, 43.62842854135043 ]
+			},
+			"properties" : {
+				"nom" : "Fac de Lettres",
+				"secteur" : "",
+				"installati" : "12 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 38,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.871168886060632, 43.63534439935278 ]
+			},
+			"properties" : {
+				"nom" : "Vert-Bois",
+				"secteur" : "",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 34,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8727634196650214, 43.609010705140435 ]
+			},
+			"properties" : {
+				"nom" : "Saint-Guilhem - Courreau",
+				"secteur" : "ligne 4",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 57,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.884182597493091, 43.609754007595754 ]
+			},
+			"properties" : {
+				"nom" : "Jean de Beins",
+				"secteur" : "",
+				"installati" : "16 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 61,
+				"type_stati" : "sans CB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 3.8842150963510873, 43.60137969689591 ]
+			},
+			"properties" : {
+				"nom" : "Cité Mion",
+				"secteur" : "",
+				"installati" : "8 vélos",
+				"commune" : "MONTPELLIER",
+				"numero" : 24,
+				"type_stati" : "sans CB"
+			}
 		}
 	]
 }
