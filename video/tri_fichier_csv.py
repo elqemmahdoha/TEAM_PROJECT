@@ -51,5 +51,9 @@ df_filtered['Return station'] = df_filtered['Return station'].str.replace(r'^\d+
 df_filtered = df_filtered[~df_filtered["Departure number"].str.contains("60", case=False, na=False)]
 df_filtered = df_filtered[~df_filtered["Return number"].str.contains("60", case=False, na=False)]
 
+# Supprimer les lignes où Departure number' ou 'Return number' contient "98" (AtelierTAM)
+df_filtered = df_filtered[~df_filtered["Departure number"].str.contains("98", case=False, na=False)]
+df_filtered = df_filtered[~df_filtered["Return number"].str.contains("98", case=False, na=False)]
+
 # Sauvegarder le fichier corrigé, filtré et sans lignes où les stations sont identiques
 df_filtered.to_csv(output_file, index=False, encoding="utf-8-sig")  # Utilisation de utf-8-sig pour sauvegarder sans BOM
