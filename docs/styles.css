@@ -1,0 +1,69 @@
+/* Styles CSS pour la Table des matières (TOC) */
+body {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Assurer que la page couvre toute la hauteur de la fenêtre */
+}
+
+.quarto-toc {
+    width: 150px; /* Largeur de la sidebar TOC */
+    height: 100vh; /* Hauteur de la sidebar TOC */
+    overflow-y: auto; /* Permet le défilement vertical si le contenu est trop long */
+    z-index: 1000; /* Assurer que la sidebar TOC est par-dessus le contenu */
+    padding: 20px; /* Espacement autour des éléments de la sidebar */
+    box-sizing: border-box; /* S'assurer que le padding ne dépasse pas la largeur allouée */
+    position: sticky;
+}
+
+#toc-toggle {
+    position: fixed;
+    top: 170px;
+    left: 8px;
+    background-color: #b538a2;
+    color: rgb(0, 0, 0);
+    padding: 10px; /* Gardez une seule valeur pour padding */
+    border: 2px solid #b538a2; /* Bordure définie */
+    cursor: pointer;
+    z-index: 1100;
+    border-radius: 30px; /* Pour faire un bouton circulaire */
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    width: 90px; /* Fixe la largeur du bouton */
+    height: 50px; /* Fixe la hauteur du bouton */
+    box-sizing: border-box; /* Inclut la bordure dans les dimensions */
+}
+
+#toc-toggle:hover {
+    background-color: #d835b8;
+}
+
+#TOC.collapsed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Applique l'image d'arrière-plan uniquement à la navbar */
+.navbar {
+    background-image: url('vélo_3.jpg');  /* Remplacez par le chemin de votre image */
+    background-size: cover;  /* Couvre toute la largeur de la navbar */
+    background-position: center 47%; /* Centre l'image */
+    background-repeat: no-repeat;  /* Empêche l'image de se répéter */
+    height: 160px;  /* Ajustez la hauteur de la navbar */
+  }
+  
+  /* Personnalisation de la couleur du texte pour améliorer la lisibilité sur l'image */
+  .navbar a {
+    color: rgb(10, 10, 10);  /* Change la couleur des liens pour qu'ils soient visibles sur l'image */
+  }
+  
+  .navbar .navbar-brand {   
+    font-size: 27px;  /* Augmente la taille du texte du titre */
+    font-weight: bold;  /* Met le titre en gras */
+  }
+
+  .navbar .navbar-nav a {
+    color: rgb(10, 10, 10);  /* Change la couleur des éléments de la navbar */
+  }
+  
