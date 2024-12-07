@@ -13,6 +13,8 @@ def main():
 
     # Mise à jour des intensités des compteurs
     compteurs = update_intensity_for_compteurs(compteurs, date_video)
+
+    # Mise à jour du dataframe courses
     courses['latitude_depart'] = courses['Departure number'].map(lambda x: coord_stations.get(x, {}).get('latitude'))
     courses['longitude_depart'] = courses['Departure number'].map(lambda x: coord_stations.get(x, {}).get('longitude'))
     courses['latitude_retour'] = courses['Return number'].map(lambda x: coord_stations.get(x, {}).get('latitude'))
@@ -36,4 +38,4 @@ if __name__ == "__main__":
     start = time.time()
     main()
     end = time.time()
-    print(f"Temps : {end - start:.5f} s")   
+    print(f"Temps : {end - start:.5f} s")
