@@ -6,3 +6,4 @@ Thumbs.db
 *.mp4
 /.quarto/
 /_site/
+__pycache__ 
