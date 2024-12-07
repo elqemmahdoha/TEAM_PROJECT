@@ -1,0 +1,1 @@
+from .statistiques import calculer_moyennes_mensuelles
