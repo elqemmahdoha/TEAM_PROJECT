@@ -3,7 +3,6 @@ json
 osmnx
 pandas
 matplotlib
-json
 os
 shutil
 random
@@ -12,3 +11,6 @@ locale
 time
 folium
 branca
+shutil
+numpy
+networkx
