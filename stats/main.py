@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import time
 from .traitement_donnees import charger_compteurs, charger_intensites_par_mois
 from .statistiques import calculer_moyennes_mensuelles
 from .visualisation import creer_figure_polaire, creer_figure_intensite_moyenne
@@ -53,4 +54,7 @@ def main():
     creer_figure_intensite_moyenne(tableau_moyennes, chemin_average_intensity)
 
 if __name__ == "__main__":
+    start = time.time()
     main()
+    end = time.time()
+    print(f"Temps : {end - start:.5f} s")  

@@ -2,6 +2,7 @@ from .data_loader import load_courses, load_compteurs, load_coord_stations, upda
 from .trajets import load_montpellier_graph, find_shortest_path
 from .animation import TrajetAnimation
 import osmnx as ox
+import time
 
 def main():
     # Chargement des données
@@ -12,6 +13,8 @@ def main():
 
     # Mise à jour des intensités des compteurs
     compteurs = update_intensity_for_compteurs(compteurs, date_video)
+
+    # Mise à jour du dataframe courses
     courses['latitude_depart'] = courses['Departure number'].map(lambda x: coord_stations.get(x, {}).get('latitude'))
     courses['longitude_depart'] = courses['Departure number'].map(lambda x: coord_stations.get(x, {}).get('longitude'))
     courses['latitude_retour'] = courses['Return number'].map(lambda x: coord_stations.get(x, {}).get('latitude'))
@@ -32,4 +35,7 @@ def main():
     anim_bicycle.create_animation("docs/bicycle.mp4", fps=10, bitrate=1800)
 
 if __name__ == "__main__":
+    start = time.time()
     main()
+    end = time.time()
+    print(f"Temps : {end - start:.5f} s")
