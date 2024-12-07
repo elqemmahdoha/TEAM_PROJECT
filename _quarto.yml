@@ -7,4 +7,5 @@ project:
 
 profile:
   group: 
-    - [fr, en]
+    - [fr0, fr, en]
+
