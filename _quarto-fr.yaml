@@ -1,0 +1,51 @@
+project:
+  output-dir: ./docs/fr
+  render: 
+    - index.qmd
+    - stat.qmd
+
+website:
+  reader-mode: true
+  repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT
+  repo-actions: [source, issue]
+  page-navigation: true
+  back-to-top-navigation: true
+  title: "Pédaler à Montpellier"
+  navbar:
+    right:
+      - href: ../
+        text: Français
+      - href: ../en
+        text: English
+    left:
+      - href: index.qmd
+        text: Données Visuelles
+      - href: stat.qmd       
+        text: statistiques
+    tools:
+      - icon: database
+        href: https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo
+        text: Data
+      - icon: github
+        href: https://github.com/elqemmahdoha/TEAM_PROJECT
+        text: GitHub
+    
+
+lang: fr
+
+format:
+  html:
+    smooth-scroll: true
+    theme:
+      light: [cosmo, lightmode.scss]
+      dark: [cosmo, darkmode.scss]
+    toc: true         
+    toc-location: left
+    toc-title: Index
+    css: styles.css  
+    theme-switcher: true
+    grid:
+      sidebar-width: 300px
+      body-width: 1000px
+      margin-width: 200px
+      gutter-width: 1.5rem
