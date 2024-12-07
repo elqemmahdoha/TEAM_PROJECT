@@ -1,0 +1,71 @@
+---
+execute: 
+  echo: false
+---
+
+::: {.content-visible when-profile="fr"}
+
+# Introduction
+Le site Montpellier à Vélo propose une exploration complète du trafic cycliste dans la ville, en combinant visualisations interactives et analyses dynamiques des données. Il permet d'examiner les tendances de circulation des vélos, d'identifier les périodes de forte affluence et d'analyser les comportements des cyclistes au fil du temps. Grâce à des outils interactifs tels que des vidéos, des cartes et des graphiques, la plateforme offre une perspective détaillée et enrichissante sur l'évolution du trafic cycliste à Montpellier.
+
+# Densité sur un mois
+
+Nous vous présentons une vidéo illustrant la densité du trafic cycliste sur un mois.
+:::
+
+::: {.content-visible when-profile="en"}
+
+# Introduction
+
+The "Montpellier à Vélo" website offers a comprehensive exploration of cycling traffic in the city, combining interactive visualizations and dynamic data analysis. It allows users to examine cycling traffic trends, identify peak periods, and analyze cyclists' behaviors over time. With interactive tools such as videos, maps, and charts, the platform provides a detailed and enriching perspective on the evolution of cycling traffic in Montpellier.
+
+# Density over a Month
+
+We present a video illustrating the bike traffic density over the course of a month.
+:::
+
+<video width="640" height="360" controls>
+  <source src="bicycle.mp4" type="video/mp4">
+</video>
+
+::: {.content-visible when-profile="fr"}
+
+# Prédiction du trafic
+
+Découvrez notre carte interactive qui vous permet de visualiser les prévisions du trafic cycliste à Montpellier. Elle met en évidence les zones à fort afflux et les moments de la journée les plus actifs pour les cyclistes, basés sur des données historiques.
+
+<iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0"></iframe>
+
+# À propos
+
+# Sources
+
+Les données utilisées pour cette analyse proviennent de plusieurs sources :
+
+[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): Ce site fournit des informations sur les comptages de vélos (et parfois de piétons) effectués par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
+
+[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap est une carte du monde collaborative et libre, permettant à chacun d'ajouter et de modifier des informations géographiques.
+
+:::
+
+::: {.content-visible when-profile="en"}
+
+# Traffic Prediction
+
+Discover our interactive map that allows you to visualize the cycling traffic predictions in Montpellier. It highlights areas with high traffic and the times of day when cyclists are most active, based on historical data.
+
+<iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0">
+
+</iframe>
+
+# About
+
+# Sources
+
+The data used for this analysis comes from several sources:
+
+[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): This website provides information on bicycle (and sometimes pedestrian) counts collected by eco-counters in operation across the Montpellier Metropolitan area.
+
+[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap is a collaborative and open map of the world, allowing anyone to add and edit geographical information.
+
+::: 
