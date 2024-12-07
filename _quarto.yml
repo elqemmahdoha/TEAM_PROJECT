@@ -1,6 +1,11 @@
 project:
   type: website
+  output-dir: ./docs
+  render: 
+    - index.qmd
+    - stat.qmd
 
 profile:
   group: 
-    - [fr, en]
+    - [fr0, fr, en]
+

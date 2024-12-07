@@ -1,5 +1,5 @@
 project:
-  output-dir: ./docs/fr
+  output-dir: ./docs
   render: 
     - index.qmd
     - stat.qmd
@@ -13,9 +13,9 @@ website:
   title: "Pédaler à Montpellier"
   navbar:
     right:
-      - href: ../fr/index.html
+      - href: fr/index.html
         text: Français
-      - href: ../en/index.html
+      - href: en/index.html
         text: English
     left:
       - href: index.qmd
@@ -30,8 +30,6 @@ website:
         href: https://github.com/elqemmahdoha/TEAM_PROJECT
         text: GitHub
     
-lang: fr
-
 format:
   html:
     smooth-scroll: true

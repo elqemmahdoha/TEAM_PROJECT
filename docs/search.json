@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "stat.html",
+    "href": "stat.html",
+    "title": "Pédaler à Montpellier",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nLe site Montpellier à Vélo propose une exploration complète du trafic cycliste dans la ville, en combinant visualisations interactives et analyses dynamiques des données. Il permet d’examiner les tendances de circulation des vélos, d’identifier les périodes de forte affluence et d’analyser les comportements des cyclistes au fil du temps. Grâce à des outils interactifs tels que des vidéos, des cartes et des graphiques, la plateforme offre une perspective détaillée et enrichissante sur l’évolution du trafic cycliste à Montpellier.\n\n\nDensité sur un mois\nNous vous présentons une vidéo illustrant la densité du trafic cycliste sur un mois.\n\n\n\n\n\nPrédiction du trafic\nDécouvrez notre carte interactive qui vous permet de visualiser les prévisions du trafic cycliste à Montpellier. Elle met en évidence les zones à fort afflux et les moments de la journée les plus actifs pour les cyclistes, basés sur des données historiques.\n\n\n\n\nÀ propos\n\n\nSources\nLes données utilisées pour cette analyse proviennent de plusieurs sources :\nOPEN DATA 3M: Ce site fournit des informations sur les comptages de vélos (et parfois de piétons) effectués par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.\nOpenStreetMap: OpenStreetMap est une carte du monde collaborative et libre, permettant à chacun d’ajouter et de modifier des informations géographiques.\n\n\n\n\n Back to top"
+  }
+]
