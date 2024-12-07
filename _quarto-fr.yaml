@@ -13,9 +13,9 @@ website:
   title: "Pédaler à Montpellier"
   navbar:
     right:
-      - href: ../
+      - href: ../fr/index.html
         text: Français
-      - href: ../en
+      - href: ../en/index.html
         text: English
     left:
       - href: index.qmd
@@ -30,7 +30,6 @@ website:
         href: https://github.com/elqemmahdoha/TEAM_PROJECT
         text: GitHub
     
-
 lang: fr
 
 format:

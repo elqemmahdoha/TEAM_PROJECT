@@ -13,9 +13,9 @@ website:
   title: "Cycling in Montpellier"
   navbar:
     right:
-      - href: ../
+      - href: ../fr/index.html
         text: Français
-      - href: ../en
+      - href: ../en/index.html
         text: English
     left:
       - href: index.qmd
