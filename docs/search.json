@@ -1,10 +1,24 @@
 [
   {
-    "objectID": "stat.html",
-    "href": "stat.html",
-    "title": "Pédaler à Montpellier",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "À propos",
     "section": "",
-    "text": "Back to top"
+    "text": "Notre équipe est composée de trois étudiants en Master 1 Statistiques et Sciences des Données à l’Université de Montpellier, animés par notre passion commune pour l’analyse de données et l’innovation. Chacun de nous apporte ses compétences et son expertise pour faire avancer notre projet. Voici les membres principaux de l’équipe:\n\nLaura CLETZ\nDoha EL QEMMAH\nLouison GILLET\n\n\n\n\nNous restons à votre disposition pour toute question, collaboration ou suggestion. N’hésitez pas à nous contacter via les informations ci-dessous :\n\nLinkedIn (Laura CLETZ) : https://github.com/lcletz\nLinkedIn (Doha EL QEMMAH) : https://github.com/elqemmahdoha\nLinkedIn (Louison GILLET) : https://github.com/LouisonGillet"
+  },
+  {
+    "objectID": "about.html#équipe-du-projet",
+    "href": "about.html#équipe-du-projet",
+    "title": "À propos",
+    "section": "",
+    "text": "Notre équipe est composée de trois étudiants en Master 1 Statistiques et Sciences des Données à l’Université de Montpellier, animés par notre passion commune pour l’analyse de données et l’innovation. Chacun de nous apporte ses compétences et son expertise pour faire avancer notre projet. Voici les membres principaux de l’équipe:\n\nLaura CLETZ\nDoha EL QEMMAH\nLouison GILLET"
+  },
+  {
+    "objectID": "about.html#contacts",
+    "href": "about.html#contacts",
+    "title": "À propos",
+    "section": "",
+    "text": "Nous restons à votre disposition pour toute question, collaboration ou suggestion. N’hésitez pas à nous contacter via les informations ci-dessous :\n\nLinkedIn (Laura CLETZ) : https://github.com/lcletz\nLinkedIn (Doha EL QEMMAH) : https://github.com/elqemmahdoha\nLinkedIn (Louison GILLET) : https://github.com/LouisonGillet"
   },
   {
     "objectID": "index.html",
@@ -12,5 +26,12 @@
     "title": "Introduction",
     "section": "",
     "text": "Introduction\nLe site Montpellier à Vélo propose une exploration complète du trafic cycliste dans la ville, en combinant visualisations interactives et analyses dynamiques des données. Il permet d’examiner les tendances de circulation des vélos, d’identifier les périodes de forte affluence et d’analyser les comportements des cyclistes au fil du temps. Grâce à des outils interactifs tels que des vidéos, des cartes et des graphiques, la plateforme offre une perspective détaillée et enrichissante sur l’évolution du trafic cycliste à Montpellier.\n\n\nDensité sur un mois\nNous vous présentons une vidéo illustrant la densité du trafic cycliste sur un mois.\n\n\n\n\n\nPrédiction du trafic\nDécouvrez notre carte interactive qui vous permet de visualiser les prévisions du trafic cycliste à Montpellier. Elle met en évidence les zones à fort afflux et les moments de la journée les plus actifs pour les cyclistes, basés sur des données historiques.\n\n\n\n\nÀ propos\n\n\nSources\nLes données utilisées pour cette analyse proviennent de plusieurs sources :\nOPEN DATA 3M: Ce site fournit des informations sur les comptages de vélos (et parfois de piétons) effectués par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.\nOpenStreetMap: OpenStreetMap est une carte du monde collaborative et libre, permettant à chacun d’ajouter et de modifier des informations géographiques.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "stat.html",
+    "href": "stat.html",
+    "title": "Retraits et Dépôts des vélos Vélomagg",
+    "section": "",
+    "text": "Retraits et Dépôts des vélos Vélomagg\nDécouvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à un graphique interactif qui présente, pour chaque jour de la semaine, le nombre de dépôts et de retraits dans chaque station. Cette visualisation permet de suivre l’évolution quotidienne des flux de vélos et de mieux comprendre les variations de fréquentation d’une station à l’autre, offrant ainsi une analyse approfondie des habitudes d’utilisation tout au long de la semaine.\n\n\n\n\nMoyenne des intensités par mois\n\n\n\n\nFigure\n\n\n\n\n\n\n Back to top"
   }
 ]
