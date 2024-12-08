@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Montpellier à vélo</h1>
+<h1 style="text-align: center;">Pédaler à Montpellier</h1>
 
 Bienvenue sur la page source du projet **Pédaler à Montpellier** !
 
@@ -29,7 +29,7 @@ Le site internet du projet est disponible à l'URL suivante :
 
 ---
 
-## 💻 Code pour construire le site web 
+## 💻 Code pour construire le projet 
 
 Pour exécuter ce projet localement et construire le site web, suivez les étapes ci-dessous :  
 
