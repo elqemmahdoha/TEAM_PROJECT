@@ -7,3 +7,4 @@ Thumbs.db
 /.quarto/
 /_site/
 __pycache__ 
+cache/
