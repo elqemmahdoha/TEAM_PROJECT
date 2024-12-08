@@ -1,14 +1,13 @@
 /*-- scss:defaults --*/
 // Lightmode
 
-$link-color: #970a74;
+$link-color: #2890af;
 $navbar-bg: #dc7fd7;
-$toc-font-size: 12px;
-$body-bg: #f6f6f6;
-$code-block-bg-alpha: -.8;
-$dropdown-bg: $body-bg;
 $navbar-hl: #970a74;
-$input-bg:white;
+$body-bg: #f6f6f6;
+$dropdown-bg: $body-bg;
+$dropdown-link-hover-bg:#e8e6be;
+$dropdown-link-active-bg:#970a74;
 $dropdown-link-hover-bg:#e8e6be;
 $dropdown-link-active-bg:#970a74;
 //sidebar-bg: #dc7fd7;

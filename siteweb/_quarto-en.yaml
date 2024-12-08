@@ -1,5 +1,5 @@
 project:
-  output-dir: ./docs/en
+  output-dir: ../docs/en
   render: 
     - index.qmd
     - stat.qmd
