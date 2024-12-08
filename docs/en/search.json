@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Our team is made up of three students in the Master’s program in Statistics and Data Science at the University of Montpellier, driven by our shared passion for data analysis and innovation. Each of us brings unique skills and expertise to advance our project. Here are the key members of our team:\n\nLaura CLETZ\nDoha EL QEMMAH\nLouison GILLET\n\n\n\n\nWe are available for any questions, collaborations, or suggestions. Feel free to contact us through the following information:\n\nLinkedIn (Laura CLETZ) : https://github.com/lcletz\nLinkedIn (Doha EL QEMMAH) : https://github.com/elqemmahdoha\nLinkedIn (Louison GILLET) : https://github.com/LouisonGillet"
+    "text": "Our team is made up of three students in the Master’s program in Statistics and Data Science at the University of Montpellier, driven by our shared passion for data analysis and innovation. Each of us brings unique skills and expertise to advance our project. Here are the key members of our team:\n\nLaura CLETZ\nDoha EL QEMMAH\nLouison GILLET\n\n\n\n\nWe are available for any questions, collaborations, or suggestions. Feel free to contact us through the following information:\n\nGitHub (Laura CLETZ) : https://github.com/lcletz\nGitHub (Doha EL QEMMAH) : https://github.com/elqemmahdoha\nGitHub (Louison GILLET) : https://github.com/LouisonGillet"
   },
   {
     "objectID": "about.html#project-team",
@@ -18,7 +18,7 @@
     "href": "about.html#contacts-2",
     "title": "About",
     "section": "",
-    "text": "We are available for any questions, collaborations, or suggestions. Feel free to contact us through the following information:\n\nLinkedIn (Laura CLETZ) : https://github.com/lcletz\nLinkedIn (Doha EL QEMMAH) : https://github.com/elqemmahdoha\nLinkedIn (Louison GILLET) : https://github.com/LouisonGillet"
+    "text": "We are available for any questions, collaborations, or suggestions. Feel free to contact us through the following information:\n\nGitHub (Laura CLETZ) : https://github.com/lcletz\nGitHub (Doha EL QEMMAH) : https://github.com/elqemmahdoha\nGitHub (Louison GILLET) : https://github.com/LouisonGillet"
   },
   {
     "objectID": "index.html",
@@ -32,6 +32,20 @@
     "href": "stat.html",
     "title": "Withdrawals and Deposits of Vélomagg Bikes",
     "section": "",
-    "text": "Withdrawals and Deposits of Vélomagg Bikes\nExplore the trends of bike withdrawals and deposits at Vélomagg through an interactive chart that shows, for each day of the week, the number of deposits and withdrawals at each station. This visualization allows you to track the daily flow of bikes and better understand station-to-station variations in usage, providing an in-depth analysis of usage patterns throughout the week.\n\n\n\n\nAverage Passages at Eco-Counters\n\n\n\n\nMonthly Intensity of Counters\n\n\n\n\n\n\n Back to top"
+    "text": "Explore the trends of bike withdrawals and returns for Vélomagg through an interactive graph that shows, day by day, the number of returns and withdrawals at each station. This dynamic visualization allows you to track the daily flow of bikes, providing a better understanding of the variations in station traffic. It also offers a detailed analysis of bike usage patterns throughout the week, helping to identify peak activity periods and optimize station management.\n\n📊 To view only the withdrawals or only the deposits, simply click on the corresponding option. By clicking on an option, it will disappear, allowing you to focus on the other type of data."
+  },
+  {
+    "objectID": "stat.html#what-is-an-eco-counter",
+    "href": "stat.html#what-is-an-eco-counter",
+    "title": "Withdrawals and Deposits of Vélomagg Bikes",
+    "section": "What is an Eco-Counter?",
+    "text": "What is an Eco-Counter?\nEco-Counters are technological devices designed to measure in real time the passage of pedestrians and cyclists in specific areas. These devices collect valuable data on movement behaviors, contributing to better infrastructure planning and more efficient mobility management."
+  },
+  {
+    "objectID": "stat.html#analysis-of-the-average-passage-in-front-of-eco-counters-in-montpellier-in-2024",
+    "href": "stat.html#analysis-of-the-average-passage-in-front-of-eco-counters-in-montpellier-in-2024",
+    "title": "Withdrawals and Deposits of Vélomagg Bikes",
+    "section": "Analysis of the Average Passage in Front of Eco-Counters in Montpellier in 2024",
+    "text": "Analysis of the Average Passage in Front of Eco-Counters in Montpellier in 2024\nThe graph below illustrates the average passage intensity of pedestrians and cyclists in front of the Eco-Counters in the city of Montpellier throughout the year 2024. These data, collected directly from the counting devices installed in various neighborhoods across the city, provide a view of the monthly variations in foot traffic in these key areas.\nThis graph offers a detailed overview of circulation trends, while considering the seasonal factors that naturally influence the flow of traffic. It allows for a precise analysis of the fluctuations in passage intensity over the months, and a better understanding of the mobility behaviors of the city’s inhabitants."
   }
 ]
