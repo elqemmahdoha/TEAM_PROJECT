@@ -5,7 +5,36 @@ from .traitement_donnees import charger_compteurs, charger_intensites_par_mois
 from .statistiques import calculer_moyennes_mensuelles
 from .visualisation import creer_figure_polaire, creer_figure_intensite_moyenne
 
-def main(): 
+def main():
+    """
+    Script principal pour l'analyse des données des compteurs de vélos et la génération de visualisations.
+
+    Ce script charge les données des compteurs de vélos depuis un fichier GeoJSON, extrait les intensités mensuelles de passage pour une période spécifiée, calcule les moyennes mensuelles et génère des visualisations interactives des intensités. Les graphiques générés sont sauvegardés sous forme de fichiers HTML.
+
+    Le processus inclut les étapes suivantes :
+    1. Création d'un sous-répertoire pour sauvegarder les figures générées.
+    2. Chargement des données des compteurs de vélos depuis un fichier GeoJSON.
+    3. Extraction des intensités de passage pour chaque mois sur la période spécifiée.
+    4. Calcul des moyennes mensuelles d'intensité pour chaque compteur.
+    5. Préparation des données nécessaires à la génération des graphiques :
+    - Moyennes mensuelles d'intensité pour chaque mois de la période.
+    - Classement des compteurs par intensité totale, et sélection des 10 premiers.
+    6. Création de deux visualisations :
+    - Un graphique polaire des intensités mensuelles moyennes pour chaque compteur.
+    - Un graphique des intensités moyennes mensuelles globales.
+    7. Sauvegarde des graphiques sous forme de fichiers HTML dans un dossier dédié.
+
+    Modules utilisés :
+    - `traitement_donnees`: Pour charger les données des compteurs et extraire les intensités mensuelles.
+    - `statistiques`: Pour calculer les moyennes mensuelles d'intensité.
+    - `visualisation`: Pour générer les graphiques interactifs des intensités moyennes.
+    - `pandas`: Pour la manipulation des données et le calcul des moyennes.
+    - `os`: Pour la gestion des répertoires et des chemins de fichiers.
+
+    Temps d'exécution : environ 10 secondes.
+
+    """
+ 
     # Créer un sous-répertoire pour les figures
     dossier_destination = "docs\\figures"
     os.makedirs(dossier_destination, exist_ok=True)
