@@ -34,7 +34,7 @@ def main():
     # Chargement des données
     date_video = "2024-10-07"
     courses = load_courses("data/video/courses/CoursesVelomagg_filtre.csv", date_video)
-    compteurs = load_compteurs("data/video/ecocompt/GeolocCompteurs.geojson")
+    compteurs = load_compteurs("data/video/compteurs/MMM_MMM_GeolocCompteurs_sorted.geojson")
     coord_stations = load_coord_stations("data/video/courses/PointsVelomagg.json")
 
     # Mise à jour des intensités des compteurs

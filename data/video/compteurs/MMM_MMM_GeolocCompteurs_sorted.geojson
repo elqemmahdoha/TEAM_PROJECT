@@ -1,0 +1,678 @@
+{
+    "type": "FeatureCollection",
+    "name": "MMM_MMM_GeolocCompteur",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Saint-Lazare",
+                "N° Série": "ED223110495",
+                "N° Sér_1": null,
+                "Latitude": 43.6236365,
+                "Longitude": 3.8922978,
+                "OSM_Line_i": 105575465
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.892233885266607,
+                    43.62357095291798
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Quai de Cythère",
+                "N° Série": "ED223110496",
+                "N° Sér_1": null,
+                "Latitude": 43.609783,
+                "Longitude": 3.8985888,
+                "OSM_Line_i": 121403595
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.898652611413219,
+                    43.60982104639774
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Saint-Martin Cité Mion",
+                "N° Série": "ED223110497",
+                "N° Sér_1": null,
+                "Latitude": 43.5969973,
+                "Longitude": 3.8837306,
+                "OSM_Line_i": 1182343623
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.883731489029596,
+                    43.59700156366261
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Rue Pierre Causse",
+                "N° Série": "ED223110500",
+                "N° Sér_1": null,
+                "Latitude": 43.6089867,
+                "Longitude": 3.8417193,
+                "OSM_Line_i": 140548130
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.841721058176745,
+                    43.608990852814394
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Sabines",
+                "N° Série": "ED223110501",
+                "N° Sér_1": null,
+                "Latitude": 43.5842845,
+                "Longitude": 3.8610253,
+                "OSM_Line_i": 37618918
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8610267527322,
+                    43.58429988136376
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Piéton/Vélo Berracasa",
+                "N° Série": "X2H19070220",
+                "N° Sér_1": "X2H19070220",
+                "Latitude": 43.6096992492676,
+                "Longitude": 3.89693999290466,
+                "OSM_Line_i": 121403593
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.896939992904659,
+                    43.60969924926759
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Lodève Celleneuve",
+                "N° Série": "Y2H20042633",
+                "N° Sér_1": "X2H20042633",
+                "Latitude": 43.61465,
+                "Longitude": 3.8336,
+                "OSM_Line_i": 734202564
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8336,
+                    43.61465
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Vieille poste",
+                "N° Série": "Y2H20063161",
+                "N° Sér_1": "X2H20063161",
+                "Latitude": 43.6157418,
+                "Longitude": 3.9096322,
+                "OSM_Line_i": 676645909
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.9096322,
+                    43.6157418
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Gerhardt",
+                "N° Série": "Y2H20063162",
+                "N° Sér_1": "X2H20063162",
+                "Latitude": 43.6138841,
+                "Longitude": 3.8684671,
+                "OSM_Line_i": 23231541
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8684671,
+                    43.6138841
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Delmas 1",
+                "N° Série": "Y2H20063163",
+                "N° Sér_1": "X2H20063163",
+                "Latitude": 43.6266977,
+                "Longitude": 3.8956288,
+                "OSM_Line_i": 105575465
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8956288,
+                    43.6266977
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Delmas 2",
+                "N° Série": "Y2H20063164",
+                "N° Sér_1": "X2H20063164",
+                "Latitude": 43.6266977,
+                "Longitude": 3.8956288,
+                "OSM_Line_i": 105575465
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8956288,
+                    43.6266977
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Méric",
+                "N° Série": "X2H20104132",
+                "N° Sér_1": "X2H20104132",
+                "Latitude": 43.62959,
+                "Longitude": 3.89379,
+                "OSM_Line_i": 10429699
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.89352841233989,
+                    43.629534011319116
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Père Soulas 1",
+                "N° Série": "X2H21070341",
+                "N° Sér_1": null,
+                "Latitude": 43.62387,
+                "Longitude": 3.85339,
+                "OSM_Line_i": 135001721
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8535306577403,
+                    43.623773755552435
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Père Soulas 2",
+                "N° Série": "X2H21070342",
+                "N° Sér_1": null,
+                "Latitude": 43.62387,
+                "Longitude": 3.85339,
+                "OSM_Line_i": 135001721
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.853519608376403,
+                    43.62376270618854
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo M17 Montferrier 1",
+                "N° Série": "X2H21070343",
+                "N° Sér_1": null,
+                "Latitude": 43.67179,
+                "Longitude": 3.867914,
+                "OSM_Line_i": 755700690
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.867928592748969,
+                    43.67151867079606
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Figuerolles",
+                "N° Série": "X2H21070344",
+                "N° Sér_1": null,
+                "Latitude": 43.606275,
+                "Longitude": 3.863965,
+                "OSM_Line_i": 813676445
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.863979059010072,
+                    43.606270949289254
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Piéton/vélo Pavelet",
+                "N° Série": "X2H21070345",
+                "N° Sér_1": null,
+                "Latitude": 43.585203,
+                "Longitude": 3.859721,
+                "OSM_Line_i": 563115296
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.859739786395711,
+                    43.58519797078096
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo N17 Montferrier 2",
+                "N° Série": "X2H21070347",
+                "N° Sér_1": null,
+                "Latitude": 43.67179,
+                "Longitude": 3.867914,
+                "OSM_Line_i": 755700690
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.867982611861345,
+                    43.67153033401351
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Einstein",
+                "N° Série": "X2H21070348",
+                "N° Sér_1": null,
+                "Latitude": 43.610301,
+                "Longitude": 3.913589,
+                "OSM_Line_i": 359148100
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.913575970413236,
+                    43.610300897843196
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Lapeyronie",
+                "N° Série": "X2H21070349",
+                "N° Sér_1": null,
+                "Latitude": 43.631989,
+                "Longitude": 3.852038,
+                "OSM_Line_i": 374829525
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.85205495380677,
+                    43.631968700441234
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo M185 Arnel",
+                "N° Série": "X2H21070350",
+                "N° Sér_1": null,
+                "Latitude": 43.539352,
+                "Longitude": 3.887153,
+                "OSM_Line_i": 31450087
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.88719806952823,
+                    43.539357843102145
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Saint-Jaumes 1",
+                "N° Série": "X2H21111120",
+                "N° Sér_1": null,
+                "Latitude": 43.6168,
+                "Longitude": 3.868,
+                "OSM_Line_i": 437445704
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.868231844054546,
+                    43.61676390914395
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Saint-Jaumes 2",
+                "N° Série": "X2H21111121",
+                "N° Sér_1": null,
+                "Latitude": 43.6147,
+                "Longitude": 3.8699,
+                "OSM_Line_i": 563323786
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.870097277864347,
+                    43.61463892559912
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo RM65 Thomassy",
+                "N° Série": "X2H22043029",
+                "N° Sér_1": "X2H22043029",
+                "Latitude": 43.6489091,
+                "Longitude": 3.855992,
+                "OSM_Line_i": 249866952
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.856231212073433,
+                    43.64905190220725
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Allée de la Méditerranée",
+                "N° Série": "X2H22043033",
+                "N° Sér_1": "X2H22043033",
+                "Latitude": 43.59888,
+                "Longitude": 3.89867,
+                "OSM_Line_i": 399988317
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.898694041683555,
+                    43.59883097415739
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Renouvier bande cyclable",
+                "N° Série": "X2H22043034",
+                "N° Sér_1": "X2H22043034",
+                "Latitude": 43.60381,
+                "Longitude": 3.8677,
+                "OSM_Line_i": 295726077
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.867682517800408,
+                    43.60385578336974
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Renouvier chaussée",
+                "N° Série": "X2H22043035",
+                "N° Sér_1": "X2H22043035",
+                "Latitude": 43.60383,
+                "Longitude": 3.86779,
+                "OSM_Line_i": 295726077
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.867765118853567,
+                    43.60386164117374
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Jean Mermoz",
+                "N° Série": "X2H22104768",
+                "N° Sér_1": null,
+                "Latitude": 43.6115,
+                "Longitude": 3.8899,
+                "OSM_Line_i": 155831324
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.889818799334975,
+                    43.61130274355122
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Grossec",
+                "N° Série": "X2H22104769",
+                "N° Sér_1": null,
+                "Latitude": 43.5754,
+                "Longitude": 3.8617,
+                "OSM_Line_i": 38292462
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.861142483689855,
+                    43.575238909321754
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Colonel Pavelet",
+                "N° Série": "X2H22104770",
+                "N° Sér_1": null,
+                "Latitude": 43.5842,
+                "Longitude": 3.8613,
+                "OSM_Line_i": 37618918
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.861086771525648,
+                    43.58422001704967
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Pompignane1",
+                "N° Série": "X2H22104773",
+                "N° Sér_1": null,
+                "Latitude": 43.614,
+                "Longitude": 3.8981,
+                "OSM_Line_i": 376991821
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.898039156858491,
+                    43.61400884774643
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Pompignane2",
+                "N° Série": "X2H22104774",
+                "N° Sér_1": null,
+                "Latitude": 43.614,
+                "Longitude": 3.8981,
+                "OSM_Line_i": 31450626
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.898217735499705,
+                    43.61390233834256
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Vieussens1",
+                "N° Série": "X2H22104775",
+                "N° Sér_1": null,
+                "Latitude": 43.6001,
+                "Longitude": 3.8776,
+                "OSM_Line_i": 8584788
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.877649940498084,
+                    43.60011734280271
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Vieussens2",
+                "N° Série": "X2H22104776",
+                "N° Sér_1": null,
+                "Latitude": 43.6001,
+                "Longitude": 3.8776,
+                "OSM_Line_i": 8584788
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.877415237141062,
+                    43.60014923184578
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Léon Vallois",
+                "N° Série": "X2H22104777",
+                "N° Sér_1": null,
+                "Latitude": 43.614,
+                "Longitude": 3.8847,
+                "OSM_Line_i": 643789819
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.884894975086918,
+                    43.61399998947964
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Tanneurs",
+                "N° Série": "XTH19101158",
+                "N° Sér_1": "XTH19101158",
+                "Latitude": 43.6162094554924,
+                "Longitude": 3.87440800666809,
+                "OSM_Line_i": 188609530
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.87440800666809,
+                    43.6162094554924
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nom du com": "Compteur Vélo Clapiers",
+                "N° Série": "XTH24072390",
+                "N° Sér_1": null,
+                "Latitude": 43.660053,
+                "Longitude": 3.900942,
+                "OSM_Line_i": 930381158
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.900965576941343,
+                    43.66004835682959
+                ]
+            }
+        }
+    ]
+}
