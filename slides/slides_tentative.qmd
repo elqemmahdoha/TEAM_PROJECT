@@ -1,0 +1,71 @@
+---
+title: "Pédaler à Montpellier"
+subtitle: "Projet HAX712X - Développement Logiciel"
+author: "CLETZ Laura, EL QEMMAH Doha, GILLET Louison"
+date: "`r Sys.Date()`"
+format: 
+  revealjs:
+    theme: solarized
+    slideNumber: true
+    transition: slide
+    css: slides.css
+---
+
+## Introduction
+
+### Objectif du projet
+
+Dans le cadre du module **HAX712X - Développement logiciel** du Master Statistique et Science des Données à l'Université de Montpellier, ce projet vise à :
+
+1. **Observer** le trafic cycliste dans Montpellier à partir des données fournies par **Montpellier Méditerranée Métropole**.
+2. **Prédire** le trafic cycliste pour les jours à venir grâce à des algorithmes de modélisation.
+
+---
+
+## Map Interactive
+
+## Vidéo
+
+---
+
+## Site Web
+
+---
+
+## Difficultés
+
+### Laura
+
+- **À ajouter.**
+
+### Doha
+
+- **À ajouter.**
+
+### Louison
+
+- Utiliser **Git** : apprendre et gérer les branches pour collaborer efficacement.
+- Réorganisation du code :
+  - Avant : code monolithique.
+  - Après : organisation en classes et modules Python.
+
+## Avant/Après Réorganisation du Code
+
+Voici un aperçu de la structure du projet avant et après avoir réorganisé le code en modules Python. 
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div style="text-align: left; width: 45%;">
+    <img src="images/arbre_avant_modules.PNG" alt="Image gauche" style="width: 100%;">
+  </div>
+  
+  <div style="width: 10%; text-align: center;">
+    <h2>→</h2>
+  </div>
+  
+  <div style="text-align: left; width: 45%;">
+    <img src="images/arbre_apres_module.PNG" alt="Image droite" style="width: 100%;">
+  </div>
+</div>
+
+
+
