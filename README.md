@@ -29,7 +29,7 @@ Le site internet du projet est disponible à l'URL suivante :
 
 ---
 
-## 💻 Code pour construire le site web 
+## 💻 Code pour construire le projet 
 
 Pour exécuter ce projet localement et construire le site web, suivez les étapes ci-dessous :  
 
