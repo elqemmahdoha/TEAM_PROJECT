@@ -26,3 +26,11 @@ body {
 #quarto-sidebarnav-toggle {
   display: none;  /* Masque la barre latérale */
 }
+
+h1 {
+  color: #cb27a2;  
+}
+
+h2 {
+  color: #2890af;  
+}
