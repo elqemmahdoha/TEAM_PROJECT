@@ -1,0 +1,37 @@
+.reveal {
+    position: relative;
+  }
+  
+.reveal::before {
+    content: "";
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    background-image: url('images/Logo_université_montpellier.png');
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    width: 100px; 
+    height: 100px; 
+    z-index: 1000; 
+  }
+  
+.reveal .slide-background {
+    background: linear-gradient(43deg, #9a41d0 0%, #C850C0 44%, #cf9143 99%) !important;
+    background-size: cover;
+  }
+
+.reveal .slides {
+    color: white !important;
+  }
+  
+.reveal .slides h1,
+.reveal .slides h2,
+.reveal .slides h3 {
+    color: white !important; 
+  }
+  
+.reveal p,
+.reveal li {
+    color: white !important;
+  }
+  

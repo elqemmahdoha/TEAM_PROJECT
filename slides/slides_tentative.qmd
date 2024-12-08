@@ -5,10 +5,9 @@ author: "CLETZ Laura, EL QEMMAH Doha, GILLET Louison"
 date: "`r Sys.Date()`"
 format: 
   revealjs:
-    theme: solarized
     slideNumber: true
     transition: slide
-    css: slides.css
+    css: styles.css
 ---
 
 ## Introduction
@@ -36,7 +35,9 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 
 ### Laura
 
-- **À ajouter.**
+- Apprendre les particularités de chaque package, surtout folium.
+- Lire des dictionnaires json.
+- Comprendre la stylisation CSS. 
 
 ### Doha
 
