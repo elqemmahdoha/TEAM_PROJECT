@@ -10,3 +10,4 @@ __pycache__
 cache/
 !bicycle.mp4
 *.json
+*.geojson
