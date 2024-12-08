@@ -1,32 +1,37 @@
 ::: {.content-visible when-profile="fr"}
 
 # Introduction
-Le site Montpellier à Vélo propose une exploration complète du trafic cycliste dans la ville, en combinant visualisations interactives et analyses dynamiques des données. Il permet d'examiner les tendances de circulation des vélos, d'identifier les périodes de forte affluence et d'analyser les comportements des cyclistes au fil du temps. Grâce à des outils interactifs tels que des vidéos, des cartes et des graphiques, la plateforme offre une perspective détaillée et enrichissante sur l'évolution du trafic cycliste à Montpellier.
 
-# Densité sur un mois
+Le site *Pédaler à Montpellier* offre une exploration approfondie du trafic cycliste dans la ville, alliant visualisations interactives et analyses dynamiques des données. Il permet d'examiner les tendances de circulation, d'identifier les périodes de forte affluence et de comprendre les comportements des cyclistes au fil du temps. Grâce à des outils interactifs tels que des vidéos, des cartes et des graphiques, cette plateforme fournit une vue détaillée et enrichissante de l'évolution du trafic cycliste à Montpellier, offrant ainsi une ressource précieuse pour mieux appréhender l’utilisation du vélo dans la ville.
 
-Nous vous présentons une vidéo illustrant la densité du trafic cycliste sur un mois.
+# Densité d'une journée"
+
+La vidéo ci-dessous permet de visualiser en temps réel les données relatives aux trajets effectués à vélo au sein de la ville pour une journée spécifique (2024-10-24). Elle offre une représentation dynamique des mouvements des cyclistes, avec des trajets tracés sur la carte, permettant ainsi de suivre l'intensité des déplacements. En fonction de la densité de ces trajets dans des zones précises, des points sont affichés sur la carte : ceux-ci apparaissent de petite taille lorsqu'il y a peu de passages et grandissent proportionnellement lorsque la densité de cyclistes augmente. Ce système de visualisation permet de mieux comprendre les flux de circulation et d'identifier les zones à forte activité, facilitant ainsi l'analyse de la répartition des trajets à vélo dans la ville pendant cette journée. Cette approche permet de percevoir rapidement les tendances et d'identifier les zones à surveiller, offrant ainsi une perspective claire et intuitive de l'utilisation du vélo dans la ville. 
+
 :::
 
 ::: {.content-visible when-profile="fr0"}
 
 # Introduction
-Le site Montpellier à Vélo propose une exploration complète du trafic cycliste dans la ville, en combinant visualisations interactives et analyses dynamiques des données. Il permet d'examiner les tendances de circulation des vélos, d'identifier les périodes de forte affluence et d'analyser les comportements des cyclistes au fil du temps. Grâce à des outils interactifs tels que des vidéos, des cartes et des graphiques, la plateforme offre une perspective détaillée et enrichissante sur l'évolution du trafic cycliste à Montpellier.
 
-# Densité sur un mois
+Le site *Pédaler à Montpellier* offre une exploration approfondie du trafic cycliste dans la ville, alliant visualisations interactives et analyses dynamiques des données. Il permet d'examiner les tendances de circulation, d'identifier les périodes de forte affluence et de comprendre les comportements des cyclistes au fil du temps. Grâce à des outils interactifs tels que des vidéos, des cartes et des graphiques, cette plateforme fournit une vue détaillée et enrichissante de l'évolution du trafic cycliste à Montpellier, offrant ainsi une ressource précieuse pour mieux appréhender l’utilisation du vélo dans la ville.
 
-Nous vous présentons une vidéo illustrant la densité du trafic cycliste sur un mois.
+# Densité d'une journée
+
+La vidéo ci-dessous permet de visualiser en temps réel les données relatives aux trajets effectués à vélo au sein de la ville pour une journée spécifique (2024-10-24). Elle offre une représentation dynamique des mouvements des cyclistes, avec des trajets tracés sur la carte, permettant ainsi de suivre l'intensité des déplacements. En fonction de la densité de ces trajets dans des zones précises, des points sont affichés sur la carte : ceux-ci apparaissent de petite taille lorsqu'il y a peu de passages et grandissent proportionnellement lorsque la densité de cyclistes augmente. Ce système de visualisation permet de mieux comprendre les flux de circulation et d'identifier les zones à forte activité, facilitant ainsi l'analyse de la répartition des trajets à vélo dans la ville pendant cette journée. Cette approche permet de percevoir rapidement les tendances et d'identifier les zones à surveiller, offrant ainsi une perspective claire et intuitive de l'utilisation du vélo dans la ville. 
+
 :::
 
 ::: {.content-visible when-profile="en"}
 
 # Introduction
 
-The "Montpellier à Vélo" website offers a comprehensive exploration of cycling traffic in the city, combining interactive visualizations and dynamic data analysis. It allows users to examine cycling traffic trends, identify peak periods, and analyze cyclists' behaviors over time. With interactive tools such as videos, maps, and charts, the platform provides a detailed and enriching perspective on the evolution of cycling traffic in Montpellier.
+The *Cycling in Montpellier* website offers an in-depth exploration of cycling traffic in the city, combining interactive visualizations and dynamic data analysis. It allows for the examination of circulation trends, identification of peak traffic periods, and an understanding of cyclists' behaviors over time. With interactive tools such as videos, maps, and graphs, this platform provides a detailed and insightful view of the evolution of cycling traffic in Montpellier, making it a valuable resource for better understanding bicycle use in the city.
 
-# Density over a Month
+# Density over a Day
 
-We present a video illustrating the bike traffic density over the course of a month.
+The video below allows real-time visualization of data related to bicycle journeys within the city for a specific day (2024-10-24). It provides a dynamic representation of cyclists' movements, with routes traced on the map, enabling the tracking of journey intensity. Based on the density of these journeys in specific areas, points are displayed on the map: they appear small when there are few passages and increase in size proportionally as the density of cyclists grows. This visualization system helps better understand traffic flows and identify high-activity areas, facilitating the analysis of bike journey distribution in the city during this particular day. This approach enables quick recognition of trends and highlights areas to monitor, providing a clear and intuitive perspective on bicycle use in the city.
+
 :::
 
 <video width="640" height="360" controls>
@@ -37,19 +42,9 @@ We present a video illustrating the bike traffic density over the course of a mo
 
 # Prédiction du trafic
 
-Découvrez notre carte interactive qui vous permet de visualiser les prévisions du trafic cycliste à Montpellier. Elle met en évidence les zones à fort afflux et les moments de la journée les plus actifs pour les cyclistes, basés sur des données historiques.
+Découvrez notre carte interactive qui vous permet d'explorer les prévisions du trafic cycliste à Montpellier pour chaque jour de la semaine. En utilisant des données historiques, cette carte met en évidence les zones à fort afflux de cyclistes. Elle offre une vue d'ensemble des tendances de circulation, permettant d’identifier les zones les plus sollicitées. Grâce à cette visualisation, vous pourrez anticiper les zones susceptibles d’être les plus fréquentées. Cette fonctionnalité permet ainsi une planification plus éclairée et facilite l'optimisation des déplacements cyclistes dans la ville.
 
 <iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0"></iframe>
-
-# À propos
-
-# Sources
-
-Les données utilisées pour cette analyse proviennent de plusieurs sources :
-
-[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): Ce site fournit des informations sur les comptages de vélos (et parfois de piétons) effectués par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
-
-[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap est une carte du monde collaborative et libre, permettant à chacun d'ajouter et de modifier des informations géographiques.
 
 :::
 
@@ -57,7 +52,7 @@ Les données utilisées pour cette analyse proviennent de plusieurs sources :
 
 # Prédiction du trafic
 
-Découvrez notre carte interactive qui vous permet de visualiser les prévisions du trafic cycliste à Montpellier. Elle met en évidence les zones à fort afflux et les moments de la journée les plus actifs pour les cyclistes, basés sur des données historiques.
+Découvrez notre carte interactive qui vous permet d'explorer les prévisions du trafic cycliste à Montpellier pour chaque jour de la semaine. En utilisant des données historiques, cette carte met en évidence les zones à fort afflux de cyclistes. Elle offre une vue d'ensemble des tendances de circulation, permettant d’identifier les zones les plus sollicitées. Grâce à cette visualisation, vous pourrez anticiper les zones susceptibles d’être les plus fréquentées. Cette fonctionnalité permet ainsi une planification plus éclairée et facilite l'optimisation des déplacements cyclistes dans la ville.
 
 <iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0"></iframe>
 
@@ -67,10 +62,8 @@ Découvrez notre carte interactive qui vous permet de visualiser les prévisions
 
 # Traffic Prediction
 
-Discover our interactive map that allows you to visualize the cycling traffic predictions in Montpellier. It highlights areas with high traffic and the times of day when cyclists are most active, based on historical data.
+Discover our interactive map, which allows you to explore the cycling traffic forecasts in Montpellier for each day of the week. Using historical data, this map highlights areas with high cyclist traffic. It provides an overview of traffic trends, helping to identify the most frequented areas. With this visualization, you can anticipate the zones that are likely to be the busiest. This feature enables more informed planning and helps optimize cycling movement within the city.
 
-<iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0">
-
-</iframe>
+<iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0"></iframe>
 
 ::: 
