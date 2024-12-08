@@ -2,11 +2,23 @@
 
 # Retraits et Dépôts des vélos Vélomagg
 
-Découvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à un graphique interactif qui présente, pour chaque jour de la semaine, le nombre de dépôts et de retraits dans chaque station. Cette visualisation permet de suivre l'évolution quotidienne des flux de vélos et de mieux comprendre les variations de fréquentation d'une station à l'autre, offrant ainsi une analyse approfondie des habitudes d'utilisation tout au long de la semaine.
+Explorez les tendances de retrait et de dépôt des vélos Vélomagg à travers un graphique interactif, qui présente, jour par jour, le nombre de dépôts et de retraits dans chaque station. Cette visualisation dynamique permet de suivre l'évolution quotidienne des flux de vélos, offrant ainsi une meilleure compréhension des variations de fréquentation d’une station à l’autre. Elle fournit également une analyse détaillée des habitudes d’utilisation des vélos tout au long de la semaine, permettant de repérer les périodes de forte activité et d'optimiser l'organisation des stations.
 
-<iframe src="graphique_interactif.html" width="1000px" height="1100px"></iframe>
+> ``📊`` Pour visualiser uniquement les retraits ou uniquement les dépôts, il vous suffit de cliquer sur l'option correspondante. En cliquant sur une option, celle-ci disparaîtra, vous permettant ainsi de vous concentrer sur l'autre type de donnée.
+
+<iframe src="graphique_interactif.html" width="1000px" height="1100px" style="display: block; margin-bottom: -20px;"></iframe>
 
 # Passages Moyens aux Éco-Compteurs 
+
+## Qu'est-ce que l'Éco-Compteur ?
+
+Les Éco-Compteurs sont des dispositifs technologiques conçus pour mesurer en temps réel le passage des piétons et des cyclistes dans des zones spécifiques. Ces appareils permettent de collecter des données précieuses sur les comportements de déplacement, contribuant ainsi à une meilleure planification des infrastructures et à une gestion plus efficace de la mobilité.
+
+## Analyse du Passage Moyen devant les Éco-Compteurs à Montpellier en 2024
+
+Le graphe ci-dessous illustre l’intensité du passage moyen des piétons et vélos devant les Éco-Compteurs de la ville de Montpellier, tout au long de l'année 2024. Ces données, collectées directement à partir des dispositifs de comptage installés dans divers quartiers de la ville, permettent de visualiser les variations mensuelles de la fréquentation dans ces zones clés.
+
+Ce graphique offre un aperçu détaillé des tendances de circulation, tout en prenant en compte les facteurs saisonniers qui influencent naturellement la fréquentation. Cela permet d'analyser de manière précise les fluctuations de l'intensité de passage au fil des mois, et de mieux comprendre les comportements de mobilité des habitants de la ville.
 
 <iframe src="average_intensity_month.html" width="900px" height="700px"></iframe>
 
@@ -20,11 +32,23 @@ Découvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à
 
 # Retraits et Dépôts des vélos Vélomagg
 
-Découvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à un graphique interactif qui présente, pour chaque jour de la semaine, le nombre de dépôts et de retraits dans chaque station. Cette visualisation permet de suivre l'évolution quotidienne des flux de vélos et de mieux comprendre les variations de fréquentation d'une station à l'autre, offrant ainsi une analyse approfondie des habitudes d'utilisation tout au long de la semaine.
+Explorez les tendances de retrait et de dépôt des vélos Vélomagg à travers un graphique interactif, qui présente, jour par jour, le nombre de dépôts et de retraits dans chaque station. Cette visualisation dynamique permet de suivre l'évolution quotidienne des flux de vélos, offrant ainsi une meilleure compréhension des variations de fréquentation d’une station à l’autre. Elle fournit également une analyse détaillée des habitudes d’utilisation des vélos tout au long de la semaine, permettant de repérer les périodes de forte activité et d'optimiser l'organisation des stations.
+
+> ``📊`` Pour visualiser uniquement les retraits ou uniquement les dépôts, il vous suffit de cliquer sur l'option correspondante. En cliquant sur une option, celle-ci disparaîtra, vous permettant ainsi de vous concentrer sur l'autre type de donnée.
 
 <iframe src="graphique_interactif.html" width="1000px" height="1100px"></iframe>
 
 # Passages Moyens aux Éco-Compteurs
+
+## Qu'est-ce que l'Éco-Compteur ?
+
+Les Éco-Compteurs sont des dispositifs technologiques conçus pour mesurer en temps réel le passage des piétons et des cyclistes dans des zones spécifiques. Ces appareils permettent de collecter des données précieuses sur les comportements de déplacement, contribuant ainsi à une meilleure planification des infrastructures et à une gestion plus efficace de la mobilité.
+
+## Analyse du Passage Moyen devant les Éco-Compteurs à Montpellier en 2024
+
+Le graphe ci-dessous illustre l’intensité du passage moyen des piétons et vélos devant les Éco-Compteurs de la ville de Montpellier, tout au long de l'année 2024. Ces données, collectées directement à partir des dispositifs de comptage installés dans divers quartiers de la ville, permettent de visualiser les variations mensuelles de la fréquentation dans ces zones clés.
+
+Ce graphique offre un aperçu détaillé des tendances de circulation, tout en prenant en compte les facteurs saisonniers qui influencent naturellement la fréquentation. Cela permet d'analyser de manière précise les fluctuations de l'intensité de passage au fil des mois, et de mieux comprendre les comportements de mobilité des habitants de la ville.
 
 <iframe src="average_intensity_month.html" width="900px" height="700px"></iframe>
 
@@ -38,11 +62,23 @@ Découvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à
 
 # Withdrawals and Deposits of Vélomagg Bikes
 
-Explore the trends of bike withdrawals and deposits at Vélomagg through an interactive chart that shows, for each day of the week, the number of deposits and withdrawals at each station. This visualization allows you to track the daily flow of bikes and better understand station-to-station variations in usage, providing an in-depth analysis of usage patterns throughout the week.
+Explore the trends of bike withdrawals and returns for Vélomagg through an interactive graph that shows, day by day, the number of returns and withdrawals at each station. This dynamic visualization allows you to track the daily flow of bikes, providing a better understanding of the variations in station traffic. It also offers a detailed analysis of bike usage patterns throughout the week, helping to identify peak activity periods and optimize station management.
+
+> ``📊`` To view only the withdrawals or only the deposits, simply click on the corresponding option. By clicking on an option, it will disappear, allowing you to focus on the other type of data.
 
 <iframe src="graphique_interactif.html" width="1000px" height="1100px"></iframe>
 
 # Average Passages at Eco-Counters 
+
+## What is an Eco-Counter?
+
+Eco-Counters are technological devices designed to measure in real time the passage of pedestrians and cyclists in specific areas. These devices collect valuable data on movement behaviors, contributing to better infrastructure planning and more efficient mobility management.
+
+## Analysis of the Average Passage in Front of Eco-Counters in Montpellier in 2024
+
+The graph below illustrates the average passage intensity of pedestrians and cyclists in front of the Eco-Counters in the city of Montpellier throughout the year 2024. These data, collected directly from the counting devices installed in various neighborhoods across the city, provide a view of the monthly variations in foot traffic in these key areas.
+
+This graph offers a detailed overview of circulation trends, while considering the seasonal factors that naturally influence the flow of traffic. It allows for a precise analysis of the fluctuations in passage intensity over the months, and a better understanding of the mobility behaviors of the city's inhabitants.
 
 <iframe src="average_intensity_month.html" width="900px" height="700px"></iframe>
 

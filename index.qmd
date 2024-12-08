@@ -4,7 +4,7 @@
 
 Le site *Pédaler à Montpellier* offre une exploration approfondie du trafic cycliste dans la ville, alliant visualisations interactives et analyses dynamiques des données. Il permet d'examiner les tendances de circulation, d'identifier les périodes de forte affluence et de comprendre les comportements des cyclistes au fil du temps. Grâce à des outils interactifs tels que des vidéos, des cartes et des graphiques, cette plateforme fournit une vue détaillée et enrichissante de l'évolution du trafic cycliste à Montpellier, offrant ainsi une ressource précieuse pour mieux appréhender l’utilisation du vélo dans la ville.
 
-# Densité d'une journée"
+# Densité d'une journée
 
 La vidéo ci-dessous permet de visualiser en temps réel les données relatives aux trajets effectués à vélo au sein de la ville pour une journée spécifique (2024-10-24). Elle offre une représentation dynamique des mouvements des cyclistes, avec des trajets tracés sur la carte, permettant ainsi de suivre l'intensité des déplacements. En fonction de la densité de ces trajets dans des zones précises, des points sont affichés sur la carte : ceux-ci apparaissent de petite taille lorsqu'il y a peu de passages et grandissent proportionnellement lorsque la densité de cyclistes augmente. Ce système de visualisation permet de mieux comprendre les flux de circulation et d'identifier les zones à forte activité, facilitant ainsi l'analyse de la répartition des trajets à vélo dans la ville pendant cette journée. Cette approche permet de percevoir rapidement les tendances et d'identifier les zones à surveiller, offrant ainsi une perspective claire et intuitive de l'utilisation du vélo dans la ville. 
 
