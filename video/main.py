@@ -15,15 +15,10 @@ def main():
     - Les informations sur les courses de vélos depuis un fichier CSV.
     - Les informations géospatiales des compteurs à partir d'un fichier GeoJSON.
     - Les coordonnées des stations depuis un fichier JSON.
-    
-    2. Mise à jour des intensités des compteurs en fonction de la date vidéo spécifiée.
-
+    2. Mise à jour des intensités des compteurs en fonction de la date vidéo spécifiée
     3. Calcul des coordonnées de départ et de retour pour chaque course et ajout à un DataFrame.
-
     4. Calcul du trajet le plus court entre les stations de départ et de retour en utilisant un graphe du réseau cycliste de Montpellier.
-
     5. Création d'une animation des trajets avec les données géographiques et les informations des compteurs.
-
     6. Sauvegarde de l'animation générée sous forme de fichier vidéo au format MP4.
 
     Modules utilisés :
