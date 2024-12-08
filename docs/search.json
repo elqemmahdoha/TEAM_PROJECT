@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "À propos",
     "section": "",
-    "text": "Notre équipe est composée de trois étudiants en Master 1 Statistiques et Sciences des Données à l’Université de Montpellier, animés par notre passion commune pour l’analyse de données et l’innovation. Chacun de nous apporte ses compétences et son expertise pour faire avancer notre projet. Voici les membres principaux de l’équipe:\n\nLaura CLETZ\nDoha EL QEMMAH\nLouison GILLET\n\n\n\n\nNous restons à votre disposition pour toute question, collaboration ou suggestion. N’hésitez pas à nous contacter via les informations ci-dessous :\n\nLinkedIn (Laura CLETZ) : https://github.com/lcletz\nLinkedIn (Doha EL QEMMAH) : https://github.com/elqemmahdoha\nLinkedIn (Louison GILLET) : https://github.com/LouisonGillet"
+    "text": "Notre équipe est composée de trois étudiants en Master 1 Statistiques et Sciences des Données à l’Université de Montpellier, animés par notre passion commune pour l’analyse de données et l’innovation. Chacun de nous apporte ses compétences et son expertise pour faire avancer notre projet. Voici les membres principaux de l’équipe:\n\nLaura CLETZ\nDoha EL QEMMAH\nLouison GILLET\n\n\n\n\nNous restons à votre disposition pour toute question, collaboration ou suggestion. N’hésitez pas à nous contacter via les informations ci-dessous :\n\nGitHub (Laura CLETZ) : https://github.com/lcletz\nGitHub (Doha EL QEMMAH) : https://github.com/elqemmahdoha\nGitHub (Louison GILLET) : https://github.com/LouisonGillet"
   },
   {
     "objectID": "about.html#équipe-du-projet",
@@ -18,7 +18,7 @@
     "href": "about.html#contacts",
     "title": "À propos",
     "section": "",
-    "text": "Nous restons à votre disposition pour toute question, collaboration ou suggestion. N’hésitez pas à nous contacter via les informations ci-dessous :\n\nLinkedIn (Laura CLETZ) : https://github.com/lcletz\nLinkedIn (Doha EL QEMMAH) : https://github.com/elqemmahdoha\nLinkedIn (Louison GILLET) : https://github.com/LouisonGillet"
+    "text": "Nous restons à votre disposition pour toute question, collaboration ou suggestion. N’hésitez pas à nous contacter via les informations ci-dessous :\n\nGitHub (Laura CLETZ) : https://github.com/lcletz\nGitHub (Doha EL QEMMAH) : https://github.com/elqemmahdoha\nGitHub (Louison GILLET) : https://github.com/LouisonGillet"
   },
   {
     "objectID": "index.html",
@@ -32,6 +32,20 @@
     "href": "stat.html",
     "title": "Retraits et Dépôts des vélos Vélomagg",
     "section": "",
-    "text": "Retraits et Dépôts des vélos Vélomagg\nDécouvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à un graphique interactif qui présente, pour chaque jour de la semaine, le nombre de dépôts et de retraits dans chaque station. Cette visualisation permet de suivre l’évolution quotidienne des flux de vélos et de mieux comprendre les variations de fréquentation d’une station à l’autre, offrant ainsi une analyse approfondie des habitudes d’utilisation tout au long de la semaine.\n\n\n\n\nPassages Moyens aux Éco-Compteurs\n\n\n\n\nIntensité Mensuelle des Compteurs\n\n\n\n\n\n\n Back to top"
+    "text": "Explorez les tendances de retrait et de dépôt des vélos Vélomagg à travers un graphique interactif, qui présente, jour par jour, le nombre de dépôts et de retraits dans chaque station. Cette visualisation dynamique permet de suivre l’évolution quotidienne des flux de vélos, offrant ainsi une meilleure compréhension des variations de fréquentation d’une station à l’autre. Elle fournit également une analyse détaillée des habitudes d’utilisation des vélos tout au long de la semaine, permettant de repérer les périodes de forte activité et d’optimiser l’organisation des stations.\n\n📊 Pour visualiser uniquement les retraits ou uniquement les dépôts, il vous suffit de cliquer sur l’option correspondante. En cliquant sur une option, celle-ci disparaîtra, vous permettant ainsi de vous concentrer sur l’autre type de donnée."
+  },
+  {
+    "objectID": "stat.html#quest-ce-que-léco-compteur",
+    "href": "stat.html#quest-ce-que-léco-compteur",
+    "title": "Retraits et Dépôts des vélos Vélomagg",
+    "section": "Qu’est-ce que l’Éco-Compteur ?",
+    "text": "Qu’est-ce que l’Éco-Compteur ?\nLes Éco-Compteurs sont des dispositifs technologiques conçus pour mesurer en temps réel le passage des piétons et des cyclistes dans des zones spécifiques. Ces appareils permettent de collecter des données précieuses sur les comportements de déplacement, contribuant ainsi à une meilleure planification des infrastructures et à une gestion plus efficace de la mobilité."
+  },
+  {
+    "objectID": "stat.html#analyse-du-passage-moyen-devant-les-éco-compteurs-à-montpellier-en-2024",
+    "href": "stat.html#analyse-du-passage-moyen-devant-les-éco-compteurs-à-montpellier-en-2024",
+    "title": "Retraits et Dépôts des vélos Vélomagg",
+    "section": "Analyse du Passage Moyen devant les Éco-Compteurs à Montpellier en 2024",
+    "text": "Analyse du Passage Moyen devant les Éco-Compteurs à Montpellier en 2024\nLe graphe ci-dessous illustre l’intensité du passage moyen des piétons et vélos devant les Éco-Compteurs de la ville de Montpellier, tout au long de l’année 2024. Ces données, collectées directement à partir des dispositifs de comptage installés dans divers quartiers de la ville, permettent de visualiser les variations mensuelles de la fréquentation dans ces zones clés.\nCe graphique offre un aperçu détaillé des tendances de circulation, tout en prenant en compte les facteurs saisonniers qui influencent naturellement la fréquentation. Cela permet d’analyser de manière précise les fluctuations de l’intensité de passage au fil des mois, et de mieux comprendre les comportements de mobilité des habitants de la ville."
   }
 ]

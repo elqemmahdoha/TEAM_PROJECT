@@ -24,6 +24,10 @@ Ce graphique offre un aperçu détaillé des tendances de circulation, tout en p
 
 # Intensité Mensuelle des Compteurs
 
+Ce diagramme illustre l'intensité moyenne des compteurs tout au long de l'année. Chaque axe représente un mois spécifique, et la valeur le long de chaque axe reflète l'intensité moyenne des compteurs pour ce mois. En observant ce graphique, vous pouvez rapidement identifier les périodes de forte ou faible activité. Par exemple, un mois avec une valeur élevée indique une période d'intensité accrue, tandis qu'un mois avec une valeur plus basse signale une activité moins importante. Ce graphique permet ainsi de visualiser les variations mensuelles de l'intensité des compteurs, facilitant l'analyse des fluctuations saisonnières ou des tendances spécifiques à l'année.
+
+> ``📈`` Double-cliquez sur une station dans la légende pour isoler ses données.
+
 <iframe src="polar_figure.html" width="900px" height="700px"></iframe>
 
 :::
@@ -54,6 +58,10 @@ Ce graphique offre un aperçu détaillé des tendances de circulation, tout en p
 
 # Intensité Mensuelle des Compteurs
 
+Ce diagramme illustre l'intensité moyenne des compteurs tout au long de l'année. Chaque axe représente un mois spécifique, et la valeur le long de chaque axe reflète l'intensité moyenne des compteurs pour ce mois. En observant ce graphique, vous pouvez rapidement identifier les périodes de forte ou faible activité. Par exemple, un mois avec une valeur élevée indique une période d'intensité accrue, tandis qu'un mois avec une valeur plus basse signale une activité moins importante. Ce graphique permet ainsi de visualiser les variations mensuelles de l'intensité des compteurs, facilitant l'analyse des fluctuations saisonnières ou des tendances spécifiques à l'année.
+
+> ``📈`` Double-cliquez sur une station dans la légende pour isoler ses données.
+
 <iframe src="polar_figure.html" width="900px" height="700px"></iframe>
 
 :::
@@ -83,6 +91,10 @@ This graph offers a detailed overview of circulation trends, while considering t
 <iframe src="average_intensity_month.html" width="900px" height="700px"></iframe>
 
 # Monthly Intensity of Counters
+
+This chart illustrates the average intensity of the meters throughout the year. Each axis represents a specific month, and the value along each axis reflects the average intensity of the meters for that month. By observing this graph, you can quickly identify periods of high or low activity. For example, a month with a high value indicates a period of increased intensity, while a month with a lower value signals less activity. This chart allows you to visualize the monthly variations in meter intensity, making it easier to analyze seasonal fluctuations or trends specific to the year.
+
+> ``📈`` Double-click on a station in the legend to isolate its data.
 
 <iframe src="polar_figure.html" width="900px" height="700px"></iframe>
 

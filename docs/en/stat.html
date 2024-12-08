@@ -137,7 +137,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#withdrawals-and-deposits-of-vélomagg-bikes" id="toc-withdrawals-and-deposits-of-vélomagg-bikes" class="nav-link active" data-scroll-target="#withdrawals-and-deposits-of-vélomagg-bikes">Withdrawals and Deposits of Vélomagg Bikes</a></li>
-  <li><a href="#average-passages-at-eco-counters" id="toc-average-passages-at-eco-counters" class="nav-link" data-scroll-target="#average-passages-at-eco-counters">Average Passages at Eco-Counters</a></li>
+  <li><a href="#average-passages-at-eco-counters" id="toc-average-passages-at-eco-counters" class="nav-link" data-scroll-target="#average-passages-at-eco-counters">Average Passages at Eco-Counters</a>
+  <ul class="collapse">
+  <li><a href="#what-is-an-eco-counter" id="toc-what-is-an-eco-counter" class="nav-link" data-scroll-target="#what-is-an-eco-counter">What is an Eco-Counter?</a></li>
+  <li><a href="#analysis-of-the-average-passage-in-front-of-eco-counters-in-montpellier-in-2024" id="toc-analysis-of-the-average-passage-in-front-of-eco-counters-in-montpellier-in-2024" class="nav-link" data-scroll-target="#analysis-of-the-average-passage-in-front-of-eco-counters-in-montpellier-in-2024">Analysis of the Average Passage in Front of Eco-Counters in Montpellier in 2024</a></li>
+  </ul></li>
   <li><a href="#monthly-intensity-of-counters" id="toc-monthly-intensity-of-counters" class="nav-link" data-scroll-target="#monthly-intensity-of-counters">Monthly Intensity of Counters</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/stat.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/elqemmahdoha/TEAM_PROJECT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -154,17 +158,33 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="withdrawals-and-deposits-of-vélomagg-bikes" class="level1">
 <h1>Withdrawals and Deposits of Vélomagg Bikes</h1>
-<p>Explore the trends of bike withdrawals and deposits at Vélomagg through an interactive chart that shows, for each day of the week, the number of deposits and withdrawals at each station. This visualization allows you to track the daily flow of bikes and better understand station-to-station variations in usage, providing an in-depth analysis of usage patterns throughout the week.</p>
+<p>Explore the trends of bike withdrawals and returns for Vélomagg through an interactive graph that shows, day by day, the number of returns and withdrawals at each station. This dynamic visualization allows you to track the daily flow of bikes, providing a better understanding of the variations in station traffic. It also offers a detailed analysis of bike usage patterns throughout the week, helping to identify peak activity periods and optimize station management.</p>
+<blockquote class="blockquote">
+<p><code>📊</code> To view only the withdrawals or only the deposits, simply click on the corresponding option. By clicking on an option, it will disappear, allowing you to focus on the other type of data.</p>
+</blockquote>
 <iframe src="graphique_interactif.html" width="1000px" height="1100px">
 </iframe>
 </section>
 <section id="average-passages-at-eco-counters" class="level1">
 <h1>Average Passages at Eco-Counters</h1>
+<section id="what-is-an-eco-counter" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-an-eco-counter">What is an Eco-Counter?</h2>
+<p>Eco-Counters are technological devices designed to measure in real time the passage of pedestrians and cyclists in specific areas. These devices collect valuable data on movement behaviors, contributing to better infrastructure planning and more efficient mobility management.</p>
+</section>
+<section id="analysis-of-the-average-passage-in-front-of-eco-counters-in-montpellier-in-2024" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-of-the-average-passage-in-front-of-eco-counters-in-montpellier-in-2024">Analysis of the Average Passage in Front of Eco-Counters in Montpellier in 2024</h2>
+<p>The graph below illustrates the average passage intensity of pedestrians and cyclists in front of the Eco-Counters in the city of Montpellier throughout the year 2024. These data, collected directly from the counting devices installed in various neighborhoods across the city, provide a view of the monthly variations in foot traffic in these key areas.</p>
+<p>This graph offers a detailed overview of circulation trends, while considering the seasonal factors that naturally influence the flow of traffic. It allows for a precise analysis of the fluctuations in passage intensity over the months, and a better understanding of the mobility behaviors of the city’s inhabitants.</p>
 <iframe src="average_intensity_month.html" width="900px" height="700px">
 </iframe>
 </section>
+</section>
 <section id="monthly-intensity-of-counters" class="level1">
 <h1>Monthly Intensity of Counters</h1>
+<p>This chart illustrates the average intensity of the meters throughout the year. Each axis represents a specific month, and the value along each axis reflects the average intensity of the meters for that month. By observing this graph, you can quickly identify periods of high or low activity. For example, a month with a high value indicates a period of increased intensity, while a month with a lower value signals less activity. This chart allows you to visualize the monthly variations in meter intensity, making it easier to analyze seasonal fluctuations or trends specific to the year.</p>
+<blockquote class="blockquote">
+<p><code>📈</code> Double-click on a station in the legend to isolate its data.</p>
+</blockquote>
 <iframe src="polar_figure.html" width="900px" height="700px">
 </iframe>
 
