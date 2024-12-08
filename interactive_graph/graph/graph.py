@@ -1,29 +1,26 @@
-import pandas as pd
 import plotly.graph_objects as go
+from graph_data import load_graph_data
 from plotly.subplots import make_subplots
 import locale
 locale.setlocale(locale.LC_TIME, 'fr_FR.UTF-8')
-# Importation des données des courses Velomagg
-rd_velomagg = pd.read_csv("data/video/courses/TAM_MMM_CoursesVelomagg.csv", encoding="utf-8-sig")
 
-# Correction de l'encodage des caractères pour faire disparaître les caractères spéciaux
-def correct_encoding(value):
-    if isinstance(value, str):
-        return value.encode("latin1", errors="replace").decode("utf-8", errors="replace")
-    return value
-
-rd_velomagg = rd_velomagg.apply(lambda col: col.apply(correct_encoding) if col.dtype == "object" else col)
-
-rd_velomagg["Date"] = pd.to_datetime(rd_velomagg["Departure"]).dt.date
-# Choix des dates de la semaine à visualiser (mêmes dates que celles des données des compteurs)
-date_debut = pd.to_datetime("2024-03-18").date()
-date_fin = pd.to_datetime("2024-03-24").date()
-
-rd_velomagg = rd_velomagg[(rd_velomagg["Date"] >= date_debut) & (rd_velomagg["Date"] <= date_fin)]
-dates = pd.date_range(date_debut, date_fin).date # Création de la liste des dates de la semaine
-weekdays = {date.strftime("%A"): date for date in dates} # Création d'un dictionnaire pour associer les jours de la semaine aux dates en français
 # Création d'un graphique interactif pour visualiser les retraits et dépôts des Vélomaggs
 def plot_interactive_graph(selected_day="lundi", show="both"):
+    """
+    Création d'un graphique interactif pour visualiser les retraits et dépôts des Vélomaggs.
+    
+    Parameters
+    ----------
+    selected_day : str
+        Jour de la semaine à afficher
+        show : str
+        
+    Returns
+    -------
+    go.Figure
+        Graphique interactif des retraits et dépôts des Vélomaggs
+    """
+    rd_velomagg, weekdays = load_graph_data() # Chargement des données pour les graphiques interactifs
     fig = make_subplots(rows=1, cols=1) # Création d'une figure avec un seul subplot
 
     for idx, (jour, date) in enumerate(weekdays.items()):
@@ -108,6 +105,5 @@ def plot_interactive_graph(selected_day="lundi", show="both"):
         ],
     )
 
-    fig.write_html("docs/graphique_interactif.html") # Sauvegarde du graphique interactif
-
-plot_interactive_graph(selected_day="lundi", show="both")
+    fig.write_html("docs/graphique_interactif.html") # Sauvegarde du graphique interactif 
+    return fig
