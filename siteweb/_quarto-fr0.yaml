@@ -32,7 +32,9 @@ website:
       - icon: github
         href: https://github.com/elqemmahdoha/TEAM_PROJECT
         text: GitHub
-    
+
+lang: fr 
+
 format:
   html:
     smooth-scroll: true
