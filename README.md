@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Montpellier à vélo</h1>
+<h1 style="text-align: center;">Pédaler à Montpellier</h1>
 
 Bienvenue sur la page source du projet **Pédaler à Montpellier** !
 
