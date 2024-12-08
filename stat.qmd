@@ -1,8 +1,4 @@
----
-titre: "Description graphiques des données"
-output: html
----
-::: {.content-visible when-profile="fr0,fr"}
+::: {.content-visible when-profile="fr0"}
 
 # Retraits et Dépôts des vélos Vélomagg
 
@@ -20,8 +16,29 @@ Découvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à
 
 <iframe src="polar_figure.html" width="100%" height="500px">
 </iframe>
+
 :::
 
+::: {.content-visible when-profile="fr"}
+
+# Retraits et Dépôts des vélos Vélomagg
+
+Découvrez les tendances de retrait et de dépôt des vélos Vélomagg grâce à un graphique interactif qui présente, pour chaque jour de la semaine, le nombre de dépôts et de retraits dans chaque station. Cette visualisation permet de suivre l'évolution quotidienne des flux de vélos et de mieux comprendre les variations de fréquentation d'une station à l'autre, offrant ainsi une analyse approfondie des habitudes d'utilisation tout au long de la semaine.
+
+<iframe src="graphique_interactif.html" width="100%" height="900px">
+</iframe>
+
+# Moyenne des intensités par mois 
+
+<iframe src="average_intensity_month.html" width="100%" height="500px">
+</iframe>
+
+# Figure 
+
+<iframe src="polar_figure.html" width="100%" height="500px">
+</iframe>
+
+:::
 
 ::: {.content-visible when-profile="en"}
 # Withdrawals and Deposits of Vélomagg Bikes
@@ -40,4 +57,5 @@ Explore the trends of bike withdrawals and deposits at Vélomagg through an inte
 
 <iframe src="polar_figure.html" width="100%" height="500px">
 </iframe>
+
 :::

@@ -1,8 +1,3 @@
----
-execute: 
-  echo: false
----
-
 ::: {.content-visible when-profile="fr"}
 
 # Introduction
@@ -66,16 +61,6 @@ Découvrez notre carte interactive qui vous permet de visualiser les prévisions
 
 <iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0"></iframe>
 
-# À propos
-
-# Sources
-
-Les données utilisées pour cette analyse proviennent de plusieurs sources :
-
-[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): Ce site fournit des informations sur les comptages de vélos (et parfois de piétons) effectués par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
-
-[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap est une carte du monde collaborative et libre, permettant à chacun d'ajouter et de modifier des informations géographiques.
-
 :::
 
 ::: {.content-visible when-profile="en"}
@@ -87,15 +72,5 @@ Discover our interactive map that allows you to visualize the cycling traffic pr
 <iframe src="mtp_interactive.html" width="100%" height="500px" frameborder="0">
 
 </iframe>
-
-# About
-
-# Sources
-
-The data used for this analysis comes from several sources:
-
-[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): This website provides information on bicycle (and sometimes pedestrian) counts collected by eco-counters in operation across the Montpellier Metropolitan area.
-
-[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap is a collaborative and open map of the world, allowing anyone to add and edit geographical information.
 
 ::: 

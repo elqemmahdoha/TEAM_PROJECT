@@ -1,6 +1,5 @@
 /* Styles CSS pour la Table des matières (TOC) */
 body {
-  flex-direction: row;
   margin: 0;
   padding: 0;
   height: 100vh; /* Assure que la page couvre toute la hauteur de la fenêtre */
@@ -11,47 +10,19 @@ body {
   font-weight: bold;
 }
 
-/* Style pour le conteneur principal de la TOC */
-.zindex-over-content.quarto-sidebar-toggle {
-  width: 200px;
-  position: fixed;
-  top: 63px;
-  left: 858.6px;
-  background-color: #fff; /* Fond blanc pour la TOC */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
-  z-index: 1000; /* S'assurez que la TOC soit au-dessus des autres éléments */
-  transition: all 0.3s ease; /* Transition douce pour l'animation */
-  border-radius: 8px; /* Bord arrondi pour un look plus moderne */
+/* Positionner le toggle à gauche */
+.quarto-reader-toggle-btn {
+  position: absolute;
+  top: 68px; 
+  left: 0;  
+  z-index: 1001;  /* S'assurer que le toggle reste au-dessus des autres éléments */
+  background-color: #970a74;
+  padding: 10px; /* Espace autour de l'icône */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  border-radius: 6px;
+  cursor: pointer;  /* Pour indiquer que c'est cliquable */
 }
 
-/* Style pour le titre de la TOC */
-.quarto-sidebar-toggle-title {
-  background-color: #f1f1f1; /* Fond gris clair pour le titre */
-  padding: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between; /* Espacement entre le texte et l'icône */
-  align-items: center;
-  border-bottom: 1px solid #ddd; /* Séparation subtile entre le titre et la liste */
-}
-
-/* Effet survol pour le titre de la TOC */
-.quarto-sidebar-toggle-title:hover {
-  background-color: #e9ecef;
-}
-
-/* Style pour la liste de la TOC (table des matières) */
-.sidebar.margin-sidebar.notransition.quarto-sidebar-toggle-contents {
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: height 0.3s ease, opacity 0.3s ease; /* Animation d'ouverture/fermeture */
-}
-
-/* Lorsque la TOC est ouverte, afficher les éléments */
-.sidebar.margin-sidebar.notransition.quarto-sidebar-toggle-contents.show {
-  height: auto;
-  opacity: 1;
+#quarto-sidebarnav-toggle {
+  display: none;  /* Masque la barre latérale */
 }

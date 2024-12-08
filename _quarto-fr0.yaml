@@ -3,6 +3,7 @@ project:
   render: 
     - index.qmd
     - stat.qmd
+    - about.qmd
 
 website:
   reader-mode: true
@@ -19,9 +20,11 @@ website:
         text: English
     left:
       - href: index.qmd
-        text: Données Visuelles
+        text: Exploration Dynamique
       - href: stat.qmd       
-        text: statistiques
+        text: Comptage Vélomagg
+      - href: about.qmd       
+        text: À propos
     tools:
       - icon: database
         href: https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo

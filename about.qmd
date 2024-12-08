@@ -1,0 +1,107 @@
+::: {.content-visible when-profile="fr0"}
+
+# À propos
+
+## Équipe du projet
+
+Notre équipe est composée de trois étudiants en Master 1 Statistiques et Sciences des Données à l'Université de Montpellier, animés par notre passion commune pour l’analyse de données et l’innovation. Chacun de nous apporte ses compétences et son expertise pour faire avancer notre projet. Voici les membres principaux de l’équipe:
+
+- Laura CLETZ
+- Doha EL QEMMAH
+- Louison GILLET
+
+## Contacts 
+
+Nous restons à votre disposition pour toute question, collaboration ou suggestion. N'hésitez pas à nous contacter via les informations ci-dessous :
+
+- **LinkedIn (Laura CLETZ) :** [https://github.com/lcletz](https://github.com/lcletz)
+- **LinkedIn (Doha EL QEMMAH) :** [https://github.com/elqemmahdoha](https://github.com/elqemmahdoha)
+- **LinkedIn (Louison GILLET) :** [https://github.com/LouisonGillet](https://github.com/LouisonGillet)
+
+# Sources
+
+Les données utilisées pour cette analyse proviennent de plusieurs sources :
+
+[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): Ce site met à disposition des informations sur les comptages de vélos (et parfois de piétons) réalisés par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
+
+[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap est une carte collaborative et libre du monde, permettant à chacun d’ajouter et de modifier des informations géographiques.
+
+La traduction entre l'anglais et le français a été réalisée à l'aide des ressources disponibles sur ces sites web:
+
+[Project Profiles](https://quarto.org/docs/projects/profiles.html): Ce site web vous montre comment les profils de projet vous permettent d'adapter les options, l'environnement et le contenu de vos projets en fonction de différents scénarios.
+
+[A multi-language (German/ English) Quarto website](https://quarto-dev.marioangst.com/en/blog/posts/multi-language-quarto/)
+
+:::
+
+::: {.content-visible when-profile="fr"}
+
+# À propos
+
+## Équipe du projet
+
+Notre équipe est composée de trois étudiants en Master 1 Statistiques et Sciences des Données à l'Université de Montpellier, animés par notre passion commune pour l’analyse de données et l’innovation. Chacun de nous apporte ses compétences et son expertise pour faire avancer notre projet. Voici les membres principaux de l’équipe:
+
+- Laura CLETZ
+- Doha EL QEMMAH
+- Louison GILLET
+
+## Contacts 
+
+Nous restons à votre disposition pour toute question, collaboration ou suggestion. N'hésitez pas à nous contacter via les informations ci-dessous :
+
+- **LinkedIn (Laura CLETZ) :** [https://github.com/lcletz](https://github.com/lcletz)
+- **LinkedIn (Doha EL QEMMAH) :** [https://github.com/elqemmahdoha](https://github.com/elqemmahdoha)
+- **LinkedIn (Louison GILLET) :** [https://github.com/LouisonGillet](https://github.com/LouisonGillet)
+
+# Sources
+
+Les données utilisées pour cette analyse proviennent de plusieurs sources :
+
+[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): Ce site met à disposition des informations sur les comptages de vélos (et parfois de piétons) réalisés par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
+
+[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap est une carte collaborative et libre du monde, permettant à chacun d’ajouter et de modifier des informations géographiques.
+
+La traduction entre l'anglais et le français a été réalisée à l'aide des ressources disponibles sur  ces sites web: 
+
+[Project Profiles](https://quarto.org/docs/projects/profiles.html): Ce site web vous montre comment les profils de projet vous permettent d'adapter les options, l'environnement et le contenu de vos projets en fonction de différents scénarios.
+
+[A multi-language (German/ English) Quarto website](https://quarto-dev.marioangst.com/en/blog/posts/multi-language-quarto/)
+
+:::
+
+::: {.content-visible when-profile="en"}
+
+# About
+
+## Project Team
+
+Our team is made up of three students in the Master’s program in Statistics and Data Science at the University of Montpellier, driven by our shared passion for data analysis and innovation. Each of us brings unique skills and expertise to advance our project. Here are the key members of our team:
+
+- Laura CLETZ
+- Doha EL QEMMAH
+- Louison GILLET
+
+## Contacts 
+
+We are available for any questions, collaborations, or suggestions. Feel free to contact us through the following information:
+
+- **LinkedIn (Laura CLETZ) :** [https://github.com/lcletz](https://github.com/lcletz)
+- **LinkedIn (Doha EL QEMMAH) :** [https://github.com/elqemmahdoha](https://github.com/elqemmahdoha)
+- **LinkedIn (Louison GILLET) :** [https://github.com/LouisonGillet](https://github.com/LouisonGillet)
+
+# Sources
+
+The data used for this analysis comes from several sources:
+
+[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): This website provides information on bike (and occasionally pedestrian) counts conducted by eco-counters in operation within the Montpellier Metropolitan Area.
+
+[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap is a collaborative and free world map, allowing anyone to add and modify geographic information.
+
+The translation between English and French was carried out with the help of the resources available on these websites: 
+
+[Project Profiles](https://quarto.org/docs/projects/profiles.html): This website shows you how project profiles allow you to adapt the options, environment, and content of your projects for different scenarios.
+
+[A multi-language (German/ English) Quarto website](https://quarto-dev.marioangst.com/en/blog/posts/multi-language-quarto/)
+
+:::
