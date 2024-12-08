@@ -2,7 +2,15 @@ import os
 import plotly.express as px
 
 def creer_figure_polaire(polar_data, chemin_polar_figure):
-    """Crée et enregistre la figure polaire des intensités moyennes par mois."""
+    """
+    Crée une figure polaire représentant les intensités moyennes par mois pour chaque compteur 
+    et l'enregistre dans un fichier HTML.
+
+    Arguments :
+        polar_data : DataFrame contenant les colonnes "Intensity", "Month", et "Nom du com".
+        chemin_polar_figure : Chemin où enregistrer le fichier HTML de la figure polaire.
+
+    """
     if os.path.exists(chemin_polar_figure):
         print(f"Le fichier {chemin_polar_figure} existe déjà.")
     else: 
@@ -19,7 +27,15 @@ def creer_figure_polaire(polar_data, chemin_polar_figure):
         fig.write_html(chemin_polar_figure)
 
 def creer_figure_intensite_moyenne(tableau_moyennes, chemin_average_intensity):
-    """Crée et enregistre le graphique de l'intensité moyenne des passages."""
+    """
+    Crée un graphique linéaire représentant l'intensité moyenne des passages par mois 
+    et l'enregistre dans un fichier HTML.
+
+    Arguments :
+        tableau_moyennes : DataFrame contenant les colonnes "Month" et "Average Intensity".
+        chemin_average_intensity : Chemin où enregistrer le fichier HTML de la figure.
+
+    """
     if os.path.exists(chemin_average_intensity):
         print(f"Le fichier {chemin_average_intensity} existe déjà.")
     else:

@@ -53,19 +53,8 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 
 Voici un aperçu de la structure du projet avant et après avoir réorganisé le code en modules Python. 
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <div style="text-align: left; width: 45%;">
-    <img src="images/arbre_avant_modules.PNG" alt="Image gauche" style="width: 100%;">
-  </div>
-  
-  <div style="width: 10%; text-align: center;">
-    <h2>→</h2>
-  </div>
-  
-  <div style="text-align: left; width: 45%;">
-    <img src="images/arbre_apres_module.PNG" alt="Image droite" style="width: 100%;">
-  </div>
-</div>
+![Avant](images/arbre_avant_modules.PNG)
+![Après](images/arbre_apres_module.PNG)
 
 
 

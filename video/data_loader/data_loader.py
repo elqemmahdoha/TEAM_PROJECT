@@ -3,12 +3,32 @@ import pandas as pd
 import json
 
 def load_courses(file_path: str, date_video: str) -> pd.DataFrame:
+    """
+    Charge et filtre les données des courses en fonction d'une date spécifique.
+
+    Arguments :
+        file_path (str) : Chemin du fichier CSV contenant les données des courses.
+        date_video (str) : Date cible au format 'YYYY-MM-DD' pour filtrer les courses.
+
+    Retourne :
+        pd.DataFrame : DataFrame filtré contenant les courses correspondant à la date cible.
+    """
     brut = pd.read_csv(file_path).dropna()
     brut['Departure'] = pd.to_datetime(brut['Departure'], errors='raise')
     courses = brut[brut['Departure'].dt.date == pd.to_datetime(date_video).date()].copy()
     return courses
 
 def load_compteurs(file_path: str) -> gpd.GeoDataFrame:
+    """
+    Charge les données des compteurs à partir d'un fichier GeoJSON et initialise les colonnes nécessaires.
+
+    Arguments :
+        file_path (str) : Chemin du fichier GeoJSON contenant les données des compteurs.
+
+    Retourne :
+        gpd.GeoDataFrame : GeoDataFrame contenant les données des compteurs avec des colonnes supplémentaires :
+                           "numero_serie", "intensity", et "date".
+    """
     compteurs = gpd.read_file(file_path)
     compteurs["numero_serie"] = compteurs["N° Sér_1"].fillna(compteurs["N° Série"])
     compteurs["intensity"] = None
@@ -16,6 +36,16 @@ def load_compteurs(file_path: str) -> gpd.GeoDataFrame:
     return compteurs
 
 def load_coord_stations(json_path: str) -> dict:
+    """
+    Charge les coordonnées des stations à partir d'un fichier JSON.
+
+    Arguments :
+        json_path (str) : Chemin du fichier JSON contenant les coordonnées des stations.
+
+    Retourne :
+        dict : Dictionnaire où chaque clé est le numéro de station, et la valeur est un dictionnaire 
+               contenant le nom, la latitude, et la longitude de la station.
+    """
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     
@@ -28,9 +58,16 @@ def load_coord_stations(json_path: str) -> dict:
     
     return coord_stations
 
-def update_intensity_for_compteurs(compteurs: gpd.GeoDataFrame, date_video) -> gpd.GeoDataFrame:
+def update_intensity_for_compteurs(compteurs: gpd.GeoDataFrame, date_video: str) -> gpd.GeoDataFrame:
     """
-    Met à jour les intensités et les dates des compteurs à partir des fichiers JSON spécifiques.
+    Met à jour les colonnes "intensity" et "date" des compteurs en lisant les fichiers JSON correspondants.
+
+    Arguments :
+        compteurs (gpd.GeoDataFrame) : GeoDataFrame contenant les données des compteurs.
+        date_video (str) : Date cible au format 'YYYY-MM-DD' pour filtrer les intensités des compteurs.
+
+    Retourne :
+        gpd.GeoDataFrame : GeoDataFrame avec les colonnes "intensity" et "date" mises à jour.
     """
     for idx, row in compteurs.iterrows():
         numero_serie = row["numero_serie"]
@@ -44,7 +81,6 @@ def update_intensity_for_compteurs(compteurs: gpd.GeoDataFrame, date_video) -> g
     
                     # Parcourir les lignes et extraire les données nécessaires
                     for i, line in enumerate(lines):
-                        intensity = 0 
                         try:
                             line_data = json.loads(line.strip())  # Charger la ligne comme JSON
                             intensity_observed = line_data.get("intensity", None)
@@ -54,8 +90,7 @@ def update_intensity_for_compteurs(compteurs: gpd.GeoDataFrame, date_video) -> g
                                 date = pd.to_datetime(date_observed.split("/")[0].split("T")[0]).date()
                                 if date == pd.to_datetime(date_video).date():  # Filtrer uniquement pour date_video
                                     if intensity_observed is not None:
-                                        intensity = intensity_observed  # Ajouter l'intensité
-                                        compteurs.at[idx, "intensity"] = intensity
+                                        compteurs.at[idx, "intensity"] = intensity_observed
                                         compteurs.at[idx, "date"] = date
 
                         except json.JSONDecodeError as e:

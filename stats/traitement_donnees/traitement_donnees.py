@@ -4,13 +4,34 @@ import pandas as pd
 from collections import defaultdict
 
 def charger_compteurs(filepath):
-    """Charge le fichier GeoJSON des compteurs et extrait les numéros de série."""
+    """
+    Charge un fichier GeoJSON contenant des données sur les compteurs et extrait les numéros de série des compteurs.
+
+    Arguments :
+        filepath : Le chemin vers le fichier GeoJSON contenant les données des compteurs.
+
+    Retourne :
+        compteurs : Un GeoDataFrame avec les données des compteurs, incluant une nouvelle colonne 'numero_serie'
+                            extraite des colonnes 'N° Sér_1' et 'N° Série'.
+    """
     compteurs = gpd.read_file(filepath)
     compteurs["numero_serie"] = compteurs["N° Sér_1"].fillna(compteurs["N° Série"])
     return compteurs
 
 def charger_intensites_par_mois(compteurs, date_debut, date_fin):
-    """Extrait les intensités des compteurs pour une période donnée et les stocke dans les colonnes des moyennes mensuelles."""
+    """
+    Extrait les intensités des compteurs pour une période donnée et calcule la moyenne mensuelle des intensités,
+    puis stocke ces moyennes dans les colonnes appropriées.
+
+    Arguments :
+        compteurs : Le GeoDataFrame des compteurs contenant une colonne 'numero_serie'.
+        date_debut : La date de début de la période d'analyse.
+        date_fin : La date de fin de la période d'analyse.
+
+    Retourne :
+        compteurs : Le GeoDataFrame mis à jour avec des colonnes pour chaque mois ('mean_01', 'mean_02', etc.)
+                            représentant les moyennes mensuelles des intensités pour chaque compteur.
+    """
     mois_colonnes_moyenne = [f"mean_{str(mois).zfill(2)}" for mois in range(3, 11)]
     for col in mois_colonnes_moyenne:
         compteurs[col] = None
