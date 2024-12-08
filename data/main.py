@@ -6,6 +6,7 @@ from .tri_json import charger_numeros_serie_geojson, filtrer_fichiers_par_numero
 def main():
     """
     Fonction principale pour : 
+        - scraper la page de données de Montpellier Méditerranée Métropole 
         - charger les numéros de série des compteurs, filtrer les fichiers archive_json correspondants, et les copier après nettoyage.
         - charger, corriger, filtrer et sauvegarder le fichier CSV des courses Velomagg.
 
