@@ -16,7 +16,7 @@ def load_map_interactive_data():
     Returns:
         pd.DataFrame: Un DataFrame contenant les données des compteurs triées.
     """
-    weeklyd = pd.read_csv("data/donnees_hebdo.csv", sep=";", na_values="Null", low_memory=False)
+    weeklyd = pd.read_csv("data/files/donnees_hebdo.csv", sep=";", na_values="Null", low_memory=False)
     weeklyd = pd.melt(weeklyd, id_vars=["N° Série", "Latitude", "Longitude"], 
                      value_vars=["18/3", "19/3", "20/3", "21/3", "22/3", "23/3", "24/3"],
                      var_name="Jour", value_name="Intensité")
