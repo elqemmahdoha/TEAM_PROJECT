@@ -1,1 +1,1 @@
-from .fetch_data import scrape_json_and_geojson_links, download_file,  download_files, fetch_all_files
+from .fetch_data import scrape_links, download_file,  download_files, fetch_all_files

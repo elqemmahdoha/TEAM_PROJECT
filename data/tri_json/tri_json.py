@@ -2,7 +2,7 @@ import os
 import json
 import shutil
 
-def charger_numeros_serie_geojson(geojson_path: str) -> list:
+def filtre_geojson(geojson_path: str) -> list:
     """
     Charge le fichier GeoJSON, filtre et trie les numéros de série des compteurs, puis enregistre le résultat.
     
@@ -100,3 +100,101 @@ def copier_et_nettoyer_fichiers(fichiers_selectionnes: list, dossier_fichiers: s
             f.write(lignes_corrigees)  # Réécrire le fichier sans les lignes vides et avec les retours à la ligne corrigés
 
         print(f"Fichier '{fichier}' nettoyé et copié dans '{dossier_destination}'")
+
+def add_stations(file_path):
+    """
+    Ajoute des nouvelles entrées de type Feature au fichier JSON des Stations Velomagg 
+
+    Arguments:
+        file_path (str): Chemin du fichier JSON à modifier.
+    """
+    # Nouvelles fonctionnalités à ajouter
+    new_features = [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [3.869217398604767, 43.62842854135043]
+            },
+            "properties": {
+                "nom": "Fac de Lettres",
+                "secteur": "",
+                "installati": "12 vélos",
+                "commune": "MONTPELLIER",
+                "numero": 38,
+                "type_stati": "sans CB"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [3.871168886060632, 43.63534439935278]
+            },
+            "properties": {
+                "nom": "Vert-Bois",
+                "secteur": "",
+                "installati": "16 vélos",
+                "commune": "MONTPELLIER",
+                "numero": 34,
+                "type_stati": "sans CB"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [3.8727634196650214, 43.609010705140435]
+            },
+            "properties": {
+                "nom": "Saint-Guilhem - Courreau",
+                "secteur": "ligne 4",
+                "installati": "8 vélos",
+                "commune": "MONTPELLIER",
+                "numero": 57,
+                "type_stati": "sans CB"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [3.884182597493091, 43.609754007595754]
+            },
+            "properties": {
+                "nom": "Jean de Beins",
+                "secteur": "",
+                "installati": "16 vélos",
+                "commune": "MONTPELLIER",
+                "numero": 61,
+                "type_stati": "sans CB"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [3.8842150963510873, 43.60137969689591]
+            },
+            "properties": {
+                "nom": "Cité Mion",
+                "secteur": "",
+                "installati": "8 vélos",
+                "commune": "MONTPELLIER",
+                "numero": 24,
+                "type_stati": "sans CB"
+            }
+        }
+    ]
+
+    # Charger le contenu existant
+    with open(file_path, "r", encoding="utf-8") as file:
+        data = json.load(file)
+    
+    # Ajouter les nouvelles fonctionnalités
+    data["features"].extend(new_features)
+    
+    # Sauvegarder les modifications
+    with open(file_path, "w", encoding="utf-8") as file:
+        json.dump(data, file, indent=4, ensure_ascii=False)
+    print(f"Les nouvelles entrées ont été ajoutées à {file_path}.")

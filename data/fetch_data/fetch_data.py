@@ -2,33 +2,38 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-BASE_URL = "https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo"
-DOWNLOAD_FOLDER = os.path.join(os.getcwd(), "data", "video", "compteurs")  # Répertoire local pour stocker les fichiers
+# URLs des pages à scraper
+BASE_URL1 = "https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo"
+BASE_URL2 = "https://data.montpellier3m.fr/dataset/courses-des-velos-velomagg-de-montpellier-mediterranee-metropole"
+BASE_URL3 = "https://data.montpellier3m.fr/dataset/stations-velomagg-de-montpellier-m%C3%A9diterran%C3%A9e-m%C3%A9tropole"
 
-def scrape_json_and_geojson_links():
+# Répertoire local pour stocker les fichiers
+DOWNLOAD_FOLDER = os.path.join(os.getcwd(), "data", "files")
+
+def scrape_links(base_url, file_extensions):
     """
-    Scraper la page de données pour trouver les liens vers les fichiers JSON et GeoJSON.
+    Scraper la page de données pour trouver les liens vers des fichiers avec des extensions spécifiques.
 
-    Cette fonction récupère le contenu HTML de la page spécifiée par `BASE_URL`, 
-    puis recherche tous les liens qui se terminent par `.json` ou `.geojson`.
+    Arguments:
+        base_url (str): URL de la page à scraper.
+        file_extensions (list): Liste des extensions de fichiers à rechercher (par ex. ['.json', '.geojson', '.csv']).
 
     Retourne:
-        list: Une liste des liens vers les fichiers JSON et GeoJSON trouvés sur la page.
-    
+        list: Une liste des liens vers les fichiers trouvés.
+
     Lève:
         RuntimeError: Si la page n'est pas accessible (code de statut HTTP autre que 200).
     """
-    response = requests.get(BASE_URL)
+    response = requests.get(base_url)
     if response.status_code != 200:
-        raise RuntimeError(f"Impossible d'accéder à {BASE_URL} : {response.status_code}")
+        raise RuntimeError(f"Impossible d'accéder à {base_url} : {response.status_code}")
     
     soup = BeautifulSoup(response.text, "html.parser")
     links = []
     
-    # Recherche des liens vers les fichiers JSON et GeoJSON
     for a in soup.find_all("a", href=True):
         href = a["href"]
-        if href.endswith(".json") or href.endswith(".geojson"):  # Filtre pour les fichiers JSON et GeoJSON
+        if any(href.endswith(ext) for ext in file_extensions):  # Vérifie les extensions spécifiées
             links.append(href)
     
     return links
@@ -37,16 +42,12 @@ def download_file(url, filename):
     """
     Télécharge un fichier à partir d'une URL et l'enregistre localement.
 
-    Cette fonction télécharge un fichier depuis l'URL spécifiée et l'enregistre dans le dossier 
-    local défini par `DOWNLOAD_FOLDER` sous le nom de fichier spécifié. Si le fichier existe déjà, 
-    il ne sera pas téléchargé à nouveau.
-
     Arguments:
         url (str): L'URL du fichier à télécharger.
         filename (str): Le nom du fichier tel qu'il doit être enregistré localement.
     """
     filepath = os.path.join(DOWNLOAD_FOLDER, filename)
-    if not os.path.exists(filepath):  # Ne télécharger que si le fichier n'existe pas déjà
+    if not os.path.exists(filepath):
         print(f"Téléchargement de {filename}...")
         response = requests.get(url)
         with open(filepath, "wb") as file:
@@ -56,30 +57,35 @@ def download_file(url, filename):
 
 def download_files(links):
     """
-    Télécharge tous les fichiers JSON et GeoJSON à partir des liens fournis.
-
-    Cette fonction crée d'abord le dossier de téléchargement local si nécessaire, puis
-    télécharge chaque fichier trouvé via les liens donnés en argument. Chaque fichier est
-    téléchargé et enregistré dans `DOWNLOAD_FOLDER`.
+    Télécharge tous les fichiers à partir des liens fournis.
 
     Arguments:
-        links (list): Liste des URLs des fichiers JSON et GeoJSON à télécharger.
+        links (list): Liste des URLs des fichiers à télécharger.
     """
-    os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)  # Créer le dossier si nécessaire
+    os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)
     for link in links:
         filename = os.path.basename(link)
         download_file(link, filename)
 
 def fetch_all_files():
     """
-    Récupère tous les fichiers JSON et GeoJSON à partir des liens scrappés.
-
-    Cette fonction appelle la fonction `scrape_json_and_geojson_links` pour obtenir tous les liens
-    vers les fichiers JSON et GeoJSON disponibles sur la page cible, puis elle utilise `download_files`
-    pour télécharger ces fichiers localement.
-
-    Utilisation:
-        fetch_all_files()  # Récupérer et télécharger tous les fichiers JSON et GeoJSON
+    Récupère et télécharge tous les fichiers JSON, GeoJSON et CSV des pages cibles.
     """
-    links = scrape_json_and_geojson_links()
-    download_files(links)  # Télécharger tous les fichiers JSON et GeoJSON
+    # Scraping des fichiers JSON et GeoJSON pour écocompteurs
+    compteurs_json_geojson_links = scrape_links(BASE_URL1, ['.json', '.geojson'])
+    # Scraping du fichier CSV Courses Velomagg
+    courses_csv_links = scrape_links(BASE_URL2, ['.csv'])
+    # Scraping fu fichier JSON pour Stations Velomagg 
+    stations_json_links = scrape_links(BASE_URL3,['.json'])
+    
+    # Téléchargement de tous les fichiers Json et Geojson compteurs 
+    print("Téléchargement des fichiers JSON et GeoJSON des écocompteurs...")
+    download_files(compteurs_json_geojson_links)
+    
+    # Téléchargement fichier CSV Courses Velomagg 
+    print("Téléchargement fichier CSV Courses Velomagg...")
+    download_files(courses_csv_links)
+
+    # Téléchargement fichier Json Stations Velomagg 
+    print("Téléchargement fichier JSON Stations Velomagg...")
+    download_files(stations_json_links)

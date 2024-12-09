@@ -1,7 +1,7 @@
 import time
 from .fetch_data import fetch_all_files
 from .tri_csv import charger_csv, corriger_encodage, filtrer_donnees, sauvegarder_csv 
-from .tri_json import charger_numeros_serie_geojson, filtrer_fichiers_par_numeros, copier_et_nettoyer_fichiers
+from .tri_json import filtre_geojson, filtrer_fichiers_par_numeros, copier_et_nettoyer_fichiers, add_stations
 
 def main():
     """
@@ -12,16 +12,24 @@ def main():
 
     """
     fetch_all_files()
-    geojson_path = 'data\\video\\compteurs\\MMM_MMM_GeolocCompteurs.geojson'
-    dossier_fichiers = 'data\\video\\compteurs'
-    dossier_destination = 'data\\video\\compteurs\\filtered'
 
-    input_file = 'data\\video\\courses\\TAM_MMM_CoursesVelomagg.csv'
-    output_file = 'data\\video\\courses\\CoursesVelomagg_filtre.csv'
+    # Chemins des fichiers 
+    geojson_path = 'data\\files\\MMM_MMM_GeolocCompteurs.geojson'
+    dossier_fichiers = 'data\\files'
+    dossier_destination = 'data\\files\\filtered'
+
+    input_file = 'data\\files\\TAM_MMM_CoursesVelomagg.csv'
+    output_file = 'data\\files\\filtered\\CoursesVelomagg_filtre.csv'
+
+    # Date du filtre 
     date_debut = "2024-08-01"
 
+    # Ajouter des stations Velomagg 
+    file_path = "data\\files\\MMM_MMM_Velomagg.json"
+    add_stations(file_path)
+
     # Charger les numéros de série à partir du fichier GeoJSON
-    numeros_serie_geojson = charger_numeros_serie_geojson(geojson_path)
+    numeros_serie_geojson = filtre_geojson(geojson_path)
     
     # Filtrer les fichiers à partir des numéros de série
     fichiers_selectionnes = filtrer_fichiers_par_numeros(dossier_fichiers, numeros_serie_geojson)
