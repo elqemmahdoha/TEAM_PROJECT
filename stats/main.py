@@ -43,7 +43,7 @@ def main():
     chemin_polar_figure = os.path.join(dossier_destination, "polar_figure.html")
 
     # Charger les compteurs
-    compteurs = charger_compteurs("data/video/ecocompt/GeolocCompteurs.geojson")
+    compteurs = charger_compteurs("data/files/MMM_MMM_GeolocCompteurs_sorted.geojson")
 
     # Plage de dates
     date_debut = pd.to_datetime("2024-03-01").date()

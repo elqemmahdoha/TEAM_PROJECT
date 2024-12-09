@@ -28,8 +28,6 @@ def main():
     input_file_path = "data\\files\\MMM_MMM_Velomagg.json"
     output_file_path = "data\\files\\filtered\\MMM_MMM_Velomagg_filtered.json"
 
-    add_stations(input_file_path,output_file_path)
-
     # Charger les numéros de série à partir du fichier GeoJSON
     numeros_serie_geojson = filtre_geojson(geojson_path)
     
@@ -51,6 +49,8 @@ def main():
     # Sauvegarder le fichier filtré
     sauvegarder_csv(df_filtered, output_file)
     print(f"Le fichier filtré a été sauvegardé sous {output_file}")
+
+    add_stations(input_file_path,output_file_path)
 
 if __name__ == "__main__":
     start = time.time()

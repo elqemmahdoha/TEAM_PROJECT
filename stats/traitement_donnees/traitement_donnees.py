@@ -40,7 +40,7 @@ def charger_intensites_par_mois(compteurs, date_debut, date_fin):
         numero_serie = row["numero_serie"]
         if pd.notnull(numero_serie):
             try:
-                filepath = f"data/video/ecocompt/filtered/MMM_EcoCompt_{numero_serie}_archive.json"
+                filepath = f"data/files/filtered/MMM_EcoCompt_{numero_serie}_archive.json"
                 with open(filepath, 'r', encoding='utf-8') as f:
                     lines = f.readlines()
                     intensities_by_month = defaultdict(list)

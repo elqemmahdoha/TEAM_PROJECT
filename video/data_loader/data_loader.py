@@ -74,7 +74,7 @@ def update_intensity_for_compteurs(compteurs: gpd.GeoDataFrame, date_video: str)
         if pd.notnull(numero_serie):
             try:
                 # Charger le fichier JSON correspondant
-                filepath = f"data/video/ecocompt/filtered/MMM_EcoCompt_{numero_serie}_archive.json"
+                filepath = f"data/files/filtered/MMM_EcoCompt_{numero_serie}_archive.json"
                 with open(filepath, 'r', encoding='utf-8') as f:
                     # Lire les 100 dernières lignes
                     lines = f.readlines()
