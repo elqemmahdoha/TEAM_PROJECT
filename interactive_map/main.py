@@ -58,7 +58,7 @@ def main():
     
         day_feature_groups.append(feature_group) # Ajout des HeatMap dans la liste des groupes de fonctionnalités (Feature Groups)
 
-    name, lat, lon = load_coord_stations("data/openstreetdata/MMM_MMM_Velomagg.json")
+    name, lat, lon = load_coord_stations("data/files/MMM_MMM_Velomagg.json")
     # Création des marqueurs pour chaque station Velomagg avec des icônes de vélo
     folium.Marker(
         location=[lat, lon], 

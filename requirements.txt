@@ -1,14 +1,8 @@
 geopandas
-json
 osmnx
 pandas
 matplotlib
-os
-shutil
-random
 plotly
-locale
-time
 folium
 branca
 numpy
