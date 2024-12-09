@@ -1,13 +1,13 @@
 project:
   output-dir: ../docs
   render: 
-    - index.qmd
-    - stat.qmd
-    - about.qmd
+    - siteweb/index.qmd
+    - siteweb/stat.qmd
+    - siteweb/about.qmd
 
 website:
   reader-mode: true
-  repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT
+  repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT/tree/main/siteweb
   repo-actions: [source, issue]
   page-navigation: true
   back-to-top-navigation: true
