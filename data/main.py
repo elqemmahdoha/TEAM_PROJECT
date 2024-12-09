@@ -25,8 +25,10 @@ def main():
     date_debut = "2024-08-01"
 
     # Ajouter des stations Velomagg 
-    file_path = "data\\files\\MMM_MMM_Velomagg.json"
-    add_stations(file_path)
+    input_file_path = "data\\files\\MMM_MMM_Velomagg.json"
+    output_file_path = "data\\files\\filtered\\MMM_MMM_Velomagg_filtered.json"
+
+    add_stations(input_file_path,output_file_path)
 
     # Charger les numéros de série à partir du fichier GeoJSON
     numeros_serie_geojson = filtre_geojson(geojson_path)

@@ -101,12 +101,14 @@ def copier_et_nettoyer_fichiers(fichiers_selectionnes: list, dossier_fichiers: s
 
         print(f"Fichier '{fichier}' nettoyé et copié dans '{dossier_destination}'")
 
-def add_stations(file_path):
+def add_stations(input_file_path, output_file_path):
     """
-    Ajoute des nouvelles entrées de type Feature au fichier JSON des Stations Velomagg 
+    Ajoute des nouvelles entrées de type Feature à un fichier JSON existant
+    et enregistre le résultat dans un nouveau fichier.
 
     Arguments:
-        file_path (str): Chemin du fichier JSON à modifier.
+        input_file_path (str): Chemin du fichier JSON source.
+        output_file_path (str): Chemin du fichier JSON où les données mises à jour seront enregistrées.
     """
     # Nouvelles fonctionnalités à ajouter
     new_features = [
@@ -188,13 +190,13 @@ def add_stations(file_path):
     ]
 
     # Charger le contenu existant
-    with open(file_path, "r", encoding="utf-8") as file:
+    with open(input_file_path, "r", encoding="utf-8") as file:
         data = json.load(file)
     
     # Ajouter les nouvelles fonctionnalités
     data["features"].extend(new_features)
     
-    # Sauvegarder les modifications
-    with open(file_path, "w", encoding="utf-8") as file:
+    # Sauvegarder les modifications dans un nouveau fichier
+    with open(output_file_path, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
-    print(f"Les nouvelles entrées ont été ajoutées à {file_path}.")
+    print(f"Les nouvelles entrées ont été ajoutées et sauvegardées dans {output_file_path}.")
