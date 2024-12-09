@@ -8,7 +8,6 @@ project:
 website:
   reader-mode: true
   repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT
-  repo-actions: [source, issue]
   page-navigation: true
   back-to-top-navigation: true
   title: "Pédaler à Montpellier"

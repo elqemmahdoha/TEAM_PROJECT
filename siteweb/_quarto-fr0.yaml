@@ -1,14 +1,13 @@
 project:
   output-dir: ../docs
   render: 
-    - siteweb/index.qmd
-    - siteweb/stat.qmd
-    - siteweb/about.qmd
+    - index.qmd
+    - stat.qmd
+    - about.qmd
 
 website:
   reader-mode: true
-  repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT/tree/main/siteweb
-  repo-actions: [source, issue]
+  repo-url: https://github.com/elqemmahdoha/TEAM_PROJECT
   page-navigation: true
   back-to-top-navigation: true
   title: "Pédaler à Montpellier"
@@ -32,8 +31,8 @@ website:
       - icon: github
         href: https://github.com/elqemmahdoha/TEAM_PROJECT
         text: GitHub
-
-lang: fr 
+    
+lang: fr
 
 format:
   html:
