@@ -22,13 +22,13 @@ Nous restons à votre disposition pour toute question, collaboration ou suggesti
 
 Les données utilisées pour cette analyse proviennent de plusieurs sources :
 
-[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): Ce site met à disposition des informations sur les comptages de vélos (et parfois de piétons) réalisés par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
+[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo) : Ce site met à disposition des informations sur les comptages de vélos (et parfois de piétons) réalisés par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
 
-[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap est une carte collaborative et libre du monde, permettant à chacun d’ajouter et de modifier des informations géographiques.
+[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21) : OpenStreetMap est une carte collaborative et libre du monde, permettant à chacun d’ajouter et de modifier des informations géographiques.
 
 La traduction entre l'anglais et le français a été réalisée à l'aide des ressources disponibles sur ces sites web:
 
-[Project Profiles](https://quarto.org/docs/projects/profiles.html): Ce site web vous montre comment les profils de projet vous permettent d'adapter les options, l'environnement et le contenu de vos projets en fonction de différents scénarios.
+[Project Profiles](https://quarto.org/docs/projects/profiles.html) : Ce site web vous montre comment les profils de projet vous permettent d'adapter les options, l'environnement et le contenu de vos projets en fonction de différents scénarios.
 
 [A multi-language (German/ English) Quarto website](https://quarto-dev.marioangst.com/en/blog/posts/multi-language-quarto/)
 
@@ -58,13 +58,13 @@ Nous restons à votre disposition pour toute question, collaboration ou suggesti
 
 Les données utilisées pour cette analyse proviennent de plusieurs sources :
 
-[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo): Ce site met à disposition des informations sur les comptages de vélos (et parfois de piétons) réalisés par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
+[OPEN DATA 3M](https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo) : Ce site met à disposition des informations sur les comptages de vélos (et parfois de piétons) réalisés par les éco-compteurs en service sur le territoire de la Métropole de Montpellier.
 
-[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21): OpenStreetMap est une carte collaborative et libre du monde, permettant à chacun d’ajouter et de modifier des informations géographiques.
+[OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21) : OpenStreetMap est une carte collaborative et libre du monde, permettant à chacun d’ajouter et de modifier des informations géographiques.
 
 La traduction entre l'anglais et le français a été réalisée à l'aide des ressources disponibles sur  ces sites web: 
 
-[Project Profiles](https://quarto.org/docs/projects/profiles.html): Ce site web vous montre comment les profils de projet vous permettent d'adapter les options, l'environnement et le contenu de vos projets en fonction de différents scénarios.
+[Project Profiles](https://quarto.org/docs/projects/profiles.html) : Ce site web vous montre comment les profils de projet vous permettent d'adapter les options, l'environnement et le contenu de vos projets en fonction de différents scénarios.
 
 [A multi-language (German/ English) Quarto website](https://quarto-dev.marioangst.com/en/blog/posts/multi-language-quarto/)
 
@@ -86,9 +86,9 @@ Our team is made up of three students in the Master’s program in Statistics an
 
 We are available for any questions, collaborations, or suggestions. Feel free to contact us through the following information:
 
-- **GitHub (Laura CLETZ) :** [https://github.com/lcletz](https://github.com/lcletz)
-- **GitHub (Doha EL QEMMAH) :** [https://github.com/elqemmahdoha](https://github.com/elqemmahdoha)
-- **GitHub (Louison GILLET) :** [https://github.com/LouisonGillet](https://github.com/LouisonGillet)
+- **GitHub (Laura CLETZ):** [https://github.com/lcletz](https://github.com/lcletz)
+- **GitHub (Doha EL QEMMAH):** [https://github.com/elqemmahdoha](https://github.com/elqemmahdoha)
+- **GitHub (Louison GILLET):** [https://github.com/LouisonGillet](https://github.com/LouisonGillet)
 
 # Sources
 
