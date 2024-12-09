@@ -1,6 +1,5 @@
 ---
 title: "Pédaler à Montpellier"
-subtitle: "Projet HAX712X - Développement Logiciel"
 author: "CLETZ Laura, EL QEMMAH Doha, GILLET Louison"
 format: 
   revealjs:
@@ -20,19 +19,40 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 1. **Observer** le trafic cycliste dans Montpellier à partir des données fournies par **Montpellier Méditerranée Métropole**.
 2. **Prédire** le trafic cycliste pour les jours à venir grâce à des algorithmes de modélisation.
 
----
+## Site Web
+
+blabla
+
+## Difficultés
+
+### Doha
+- Traduire le site de l'anglais vers le français et vice-versa en utilisant Project Profiles.
+- Placer les fichiers (graphes, vidéos, cartes) dans les bons dossiers et bien les référencer afin qu'ils puissent être affichés sur le site (problème de chemin d'accès).
+
+## Vidéo
+
+blabla 
+
+## Difficultés
+
+### Louison
+- Utiliser **Git** : apprendre et gérer les branches pour collaborer efficacement.
+- Réorganisation du code :
+  - Avant : code monolithique.
+  - Après : organisation en classes et modules Python.
+
+## Avant/Après Réorganisation du Code
+
+Voici un aperçu de la structure du projet avant et après avoir réorganisé le code en modules Python. 
+
+![Avant](images/arbre_avant_modules.PNG)
+![Après](images/arbre_apres_module.PNG)
 
 ## Carte Interactive
 ![](images/screen_map_int.png)  \
 **Données choisies :** données de comptage sur une semaine classique, du 18/03/2024 au 24/03/2024.  \
 **Packages Python :** pandas, json, folium, branca.  \
 **Objectif :** pouvoir prédire les zones les plus (et les moins) fréquentées par les cyclistes suivant le jour de la semaine.
-
-## Vidéo
-
-## Site Web
-
----
 
 ## Difficultés
 
@@ -51,26 +71,10 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 - Lire des dictionnaires json.
 - Comprendre la stylisation CSS. 
 
-## Difficultés
+## Conclusion
 
-### Doha
-- Traduire le site de l'anglais vers le français et vice-versa en utilisant Project Profiles.
-- Placer les fichiers (graphes, vidéos, cartes) dans les bons dossiers et bien les référencer afin qu'ils puissent être affichés sur le site (problème de chemin d'accès).
+(dire qqc sur le fait d'avoir aimé travailler avec ce groupe)
 
-## Difficultés
+### Aller plus loin...
 
-### Louison
-- Utiliser **Git** : apprendre et gérer les branches pour collaborer efficacement.
-- Réorganisation du code :
-  - Avant : code monolithique.
-  - Après : organisation en classes et modules Python.
-
-## Avant/Après Réorganisation du Code
-
-Voici un aperçu de la structure du projet avant et après avoir réorganisé le code en modules Python. 
-
-![Avant](images/arbre_avant_modules.PNG)
-![Après](images/arbre_apres_module.PNG)
-
-
-
+Proposer aux cyclistes le chemin le plus court évitant les zones très fréquentées ?
