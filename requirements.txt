@@ -6,12 +6,11 @@ matplotlib
 os
 shutil
 random
-ipywidgets
+plotly
 locale
 time
 folium
 branca
-shutil
 numpy
 networkx
 bs4 

@@ -11,3 +11,4 @@ cache/
 !bicycle.mp4
 *.json
 *.geojson
+*.csv

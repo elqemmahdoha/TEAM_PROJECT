@@ -7,7 +7,7 @@ def load_map_interactive_data():
     Charge les données des compteurs triées pour l'analyse interactive de la carte.
 
     Le processus de chargement des données comprend les étapes suivantes :
-    1. Charge les données des compteurs à partir d'un fichier CSV.
+    1. Charge les données des compteurs à partir d'un fichier CSV contenant une semaine précise classique.
     2. Réorganise les données pour les regrouper par jour, latitude, et longitude.
     3. Supprime les valeurs manquantes.
     4. Supprime les compteurs trop éloignés.

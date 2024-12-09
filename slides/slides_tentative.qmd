@@ -2,12 +2,13 @@
 title: "Pédaler à Montpellier"
 subtitle: "Projet HAX712X - Développement Logiciel"
 author: "CLETZ Laura, EL QEMMAH Doha, GILLET Louison"
-date: "`r Sys.Date()`"
 format: 
   revealjs:
+    theme: solarized
     slideNumber: true
     transition: slide
     css: styles.css
+    incremental: true
 ---
 
 ## Introduction
@@ -21,7 +22,11 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 
 ---
 
-## Map Interactive
+## Carte Interactive
+![](images/screen_map_int.png)  \
+**Données choisies :** données de comptage sur une semaine classique, du 18/03/2024 au 24/03/2024.  \
+**Packages Python :** pandas, json, folium, branca.  \
+**Objectif :** pouvoir prédire les zones les plus (et les moins) fréquentées par les cyclistes suivant le jour de la semaine.
 
 ## Vidéo
 
@@ -32,18 +37,29 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 ## Difficultés
 
 ### Laura
-
 - Apprendre les particularités de chaque package, surtout folium.
+  ```{.python code-line-numbers="1,3,7,8"}
+  folium.Marker(
+          location=[lat, lon], 
+          icon=folium.Icon(icon="bicycle", 
+                      prefix="fa", icon_color="black", 
+                      color="black", icon_size=(10, 10), 
+                      shadow_size=(0,0)), 
+          popup=folium.Popup(name, parse_html=True), 
+      ).add_to(Montpellier)
+  ```
 - Lire des dictionnaires json.
 - Comprendre la stylisation CSS. 
 
-### Doha
+## Difficultés
 
-- Traduire le site de l'anglais vers le français et vice versa en utilisant Project Profiles.
+### Doha
+- Traduire le site de l'anglais vers le français et vice-versa en utilisant Project Profiles.
 - Placer les fichiers (graphes, vidéos, cartes) dans les bons dossiers et bien les référencer afin qu'ils puissent être affichés sur le site (problème de chemin d'accès).
 
-### Louison
+## Difficultés
 
+### Louison
 - Utiliser **Git** : apprendre et gérer les branches pour collaborer efficacement.
 - Réorganisation du code :
   - Avant : code monolithique.
