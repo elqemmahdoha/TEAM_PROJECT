@@ -14,24 +14,4 @@
     height: 100px; 
     z-index: 1000; 
   }
-  
-.reveal .slide-background {
-    background: linear-gradient(43deg, #9a41d0 0%, #C850C0 44%, #cf9143 99%) !important;
-    background-size: cover;
-  }
 
-.reveal .slides {
-    color: white !important;
-  }
-  
-.reveal .slides h1,
-.reveal .slides h2,
-.reveal .slides h3 {
-    color: white !important; 
-  }
-  
-.reveal p,
-.reveal li {
-    color: white !important;
-  }
-  
