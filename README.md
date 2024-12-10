@@ -107,7 +107,7 @@ rmdir /s /q env #Sous Windows
 ---
 ## 🔏 Documentation
 
-La documentation détaillée, générée par Sphinx est accessible [**ici**](http://127.0.0.1:5500/docs2/build/html/index.html).
+La documentation détaillée, générée par Sphinx est accessible [**ici**](docs2/build/html/index.html).
 
 ---
 ## 📄 Licence 
