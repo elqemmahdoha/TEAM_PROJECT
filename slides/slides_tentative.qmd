@@ -73,7 +73,6 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 
 --- 
 
-### Louison
 - **Git** : apprendre et gérer les branches pour collaborer efficacement.
 - Utiliser une **classe python**
   ```python
@@ -129,4 +128,3 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
   <h1>Merci de votre attention !</h1>
 </div>
-
