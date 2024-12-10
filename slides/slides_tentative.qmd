@@ -65,7 +65,7 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
   <div style="text-align: center;">
    <img src="images/graph_intensite.png" height="350px">
   </div>
-- Figure polaire des intensités par mois pour les 10 compteurs relevant le plus de passage.
+- Figure polaire des intensités mensuelles des 10 compteurs relevant le plus de passage.
 
 ## Difficultés
 

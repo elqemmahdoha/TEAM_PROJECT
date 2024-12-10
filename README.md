@@ -64,8 +64,13 @@ pip install -r requirements.txt
 ```
 Vous disposez désormais de tous les éléments nécessaires pour utiliser notre projet. 
 
-### Étape 4 : Ordre d'installation et visualisation des dossiers
-Afin de pouvoir télécharger l'intégralité des données nécéssaires aux modules, veuillez d'abord lire le contenu du [README.md](https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/data/README.md) du dossier `data` et en lancer la ligne de code. Ensuite, vous pourrez accéder aux autres dossiers dans l'ordre qui vous sied. Il est conseillé de lire les README.md de chaque dossier.
+### Étape 4 : Installer les datas
+L'utilisation des modules `interactive_graph`, `interactive_map`, `stats`, et `video` nécessite l’installation préalable des données nécessaires à leur bon fonctionnement. Pour cela, placez-vous à la racine du projet et exécutez la commande suivante : 
+```bash
+python -m data.main
+```
+Le temps d'exécution sera d'environ 45 secondes. 
+Une fois cette étape terminée, vous pourrez pleinement exploiter et explorer les modules disponibles. Chaque module dispose de sa propre documentation, et des instructions détaillées pour leur utilisation sont fournies dans les sous-répertoires correspondants. 
 
 ### Étape 5 : Désactiver et supprimer l'environnement (facultatif)
 Si vous souhaitez désactiver et supprimer l'environnement créé, suivez ces étapes :  
