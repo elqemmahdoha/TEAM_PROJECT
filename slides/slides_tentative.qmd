@@ -66,17 +66,8 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 
    </div>
   
-
-## Statistiques 
-- Moyenne des intensités de passage des éco-compteurs.
-  <div style="text-align: center;">
-   <img src="images/graph_intensite.png" height="350px">
-  </div>
-- Figure polaire des intensités mensuelles des 10 compteurs relevant le plus de passage.
-
 ## Difficultés
 
-### Doha
 - Traduire le site de l'anglais vers le français et vice-versa en utilisant Project Profiles.
 - Placer les fichiers (graphes, vidéos, cartes) dans les bons dossiers et bien les référencer afin qu'ils puissent être affichés sur le site (problème de chemin d'accès).
 
@@ -114,7 +105,6 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 
 --- 
 
-### Laura
 - Apprendre les particularités de chaque package, surtout folium.
   ```{.python code-line-numbers="1,3,7,8"}
   folium.Marker(
