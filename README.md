@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 Vous disposez désormais de tous les éléments nécessaires pour utiliser notre projet. 
 
-### Étape 4 : Installer les datas
+### Étape 4 : Télécharger les données
 L'utilisation des modules `interactive_graph`, `interactive_map`, `stats`, et `video` nécessite l’installation préalable des données nécessaires à leur bon fonctionnement. Pour cela, placez-vous à la racine du projet et exécutez la commande suivante : 
 ```bash
 python -m data.main
