@@ -20,7 +20,7 @@ Nous restons à votre disposition pour toute question, collaboration ou suggesti
 
 # Documentation
 
-Vous pouvez consulter la documentation de ce site en cliquant sur [Documentation](docs2/build/html/index.html)
+Vous pouvez consulter la documentation de ce site en cliquant sur [Documentation](html/index.html)
 
 # Sources
 
@@ -60,7 +60,7 @@ Nous restons à votre disposition pour toute question, collaboration ou suggesti
 
 # Documentation
 
-Vous pouvez consulter la documentation de ce site en cliquant sur [Documentation](docs2/build/html/index.html)
+Vous pouvez consulter la documentation de ce site en cliquant sur [Documentation](html/index.html)
 
 # Sources
 
@@ -100,7 +100,7 @@ We are available for any questions, collaborations, or suggestions. Feel free to
 
 # Documentation
 
-You can access the documentation of this site by clicking on [Documentation](docs2/build/html/index.html)
+You can access the documentation of this site by clicking on [Documentation](html/index.html)
 
 # Sources
 
