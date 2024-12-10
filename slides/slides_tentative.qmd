@@ -13,6 +13,8 @@ format:
     transition: slide
     css: styles.css
     incremental: true
+    allow-html: true
+    
 ---
 
 ## Introduction
@@ -28,38 +30,83 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 
 blabla
 
-## Difficultés
-
-### Doha
-- Traduire le site de l'anglais vers le français et vice-versa en utilisant Project Profiles.
-- Placer les fichiers (graphes, vidéos, cartes) dans les bons dossiers et bien les référencer afin qu'ils puissent être affichés sur le site (problème de chemin d'accès).
-
-## Vidéo
-
-blabla 
-
-## Difficultés
-
-### Louison
-- Utiliser **Git** : apprendre et gérer les branches pour collaborer efficacement.
-- Réorganisation du code :
-  - Avant : code monolithique.
-  - Après : organisation en classes et modules Python.
-
-## Avant/Après Réorganisation du Code
-
-Voici un aperçu de la structure du projet avant et après avoir réorganisé le code en modules Python. 
-
-![Avant](images/arbre_avant_modules.PNG)
-![Après](images/arbre_apres_module.PNG)
-
 ## Carte Interactive
 ![](images/screen_map_int.png)  \
 **Données choisies :** données de comptage sur une semaine classique, du 18/03/2024 au 24/03/2024.  \
 **Packages Python :** pandas, json, folium, branca.  \
 **Objectif :** pouvoir prédire les zones les plus (et les moins) fréquentées par les cyclistes suivant le jour de la semaine.
 
+## Vidéo
+- Tracer les courses Velomagg pour une date donnée. 
+- Représenter l'intensité des écocompteurs au fil de la journée.
+-  
+  <div style="display: flex; justify-content: space-between; align-items: center; height: 100%;">
+
+   <!-- Image "Avant" -->
+   <div style="text-align: left;">
+    <p style="font-size: 25px; font-style: italic; text-align: center">
+    Début de la vidéo
+    </p>
+    <img src="images/start_video.PNG" height="350px">
+   </div>
+
+   <!-- Image "Après" -->
+   <div style="text-align: right">
+    <p style="font-size: 25px; font-style: italic; text-align: center">
+    Fin de la vidéo
+    </p>
+    <img src="images/end_video.PNG" height="350px">
+   </div>
+
+   </div>
+  
+
+## Statistiques 
+- Moyenne des intensités de passage des éco-compteurs.
+  <div style="text-align: center;">
+   <img src="images/graph_intensite.png" height="350px">
+  </div>
+- Figure polaire des intensités par mois pour les 10 compteurs relevant le plus de passage.
+
 ## Difficultés
+
+### Doha
+- Traduire le site de l'anglais vers le français et vice-versa en utilisant Project Profiles.
+- Placer les fichiers (graphes, vidéos, cartes) dans les bons dossiers et bien les référencer afin qu'ils puissent être affichés sur le site (problème de chemin d'accès).
+
+--- 
+
+### Louison
+- **Git** : apprendre et gérer les branches pour collaborer efficacement.
+- Utiliser une **classe python**
+  ```python
+  class TrajetAnimation:
+  ```
+- Organiser le code en différents **modules**
+  <div style="display: flex; justify-content: space-between; align-items: center; height: 100%;">
+
+   <!-- Image "Avant" -->
+   <div style="text-align: left; margin-top: 20px;">
+    <img src="images/arbre_avant_modules.PNG" height="200px">
+   </div>
+
+   <!-- Flèche SVG fine -->
+   <div style="text-align: center;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 150 50">
+      <!-- Ligne horizontale -->
+      <line x1="0" y1="25" x2="100" y2="25" stroke="black" stroke-width="3"/>
+      <!-- Pointe de flèche -->
+      <polygon points="100,15 100,35 140,25" fill="black"/>
+    </svg>
+   </div>
+
+   <!-- Image "Après" -->
+   <div style="text-align: right; margin-top: 20px;">
+    <img src="images/arbre_apres_module.PNG" height="250px">
+   </div>
+   </div>
+
+--- 
 
 ### Laura
 - Apprendre les particularités de chaque package, surtout folium.
