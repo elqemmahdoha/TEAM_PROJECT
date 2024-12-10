@@ -28,7 +28,6 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 
 ## Site Web
 
-blabla
 
 ## Carte Interactive
 ![](images/screen_map_int.png)  \
@@ -123,13 +122,14 @@ blabla
 - Lire des dictionnaires json.
 - Comprendre la stylisation CSS. 
 
-## Conclusion
+## Pour aller plus loin...
 
-Nous avons apprécié travailler ensemble et aimons le rendu final de notre site,  \
-merci de nous avoir écoutés.
+- recommander des trajets personnalisés pour les cyclistes, optimisés selon leurs préférences (chemins rapides, panoramiques, ou peu fréquentés).
+- étendre nos analyses à des périodes plus longues pour détecter des tendances saisonnières ou des événements exceptionnels.
 
-### Aller plus loin...
+--- 
 
-Proposer aux cyclistes le chemin le plus court évitant les zones très fréquentées ?
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <h1>Merci de votre attention !</h1>
+</div>
 
-AJOUTER PHOTO VELOMAGG OU ECO COMPTEUR FAITE NOUS-MÊMES 
