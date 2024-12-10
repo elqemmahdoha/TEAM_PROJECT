@@ -56,11 +56,18 @@ env\Scripts\activate     # Sous Windows
 ### Étape 3 : Installer les dépendances 
 Installez les bibliothèques nécessaires à l'aide du fichier `requirements.txt` :
 ```bash
+conda install --file requirements.txt
+```
+ou
+```bash
 pip install -r requirements.txt
 ```
 Vous disposez désormais de tous les éléments nécessaires pour utiliser notre projet. 
 
-### Étape 4 : Désactiver et supprimer l'environnement (facultatif)
+### Étape 4 : Ordre d'installation et visualisation des dossiers
+Afin de pouvoir télécharger l'intégralité des données nécéssaires aux modules, veuillez d'abord lire le contenu du [README.md](https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/data/README.md) du dossier `data` et en lancer la ligne de code. Ensuite, vous pourrez accéder aux autres dossiers dans l'ordre qui vous sied. Il est conseillé de lire les README.md de chaque dossier.
+
+### Étape 5 : Désactiver et supprimer l'environnement (facultatif)
 Si vous souhaitez désactiver et supprimer l'environnement créé, suivez ces étapes :  
 
 - Pour `conda` :
@@ -97,4 +104,4 @@ rmdir /s /q env #Sous Windows
 ## 📄 Licence 
 
 Ce projet est sous licence **MIT**.  
-Pour plus d'informations, veuillez consulter le fichier [LICENCE](https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/LICENSE).  
+Pour plus d'informations, veuillez consulter le fichier [LICENSE](https://github.com/elqemmahdoha/TEAM_PROJECT/blob/main/LICENSE).  
