@@ -416,6 +416,46 @@ CLETZ Laura, EL QEMMAH Doha, GILLET Louison
 <h2>Site Web</h2>
 <p>blabla</p>
 </section>
+<section id="carte-interactive" class="slide level2">
+<h2>Carte Interactive</h2>
+<p><img data-src="images/screen_map_int.png"><br>
+<strong>Données choisies :</strong> données de comptage sur une semaine classique, du 18/03/2024 au 24/03/2024.<br>
+<strong>Packages Python :</strong> pandas, json, folium, branca.<br>
+<strong>Objectif :</strong> pouvoir prédire les zones les plus (et les moins) fréquentées par les cyclistes suivant le jour de la semaine.</p>
+</section>
+<section id="vidéo" class="slide level2">
+<h2>Vidéo</h2>
+<ul>
+<li class="fragment">Tracer les courses Velomagg pour une date donnée.</li>
+<li class="fragment">Représenter l’intensité des écocompteurs au fil de la journée.</li>
+<li class="fragment"><div style="display: flex; justify-content: space-between; align-items: center; height: 100%;">
+<!-- Image "Avant" -->
+<div style="text-align: left;">
+<p style="font-size: 25px; font-style: italic; text-align: center">
+Début de la vidéo
+</p>
+<p><img src="images/start_video.PNG" height="350px"></p>
+</div>
+<!-- Image "Après" -->
+<div style="text-align: right">
+<p style="font-size: 25px; font-style: italic; text-align: center">
+Fin de la vidéo
+</p>
+<p><img src="images/end_video.PNG" height="350px"></p>
+</div>
+</div></li>
+</ul>
+</section>
+<section id="statistiques" class="slide level2">
+<h2>Statistiques</h2>
+<ul>
+<li class="fragment">Moyenne des intensités de passage des éco-compteurs.
+<div style="text-align: center;">
+<p><img src="images/graph_intensite.png" height="350px"></p>
+</div></li>
+<li class="fragment">Figure polaire des intensités par mois pour les 10 compteurs relevant le plus de passage.</li>
+</ul>
+</section>
 <section id="difficultés" class="slide level2">
 <h2>Difficultés</h2>
 <h3 id="doha">Doha</h3>
@@ -424,47 +464,43 @@ CLETZ Laura, EL QEMMAH Doha, GILLET Louison
 <li class="fragment">Placer les fichiers (graphes, vidéos, cartes) dans les bons dossiers et bien les référencer afin qu’ils puissent être affichés sur le site (problème de chemin d’accès).</li>
 </ul>
 </section>
-<section id="vidéo" class="slide level2">
-<h2>Vidéo</h2>
-<p>blabla</p>
-</section>
-<section id="difficultés-1" class="slide level2">
-<h2>Difficultés</h2>
+<section class="slide level2">
+
 <h3 id="louison">Louison</h3>
 <ul>
-<li class="fragment">Utiliser <strong>Git</strong> : apprendre et gérer les branches pour collaborer efficacement.</li>
-<li class="fragment">Réorganisation du code :
-<ul>
-<li class="fragment">Avant : code monolithique.</li>
-<li class="fragment">Après : organisation en classes et modules Python.</li>
-</ul></li>
+<li class="fragment"><p><strong>Git</strong> : apprendre et gérer les branches pour collaborer efficacement.</p></li>
+<li class="fragment"><p>Utiliser une <strong>classe python</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="kw">class</span> TrajetAnimation:</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li class="fragment"><p>Organiser le code en différents <strong>modules</strong></p>
+<div style="display: flex; justify-content: space-between; align-items: center; height: 100%;">
+<!-- Image "Avant" -->
+<div style="text-align: left; margin-top: 20px;">
+<img src="images/arbre_avant_modules.PNG" height="200px">
+</div>
+<!-- Flèche SVG fine -->
+<div style="text-align: center;">
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewbox="0 0 150 50"> <!-- Ligne horizontale --> <line x1="0" y1="25" x2="100" y2="25" stroke="black" stroke-width="3"></line> <!-- Pointe de flèche --> <polygon points="100,15 100,35 140,25" fill="black"></polygon> </svg>
+</div>
+<!-- Image "Après" -->
+<div style="text-align: right; margin-top: 20px;">
+<img src="images/arbre_apres_module.PNG" height="250px">
+</div>
+</div></li>
 </ul>
 </section>
-<section id="avantaprès-réorganisation-du-code" class="slide level2">
-<h2>Avant/Après Réorganisation du Code</h2>
-<p>Voici un aperçu de la structure du projet avant et après avoir réorganisé le code en modules Python.</p>
-<p><img data-src="images/arbre_avant_modules.PNG" alt="Avant"> <img data-src="images/arbre_apres_module.PNG" alt="Après"></p>
-</section>
-<section id="carte-interactive" class="slide level2">
-<h2>Carte Interactive</h2>
-<p><img data-src="images/screen_map_int.png"><br>
-<strong>Données choisies :</strong> données de comptage sur une semaine classique, du 18/03/2024 au 24/03/2024.<br>
-<strong>Packages Python :</strong> pandas, json, folium, branca.<br>
-<strong>Objectif :</strong> pouvoir prédire les zones les plus (et les moins) fréquentées par les cyclistes suivant le jour de la semaine.</p>
-</section>
-<section id="difficultés-2" class="slide level2">
-<h2>Difficultés</h2>
+<section class="slide level2">
+
 <h3 id="laura">Laura</h3>
 <ul>
 <li class="fragment"><p>Apprendre les particularités de chaque package, surtout folium.</p>
-<div class="sourceCode" id="cb1" data-code-line-numbers="1,3,7,8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a>folium.Marker(</span>
-<span id="cb1-2"><a href=""></a>        location<span class="op">=</span>[lat, lon], </span>
-<span id="cb1-3"><a href=""></a>        icon<span class="op">=</span>folium.Icon(icon<span class="op">=</span><span class="st">"bicycle"</span>, </span>
-<span id="cb1-4"><a href=""></a>                    prefix<span class="op">=</span><span class="st">"fa"</span>, icon_color<span class="op">=</span><span class="st">"black"</span>, </span>
-<span id="cb1-5"><a href=""></a>                    color<span class="op">=</span><span class="st">"black"</span>, icon_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>), </span>
-<span id="cb1-6"><a href=""></a>                    shadow_size<span class="op">=</span>(<span class="dv">0</span>,<span class="dv">0</span>)), </span>
-<span id="cb1-7"><a href=""></a>        popup<span class="op">=</span>folium.Popup(name, parse_html<span class="op">=</span><span class="va">True</span>), </span>
-<span id="cb1-8"><a href=""></a>    ).add_to(Montpellier)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb2" data-code-line-numbers="1,3,7,8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a>folium.Marker(</span>
+<span id="cb2-2"><a href=""></a>        location<span class="op">=</span>[lat, lon], </span>
+<span id="cb2-3"><a href=""></a>        icon<span class="op">=</span>folium.Icon(icon<span class="op">=</span><span class="st">"bicycle"</span>, </span>
+<span id="cb2-4"><a href=""></a>                    prefix<span class="op">=</span><span class="st">"fa"</span>, icon_color<span class="op">=</span><span class="st">"black"</span>, </span>
+<span id="cb2-5"><a href=""></a>                    color<span class="op">=</span><span class="st">"black"</span>, icon_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>), </span>
+<span id="cb2-6"><a href=""></a>                    shadow_size<span class="op">=</span>(<span class="dv">0</span>,<span class="dv">0</span>)), </span>
+<span id="cb2-7"><a href=""></a>        popup<span class="op">=</span>folium.Popup(name, parse_html<span class="op">=</span><span class="va">True</span>), </span>
+<span id="cb2-8"><a href=""></a>    ).add_to(Montpellier)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li class="fragment"><p>Lire des dictionnaires json.</p></li>
 <li class="fragment"><p>Comprendre la stylisation CSS.</p></li>
 </ul>
