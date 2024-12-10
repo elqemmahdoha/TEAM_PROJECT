@@ -27,7 +27,14 @@ Dans le cadre du module **HAX712X - Développement logiciel** du Master Statisti
 2. **Prédire** le trafic cycliste pour les jours à venir grâce à des algorithmes de modélisation.
 
 ## Site Web
-
+- Utilisation de Project Profiles pour gérer plusieurs versions linguistiques.
+  ```bash
+  ::: {.content-visible when-profile="fr"}
+  Contenu 
+  ::: 
+  ```
+- Séparation du contenu en français et en anglais pour une navigation fluide, avec la possibilité d'ajouter plus de langues à l'avenir.
+- Assurer la cohérence entre les versions et gérer les éléments multilingues.
 
 ## Carte Interactive
 ![](images/screen_map_int.png)  \

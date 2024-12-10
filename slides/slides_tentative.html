@@ -414,6 +414,14 @@ CLETZ Laura, EL QEMMAH Doha, GILLET Louison
 </section>
 <section id="site-web" class="slide level2">
 <h2>Site Web</h2>
+<ul>
+<li class="fragment"><p>Utilisation de Project Profiles pour gérer plusieurs versions linguistiques.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href=""></a><span class="ex">:::</span> {.content-visible when-profile=<span class="st">"fr"</span>}</span>
+<span id="cb1-2"><a href=""></a><span class="ex">Contenu</span> </span>
+<span id="cb1-3"><a href=""></a><span class="ex">:::</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li class="fragment"><p>Séparation du contenu en français et en anglais pour une navigation fluide, avec la possibilité d’ajouter plus de langues à l’avenir.</p></li>
+<li class="fragment"><p>Assurer la cohérence entre les versions et gérer les éléments multilingues.</p></li>
+</ul>
 </section>
 <section id="carte-interactive" class="slide level2">
 <h2>Carte Interactive</h2>
@@ -452,7 +460,7 @@ Fin de la vidéo
 <div style="text-align: center;">
 <p><img src="images/graph_intensite.png" height="350px"></p>
 </div></li>
-<li class="fragment">Figure polaire des intensités par mois pour les 10 compteurs relevant le plus de passage.</li>
+<li class="fragment">Figure polaire des intensités mensuelles des 10 compteurs relevant le plus de passage.</li>
 </ul>
 </section>
 <section id="difficultés" class="slide level2">
@@ -469,7 +477,7 @@ Fin de la vidéo
 <ul>
 <li class="fragment"><p><strong>Git</strong> : apprendre et gérer les branches pour collaborer efficacement.</p></li>
 <li class="fragment"><p>Utiliser une <strong>classe python</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="kw">class</span> TrajetAnimation:</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a><span class="kw">class</span> TrajetAnimation:</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li class="fragment"><p>Organiser le code en différents <strong>modules</strong></p>
 <div style="display: flex; justify-content: space-between; align-items: center; height: 100%;">
 <!-- Image "Avant" -->
@@ -492,14 +500,14 @@ Fin de la vidéo
 <h3 id="laura">Laura</h3>
 <ul>
 <li class="fragment"><p>Apprendre les particularités de chaque package, surtout folium.</p>
-<div class="sourceCode" id="cb2" data-code-line-numbers="1,3,7,8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a>folium.Marker(</span>
-<span id="cb2-2"><a href=""></a>        location<span class="op">=</span>[lat, lon], </span>
-<span id="cb2-3"><a href=""></a>        icon<span class="op">=</span>folium.Icon(icon<span class="op">=</span><span class="st">"bicycle"</span>, </span>
-<span id="cb2-4"><a href=""></a>                    prefix<span class="op">=</span><span class="st">"fa"</span>, icon_color<span class="op">=</span><span class="st">"black"</span>, </span>
-<span id="cb2-5"><a href=""></a>                    color<span class="op">=</span><span class="st">"black"</span>, icon_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>), </span>
-<span id="cb2-6"><a href=""></a>                    shadow_size<span class="op">=</span>(<span class="dv">0</span>,<span class="dv">0</span>)), </span>
-<span id="cb2-7"><a href=""></a>        popup<span class="op">=</span>folium.Popup(name, parse_html<span class="op">=</span><span class="va">True</span>), </span>
-<span id="cb2-8"><a href=""></a>    ).add_to(Montpellier)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb3" data-code-line-numbers="1,3,7,8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a>folium.Marker(</span>
+<span id="cb3-2"><a href=""></a>        location<span class="op">=</span>[lat, lon], </span>
+<span id="cb3-3"><a href=""></a>        icon<span class="op">=</span>folium.Icon(icon<span class="op">=</span><span class="st">"bicycle"</span>, </span>
+<span id="cb3-4"><a href=""></a>                    prefix<span class="op">=</span><span class="st">"fa"</span>, icon_color<span class="op">=</span><span class="st">"black"</span>, </span>
+<span id="cb3-5"><a href=""></a>                    color<span class="op">=</span><span class="st">"black"</span>, icon_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>), </span>
+<span id="cb3-6"><a href=""></a>                    shadow_size<span class="op">=</span>(<span class="dv">0</span>,<span class="dv">0</span>)), </span>
+<span id="cb3-7"><a href=""></a>        popup<span class="op">=</span>folium.Popup(name, parse_html<span class="op">=</span><span class="va">True</span>), </span>
+<span id="cb3-8"><a href=""></a>    ).add_to(Montpellier)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li class="fragment"><p>Lire des dictionnaires json.</p></li>
 <li class="fragment"><p>Comprendre la stylisation CSS.</p></li>
 </ul>
@@ -507,8 +515,8 @@ Fin de la vidéo
 <section id="pour-aller-plus-loin" class="slide level2">
 <h2>Pour aller plus loin…</h2>
 <ul>
-<li class="fragment">recommandation de trajets personnalisés pour les cyclistes, optimisés selon leurs préférences (chemins rapides, panoramiques, ou peu fréquentés).</li>
-<li class="fragment">extension des analyses à des périodes plus longues pour détecter des tendances saisonnières ou des événements exceptionnels.</li>
+<li class="fragment">recommander des trajets personnalisés pour les cyclistes, optimisés selon leurs préférences (chemins rapides, panoramiques, ou peu fréquentés).</li>
+<li class="fragment">étendre nos analyses à des périodes plus longues pour détecter des tendances saisonnières ou des événements exceptionnels.</li>
 </ul>
 </section>
 <section class="slide level2">
