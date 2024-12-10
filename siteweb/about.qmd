@@ -18,10 +18,6 @@ Nous restons à votre disposition pour toute question, collaboration ou suggesti
 - **GitHub (Doha EL QEMMAH) :** [https://github.com/elqemmahdoha](https://github.com/elqemmahdoha)
 - **GitHub (Louison GILLET) :** [https://github.com/LouisonGillet](https://github.com/LouisonGillet)
 
-# Documentation
-
-Vous pouvez consulter la documentation de ce site en cliquant sur [Documentation](html/index.html)
-
 # Sources
 
 Les données utilisées pour cette analyse proviennent de plusieurs sources :
@@ -58,10 +54,6 @@ Nous restons à votre disposition pour toute question, collaboration ou suggesti
 - **GitHub (Doha EL QEMMAH) :** [https://github.com/elqemmahdoha](https://github.com/elqemmahdoha)
 - **GitHub (Louison GILLET) :** [https://github.com/LouisonGillet](https://github.com/LouisonGillet)
 
-# Documentation
-
-Vous pouvez consulter la documentation de ce site en cliquant sur [Documentation](html/index.html)
-
 # Sources
 
 Les données utilisées pour cette analyse proviennent de plusieurs sources :
@@ -97,10 +89,6 @@ We are available for any questions, collaborations, or suggestions. Feel free to
 - **GitHub (Laura CLETZ):** [https://github.com/lcletz](https://github.com/lcletz)
 - **GitHub (Doha EL QEMMAH):** [https://github.com/elqemmahdoha](https://github.com/elqemmahdoha)
 - **GitHub (Louison GILLET):** [https://github.com/LouisonGillet](https://github.com/LouisonGillet)
-
-# Documentation
-
-You can access the documentation of this site by clicking on [Documentation](html/index.html)
 
 # Sources
 
