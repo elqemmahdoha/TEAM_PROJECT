@@ -1,7 +1,29 @@
-Plan 
-- Introduction par Laura
-- Site web par Doha
-- Vidéo par Louison
-- Map interactive par Laura
-- Difficultés : chacun sa part
-- Conclusion par Doha
+Plan pour le passage à l'oral :
+- slide 1 : attendre que tout le monde scanne le QR code
+- slide 2 : introduction par Laura (tout afficher) :
+    - notre but : analyser les densités du trafic piéton et cycliste à Montpellier 
+            afin de prévoir les zones à privilégier ou éviter
+    - nos données : essentiellement les éco-compteurs, les localisations de ceux-ci 
+            et celles des stations Vélomagg
+    - notre organisation : Doha <- site web, Louison <- vidéo, Laura <- carte interactive
+- slide 3 : site web par Doha :
+### (+ dire un truc qui t'a plu)
+- slide 4 : par Doha :
+    - (clic) 
+    - (clic)
+- slide 5 : vidéo par Louison :
+### (+ dire un truc qui t'a plu)
+- slide 6 : par Louison :
+    - (clic)
+    - (3 clics)
+- slide 7 : par Louison :
+###
+- slide 8 : carte interactive par Laura :
+    - expliquer rapidement comment se lit l'image faite avec folium et branca
+    - a aimé chercher à personnaliser et styliser la carte et les graphes,
+            notamment avec les icônes cliquables
+- slide 9 : par Laura : 
+    - (clic) parler brièvement des particularités de folium
+    - (2 clics) redite de ce qui apparait
+- slide 10 : par Doha :
+##

@@ -1,5 +1,10 @@
 ---
 title: "Pédaler à Montpellier"
+title-slide-attributes:
+  data-background-image: "images/QR_Code.png"
+  data-background-position: "top left"
+  data-background-size: "320px"
+  data-background-repeat: "no-repeat"
 author: "CLETZ Laura, EL QEMMAH Doha, GILLET Louison"
 format: 
   revealjs:
@@ -73,8 +78,11 @@ Voici un aperçu de la structure du projet avant et après avoir réorganisé le
 
 ## Conclusion
 
-(dire qqc sur le fait d'avoir aimé travailler avec ce groupe)
+Nous avons apprécié travailler ensemble et aimons le rendu final de notre site,  \
+merci de nous avoir écoutés.
 
 ### Aller plus loin...
 
 Proposer aux cyclistes le chemin le plus court évitant les zones très fréquentées ?
+
+AJOUTER PHOTO VELOMAGG OU ECO COMPTEUR FAITE NOUS-MÊMES 
