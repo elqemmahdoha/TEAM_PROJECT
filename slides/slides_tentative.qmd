@@ -17,14 +17,13 @@ format:
     
 ---
 
-## Introduction
+## Objectif du projet
 
-### Objectif du projet
-
-Dans le cadre du module **HAX712X - Développement logiciel** du Master Statistique et Science des Données à l'Université de Montpellier, ce projet vise à :
+Notre projet vise à :
 
 1. **Observer** la densité du trafic cycliste et piéton à Montpellier à partir des données de comptage.
 2. **Prédire** le trafic cycliste sur une semaine ou un mois.
+3. **Représenter** ces résultats dans un site web complet.
 
 ## Site Web
 - Utilisation de Project Profiles pour gérer plusieurs versions linguistiques.
