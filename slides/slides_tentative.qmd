@@ -41,32 +41,50 @@ Notre projet vise à :
 - Placer les fichiers (graphes, vidéos, cartes) dans les bons dossiers et bien les référencer afin qu'ils puissent être affichés sur le site (problème de chemin d'accès).
 
 ## Vidéo
+### Objectif 
 - Tracer les courses Velomagg pour une date donnée. 
 - Représenter l'intensité des écocompteurs au fil de la journée.
--  
+- Deux étapes : 
+   - Préparation des données 
+   - Animation 
+--- 
+
+### Préparation des données 
+- **Courses Velomagg** : 
+  - retrait des courses peu pertinentes
+  - suppression des courses où station départ = station arrivée 
+- **Ecocompteurs** : 
+  - sélection précise
+  - extraction des intensités dans les fichiers correspondants
+
+--- 
+
+### Animation 
+- calcul des trajets en amont
+- définition d'un pas
+- 
   <div style="display: flex; justify-content: space-between; align-items: center; height: 100%;">
 
    <!-- Image "Avant" -->
    <div style="text-align: left;">
-    <p style="font-size: 25px; font-style: italic; text-align: center">
-    Début de la vidéo
-    </p>
-    <img src="images/start_video.PNG" height="350px">
+   <p style="font-size: 35px; font-style: italic; text-align: center">
+   Début
+   </p>
+   <img src="images/start_video.PNG" height="350px">
    </div>
 
    <!-- Image "Après" -->
    <div style="text-align: right">
-    <p style="font-size: 25px; font-style: italic; text-align: center">
-    Fin de la vidéo
-    </p>
-    <img src="images/end_video.PNG" height="350px">
+   <p style="font-size: 35px; font-style: italic; text-align: center">
+   Fin
+   </p>
+   <img src="images/end_video.PNG" height="350px">
    </div>
 
-   </div>
-  
+  </div>
+
 ## Difficultés
 
-- **Git** : apprendre et gérer les branches pour collaborer efficacement.
 - Utiliser une **classe python**
   ```python
   class TrajetAnimation:
@@ -94,6 +112,7 @@ Notre projet vise à :
     <img src="images/arbre_apres_module.PNG" height="250px">
    </div>
    </div>
+- **Git** : apprendre et gérer les branches pour collaborer efficacement.
 
 ## Carte Interactive
 

@@ -432,23 +432,53 @@ CLETZ Laura, EL QEMMAH Doha, GILLET Louison
 </section>
 <section id="vidéo" class="slide level2">
 <h2>Vidéo</h2>
+<h3 id="objectif">Objectif</h3>
 <ul>
 <li class="fragment">Tracer les courses Velomagg pour une date donnée.</li>
 <li class="fragment">Représenter l’intensité des écocompteurs au fil de la journée.</li>
+<li class="fragment">Deux étapes :
+<ul>
+<li class="fragment">Préparation des données</li>
+<li class="fragment">Animation</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="préparation-des-données">Préparation des données</h3>
+<ul>
+<li class="fragment"><strong>Courses Velomagg</strong> :
+<ul>
+<li class="fragment">retrait des courses peu pertinentes</li>
+<li class="fragment">suppression des courses où station départ = station arrivée</li>
+</ul></li>
+<li class="fragment"><strong>Ecocompteurs</strong> :
+<ul>
+<li class="fragment">sélection précise</li>
+<li class="fragment">extraction des intensités dans les fichiers correspondants</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="animation">Animation</h3>
+<ul>
+<li class="fragment">calcul des trajets en amont</li>
+<li class="fragment">définition d’un pas</li>
 <li class="fragment"><div style="display: flex; justify-content: space-between; align-items: center; height: 100%;">
 <!-- Image "Avant" -->
 <div style="text-align: left;">
-<p style="font-size: 25px; font-style: italic; text-align: center">
-Début de la vidéo
+<p style="font-size: 35px; font-style: italic; text-align: center">
+Début
 </p>
-<p><img src="images/start_video.PNG" height="350px"></p>
+<img src="images/start_video.PNG" height="350px">
 </div>
 <!-- Image "Après" -->
 <div style="text-align: right">
-<p style="font-size: 25px; font-style: italic; text-align: center">
-Fin de la vidéo
+<p style="font-size: 35px; font-style: italic; text-align: center">
+Fin
 </p>
-<p><img src="images/end_video.PNG" height="350px"></p>
+<img src="images/end_video.PNG" height="350px">
 </div>
 </div></li>
 </ul>
@@ -456,7 +486,6 @@ Fin de la vidéo
 <section id="difficultés-1" class="slide level2">
 <h2>Difficultés</h2>
 <ul>
-<li class="fragment"><p><strong>Git</strong> : apprendre et gérer les branches pour collaborer efficacement.</p></li>
 <li class="fragment"><p>Utiliser une <strong>classe python</strong></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a><span class="kw">class</span> TrajetAnimation:</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li class="fragment"><p>Organiser le code en différents <strong>modules</strong></p>
@@ -474,6 +503,7 @@ Fin de la vidéo
 <img src="images/arbre_apres_module.PNG" height="250px">
 </div>
 </div></li>
+<li class="fragment"><p><strong>Git</strong> : apprendre et gérer les branches pour collaborer efficacement.</p></li>
 </ul>
 </section>
 <section id="carte-interactive" class="slide level2">
