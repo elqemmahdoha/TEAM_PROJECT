@@ -33,7 +33,7 @@ Notre projet vise à :
 ## Project profiles
 - **Configuration des profils** :
 - <div style="text-align: left; margin-top: 20px;">
-    <img src="images/yaml.png" height="500px">
+    <img src="images/yml.png" height="500px">
   </div>
 
 ## Project profiles
