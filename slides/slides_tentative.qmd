@@ -26,14 +26,14 @@ Notre projet vise à :
 3. **Représenter** ces résultats dans un site web complet.
 
 ## Site Web
-- Utilisation de Project Profiles pour gérer plusieurs versions linguistiques.
+- ![](images/navbar.png)  
+- Project profiles dans quarto permettent de personnaliser les configurations, les variables ainsi que le contenu en fonction des différents scénarios d'exécution.
+- Utilisation de Project Profiles pour gérer plusieurs versions linguistiques.  
   ```bash
   ::: {.content-visible when-profile="fr"}
   Contenu 
   ::: 
   ```
-- Séparation du contenu en français et en anglais pour une navigation fluide, avec la possibilité d'ajouter plus de langues à l'avenir.
-- Assurer la cohérence entre les versions et gérer les éléments multilingues.
 
 ## Difficultés
 
