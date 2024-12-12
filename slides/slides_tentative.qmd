@@ -5,7 +5,7 @@ title-slide-attributes:
   data-background-position: "top left"
   data-background-size: "320px"
   data-background-repeat: "no-repeat"
-author: "CLETZ Laura, EL QEMMAH Doha, GILLET Louison"
+author: "EL QEMMAH Doha, GILLET Louison, CLETZ Laura"
 format: 
   revealjs:
     theme: solarized
@@ -27,17 +27,34 @@ Notre projet vise à :
 
 ## Site Web
 - ![](images/navbar.png)  
+
 - Project profiles dans quarto permettent de personnaliser les configurations, les variables ainsi que le contenu en fonction des différents scénarios d'exécution.
-- Utilisation de Project Profiles pour gérer plusieurs versions linguistiques.  
+
+## Project profiles
+- **Configuration des profils** :
+- <div style="text-align: left; margin-top: 20px;">
+    <img src="images/yaml.png" height="500px">
+  </div>
+
+## Project profiles
+- **Contenu des profils** :
   ```bash
   ::: {.content-visible when-profile="fr"}
-  Contenu 
+  Contenu en français
   ::: 
+
+  ::: {.content-visible when-profile="en"}
+  Contenu en anglais
+  ::: 
+  ```
+- **Activation des profils** :
+  ```bash
+  quarto render --profile .....
   ```
 
 ## Difficultés
 
-- Traduire le site de l'anglais vers le français et vice-versa en utilisant Project Profiles.
+- Avoir des ressources suffisantes à consulter pour traduire le site de l'anglais vers le français et vice-versa en utilisant Project profiles.
 - Placer les fichiers (graphes, vidéos, cartes) dans les bons dossiers et bien les référencer afin qu'ils puissent être affichés sur le site (problème de chemin d'accès).
 
 ## Vidéo
@@ -135,7 +152,7 @@ Notre projet vise à :
       ).add_to(Montpellier)
   ```
 - Lire des dictionnaires json.
-- Comprendre la stylisation CSS. 
+- Comprendre la stylisation CSS et SCSS. 
 
 ## Pour aller plus loin...
 

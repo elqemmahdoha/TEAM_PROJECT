@@ -10,7 +10,7 @@
 <link href="slides_tentative_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="author" content="CLETZ Laura, EL QEMMAH Doha, GILLET Louison">
+  <meta name="author" content="EL QEMMAH Doha, GILLET Louison, CLETZ Laura">
   <title>Pédaler à Montpellier</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -397,7 +397,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-CLETZ Laura, EL QEMMAH Doha, GILLET Louison 
+EL QEMMAH Doha, GILLET Louison, CLETZ Laura 
 </div>
 </div>
 </div>
@@ -415,19 +415,38 @@ CLETZ Laura, EL QEMMAH Doha, GILLET Louison
 <section id="site-web" class="slide level2">
 <h2>Site Web</h2>
 <ul>
-<li class="fragment"><p><img data-src="images/navbar.png"><br>
-</p></li>
+<li class="fragment"><p><img data-src="images/navbar.png"></p></li>
 <li class="fragment"><p>Project profiles dans quarto permettent de personnaliser les configurations, les variables ainsi que le contenu en fonction des différents scénarios d’exécution.</p></li>
-<li class="fragment"><p>Utilisation de Project Profiles pour gérer plusieurs versions linguistiques.</p>
+</ul>
+</section>
+<section id="project-profiles" class="slide level2">
+<h2>Project profiles</h2>
+<ul>
+<li class="fragment"><strong>Configuration des profils</strong> :</li>
+<li class="fragment"><div style="text-align: left; margin-top: 20px;">
+<p><img src="images/yaml.png" height="500px"></p>
+</div></li>
+</ul>
+</section>
+<section id="project-profiles-1" class="slide level2">
+<h2>Project profiles</h2>
+<ul>
+<li class="fragment"><p><strong>Contenu des profils</strong> :</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href=""></a><span class="ex">:::</span> {.content-visible when-profile=<span class="st">"fr"</span>}</span>
-<span id="cb1-2"><a href=""></a><span class="ex">Contenu</span> </span>
-<span id="cb1-3"><a href=""></a><span class="ex">:::</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb1-2"><a href=""></a><span class="ex">Contenu</span> en français</span>
+<span id="cb1-3"><a href=""></a><span class="ex">:::</span> </span>
+<span id="cb1-4"><a href=""></a></span>
+<span id="cb1-5"><a href=""></a><span class="ex">:::</span> {.content-visible when-profile=<span class="st">"en"</span>}</span>
+<span id="cb1-6"><a href=""></a><span class="ex">Contenu</span> en anglais</span>
+<span id="cb1-7"><a href=""></a><span class="ex">:::</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li class="fragment"><p><strong>Activation des profils</strong> :</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href=""></a><span class="ex">quarto</span> render <span class="at">--profile</span> .....</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
 </section>
 <section id="difficultés" class="slide level2">
 <h2>Difficultés</h2>
 <ul>
-<li class="fragment">Traduire le site de l’anglais vers le français et vice-versa en utilisant Project Profiles.</li>
+<li class="fragment">Avoir des ressources suffisantes à consulter pour traduire le site de l’anglais vers le français et vice-versa en utilisant Project profiles.</li>
 <li class="fragment">Placer les fichiers (graphes, vidéos, cartes) dans les bons dossiers et bien les référencer afin qu’ils puissent être affichés sur le site (problème de chemin d’accès).</li>
 </ul>
 </section>
@@ -488,7 +507,7 @@ Fin
 <h2>Difficultés</h2>
 <ul>
 <li class="fragment"><p>Utiliser une <strong>classe python</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a><span class="kw">class</span> TrajetAnimation:</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a><span class="kw">class</span> TrajetAnimation:</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li class="fragment"><p>Organiser le code en différents <strong>modules</strong></p>
 <div style="display: flex; justify-content: space-between; align-items: center; height: 100%;">
 <!-- Image "Avant" -->
@@ -518,16 +537,16 @@ Fin
 <h2>Difficultés</h2>
 <ul>
 <li class="fragment"><p>Apprendre les particularités de chaque package, surtout folium.</p>
-<div class="sourceCode" id="cb3" data-code-line-numbers="1,3,7,8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a>folium.Marker(</span>
-<span id="cb3-2"><a href=""></a>        location<span class="op">=</span>[lat, lon], </span>
-<span id="cb3-3"><a href=""></a>        icon<span class="op">=</span>folium.Icon(icon<span class="op">=</span><span class="st">"bicycle"</span>, </span>
-<span id="cb3-4"><a href=""></a>                    prefix<span class="op">=</span><span class="st">"fa"</span>, icon_color<span class="op">=</span><span class="st">"black"</span>, </span>
-<span id="cb3-5"><a href=""></a>                    color<span class="op">=</span><span class="st">"black"</span>, icon_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>), </span>
-<span id="cb3-6"><a href=""></a>                    shadow_size<span class="op">=</span>(<span class="dv">0</span>,<span class="dv">0</span>)), </span>
-<span id="cb3-7"><a href=""></a>        popup<span class="op">=</span>folium.Popup(name, parse_html<span class="op">=</span><span class="va">True</span>), </span>
-<span id="cb3-8"><a href=""></a>    ).add_to(Montpellier)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb4" data-code-line-numbers="1,3,7,8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a>folium.Marker(</span>
+<span id="cb4-2"><a href=""></a>        location<span class="op">=</span>[lat, lon], </span>
+<span id="cb4-3"><a href=""></a>        icon<span class="op">=</span>folium.Icon(icon<span class="op">=</span><span class="st">"bicycle"</span>, </span>
+<span id="cb4-4"><a href=""></a>                    prefix<span class="op">=</span><span class="st">"fa"</span>, icon_color<span class="op">=</span><span class="st">"black"</span>, </span>
+<span id="cb4-5"><a href=""></a>                    color<span class="op">=</span><span class="st">"black"</span>, icon_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>), </span>
+<span id="cb4-6"><a href=""></a>                    shadow_size<span class="op">=</span>(<span class="dv">0</span>,<span class="dv">0</span>)), </span>
+<span id="cb4-7"><a href=""></a>        popup<span class="op">=</span>folium.Popup(name, parse_html<span class="op">=</span><span class="va">True</span>), </span>
+<span id="cb4-8"><a href=""></a>    ).add_to(Montpellier)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li class="fragment"><p>Lire des dictionnaires json.</p></li>
-<li class="fragment"><p>Comprendre la stylisation CSS.</p></li>
+<li class="fragment"><p>Comprendre la stylisation CSS et SCSS.</p></li>
 </ul>
 </section>
 <section id="pour-aller-plus-loin" class="slide level2">
